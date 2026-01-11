@@ -16,50 +16,50 @@ const categoryMapping = {
 
 // All available categories with icons
 const categories = [
-  { 
-    key: 'Hujjatlar', 
+  {
+    key: 'Hujjatlar',
     label: 'Hujjatlar va rasmiy xizmatlar (ID karta, pasport va boshqalar)',
     icon: '📄',
     color: 'blue'
   },
-  { 
-    key: 'Davlat xizmatlari', 
+  {
+    key: 'Davlat xizmatlari',
     label: 'Davlat xizmatlari (my.gov.uz va boshqa portallar)',
     icon: '🏛️',
     color: 'purple'
   },
-  { 
-    key: 'Moliya', 
+  {
+    key: 'Moliya',
     label: 'Moliya va bank xizmatlari',
     icon: '💰',
     color: 'emerald'
   },
-  { 
-    key: 'Ta\'lim', 
+  {
+    key: 'Ta\'lim',
     label: 'Ta\'lim va kasbiy rivojlanish',
     icon: '🎓',
     color: 'blue'
   },
-  { 
-    key: 'Salomatlik', 
+  {
+    key: 'Salomatlik',
     label: 'Salomatlik va tibbiy xizmatlar',
     icon: '🏥',
     color: 'emerald'
   },
-  { 
-    key: 'Transport', 
+  {
+    key: 'Transport',
     label: 'Transport va yo\'l harakati',
     icon: '🚗',
     color: 'orange'
   },
-  { 
-    key: 'Texnologiya', 
+  {
+    key: 'Texnologiya',
     label: 'Texnologiya va internet',
     icon: '💻',
     color: 'cyan'
   },
-  { 
-    key: 'Boshqa', 
+  {
+    key: 'Boshqa',
     label: 'Boshqa',
     icon: '📌',
     color: 'gray'
@@ -77,13 +77,13 @@ export default function BlogList({ posts }) {
     if (!selectedCategory) {
       return posts;
     }
-    
+
     if (selectedCategory === 'Boshqa') {
       // Show posts that don't match any of the defined categories
       const definedCategories = ['Hujjatlar', 'Moliya', 'Davlat xizmatlari', 'Ta\'lim', 'Salomatlik', 'Transport', 'Texnologiya'];
       return posts.filter(post => !definedCategories.includes(post.category));
     }
-    
+
     return posts.filter(post => post.category === selectedCategory);
   }, [posts, selectedCategory]);
 
@@ -177,7 +177,7 @@ export default function BlogList({ posts }) {
               </select>
             </div>
           </div>
-          
+
           {/* Results count */}
           <div className="mt-6 text-center">
             <p className="text-neutral-text-gray text-sm md:text-base">
@@ -233,11 +233,10 @@ export default function BlogList({ posts }) {
               <button
                 onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
                 disabled={currentPage === 1}
-                className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 ${
-                  currentPage === 1
+                className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 ${currentPage === 1
                     ? 'bg-neutral-light-gray text-neutral-text-light cursor-not-allowed'
                     : 'bg-[#0EA5E9] text-white hover:bg-[#0284C7] smooth cursor-pointer'
-                }`}
+                  }`}
               >
                 ← Oldingi
               </button>
@@ -246,7 +245,7 @@ export default function BlogList({ posts }) {
               <div className="flex items-center gap-2">
                 {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => {
                   // Show first page, last page, current page, and pages around current
-                  const showPage = 
+                  const showPage =
                     page === 1 ||
                     page === totalPages ||
                     (page >= currentPage - 1 && page <= currentPage + 1);
@@ -267,11 +266,10 @@ export default function BlogList({ posts }) {
                     <button
                       key={page}
                       onClick={() => setCurrentPage(page)}
-                      className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 cursor-pointer ${
-                        currentPage === page
+                      className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 cursor-pointer ${currentPage === page
                           ? 'bg-[#0EA5E9] text-white'
                           : 'bg-neutral-light-gray text-neutral-text-dark hover:bg-neutral-border smooth'
-                      }`}
+                        }`}
                     >
                       {page}
                     </button>
@@ -283,11 +281,10 @@ export default function BlogList({ posts }) {
               <button
                 onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
                 disabled={currentPage === totalPages}
-                className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 ${
-                  currentPage === totalPages
+                className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 ${currentPage === totalPages
                     ? 'bg-neutral-light-gray text-neutral-text-light cursor-not-allowed'
                     : 'bg-[#0EA5E9] text-white hover:bg-[#0284C7] smooth cursor-pointer'
-                }`}
+                  }`}
               >
                 Keyingi →
               </button>

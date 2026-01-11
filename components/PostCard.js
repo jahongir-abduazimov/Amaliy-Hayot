@@ -87,7 +87,7 @@ export default function PostCard({ post }) {
 
         {/* Read more (appears on hover) */}
         <div className="mt-4 flex items-center text-[#0EA5E9] font-semibold opacity-0 group-hover:opacity-100 smooth">
-          O'qish 
+          O'qish
           <span className="ml-2 group-hover:translate-x-2 smooth inline-block">→</span>
         </div>
       </div>

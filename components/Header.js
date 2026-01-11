@@ -29,11 +29,10 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 smooth ${
-        scrolled
+      className={`fixed top-0 w-full z-50 smooth ${scrolled
           ? 'bg-white/95 backdrop-blur-md shadow'
           : 'bg-white/80 backdrop-blur-sm'
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav className="flex items-center justify-between h-20">
@@ -58,9 +57,8 @@ export default function Header() {
                   >
                     {link.label}
                     <span
-                      className={`absolute bottom-0 left-0 h-0.5 bg-[#0EA5E9] smooth ${
-                        isActive ? 'w-full' : 'w-0 group-hover:w-full'
-                      }`}
+                      className={`absolute bottom-0 left-0 h-0.5 bg-[#0EA5E9] smooth ${isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                        }`}
                     />
                   </Link>
                 </li>
@@ -89,7 +87,7 @@ export default function Header() {
                 />
               </svg>
             </button>
-            <button 
+            <button
               onClick={() => {
                 document.getElementById('newsletter-section')?.scrollIntoView({ behavior: 'smooth' });
                 setMobileMenuOpen(false);
@@ -127,9 +125,8 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         <div
-          className={`md:hidden overflow-hidden smooth ${
-            mobileMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
-          }`}
+          className={`md:hidden overflow-hidden smooth ${mobileMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
+            }`}
         >
           <nav className="py-4 border-t border-neutral-border space-y-2">
             {navLinks.map((link) => {
@@ -138,18 +135,17 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`block px-4 py-3 rounded-xl font-medium smooth ${
-                    isActive
+                  className={`block px-4 py-3 rounded-xl font-medium smooth ${isActive
                       ? 'text-[#0EA5E9] bg-[#DBEAFE] border-l-4 border-[#0EA5E9]'
                       : 'text-neutral-text-dark hover:text-[#0EA5E9] hover:bg-[#F8FAFC]'
-                  }`}
+                    }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.label}
                 </Link>
               );
             })}
-            <button 
+            <button
               onClick={() => {
                 document.getElementById('newsletter-section')?.scrollIntoView({ behavior: 'smooth' });
                 setMobileMenuOpen(false);

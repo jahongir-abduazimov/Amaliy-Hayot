@@ -27,7 +27,7 @@ export default function Home() {
           <div className="absolute top-20 right-20 w-96 h-96 bg-[#0EA5E9]/5 rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 left-20 w-80 h-80 bg-[#F97316]/5 rounded-full blur-3xl"></div>
         </div>
-        
+
         {/* Content */}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-4xl mx-auto">
@@ -36,26 +36,26 @@ export default function Home() {
               <span className="gradient-text">osonlashtiruvchi</span>{' '}
               yo'riqnomalar
             </h1>
-            
+
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-neutral-text-gray mb-8 sm:mb-10 leading-relaxed px-2">
-              Hujjatlar, xizmatlar va kundalik hayot haqida foydali ma'lumotlar - 
+              Hujjatlar, xizmatlar va kundalik hayot haqida foydali ma'lumotlar -
               barchasi bir joyda
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-12 sm:mb-16">
-              <a 
+              <a
                 href="#maqolalar"
                 className="group bg-[#0EA5E9] text-white px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 rounded-xl text-base sm:text-lg font-bold shadow-blue hover:bg-[#0369A1] smooth inline-flex items-center justify-center cursor-pointer"
               >
                 Maqolalarni o'qish
                 <span className="inline-block ml-2 group-hover:translate-x-1 smooth">→</span>
               </a>
-              
+
               <SearchButton className="bg-transparent border-2 border-[#F97316] text-[#F97316] px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 rounded-xl text-base sm:text-lg font-bold hover:bg-[#F97316] hover:text-white smooth cursor-pointer">
                 Qidiruv 🔍
               </SearchButton>
             </div>
-            
+
             {/* Trust indicators */}
             {/* <div className="flex flex-wrap items-center justify-center gap-8 text-sm text-neutral-text-light">
               <span className="flex items-center gap-2">
@@ -113,7 +113,7 @@ export default function Home() {
                   {posts.length} ta maqola mavjud
                 </p>
               </div>
-              <Link 
+              <Link
                 href="/blog"
                 className="bg-transparent cursor-pointer border-2 border-[#F97316] text-[#F97316] px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 rounded-xl text-sm sm:text-base md:text-lg font-bold hover:bg-[#F97316] hover:text-white smooth inline-flex items-center justify-center whitespace-nowrap"
               >
