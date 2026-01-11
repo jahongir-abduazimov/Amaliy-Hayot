@@ -109,13 +109,10 @@ export default function Home() {
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-neutral-text-dark mb-2">
                   So'nggi Maqolalar
                 </h2>
-                <p className="text-base sm:text-lg text-neutral-text-gray">
-                  {posts.length} ta maqola mavjud
-                </p>
               </div>
               <Link
                 href="/blog"
-                className="bg-transparent cursor-pointer border-2 border-[#F97316] text-[#F97316] px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 rounded-xl text-sm sm:text-base md:text-lg font-bold hover:bg-[#F97316] hover:text-white smooth inline-flex items-center justify-center whitespace-nowrap"
+                className="bg-transparent cursor-pointer border-2 border-[#F97316] text-[#F97316] px-6 py-3 sm:px-6 sm:py-2 md:px-8 md:py-3 rounded-xl text-sm sm:text-base md:text-lg font-bold hover:bg-[#F97316] hover:text-white smooth inline-flex items-center justify-center whitespace-nowrap"
               >
                 Barcha maqolalarni ko'rish
                 <span className="inline-block ml-2 group-hover:translate-x-1 smooth">→</span>
@@ -196,7 +193,7 @@ export default function Home() {
       </section>
 
       {/* Newsletter Section */}
-      <NewsletterSection />
+      {/* <NewsletterSection /> */}
     </div>
   );
 }

@@ -24,34 +24,35 @@ export default function PostCard({ post }) {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className="group block bg-white border border-neutral-border rounded-2xl overflow-hidden card-hover"
+      className="group bg-white border border-neutral-border rounded-2xl overflow-hidden card-hover md:flex-col flex flex-row-reverse"
     >
       {/* Image */}
       {post.image ? (
-        <div className="relative w-full h-56 overflow-hidden bg-linear-to-br from-[#F1F5F9] to-[#E2E8F0]">
-          <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent z-10"></div>
+        <div className="relative md:w-full w-32 md:h-56 h-full shrink-0 overflow-hidden bg-linear-to-br from-[#F1F5F9] to-[#E2E8F0]">
+          <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent z-10 md:block hidden"></div>
+          <div className="absolute inset-0 bg-linear-to-r from-black/40 via-transparent to-transparent z-10 md:hidden"></div>
           <Image
             src={post.image}
             alt={post.title}
             fill
             className="object-cover group-hover:scale-105 smooth"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            sizes="(max-width: 768px) 128px, (max-width: 1200px) 50vw, 33vw"
           />
-          {post.category && categoryColor && (
-            <div className="absolute top-4 left-4 z-20">
-              <span className={`inline-block px-4 py-2 rounded-full text-sm font-bold shadow-soft ${categoryColor.bg} ${categoryColor.text}`}>
+          {/* {post.category && categoryColor && (
+            <div className="absolute top-2 left-2 md:top-4 md:left-4 z-20">
+              <span className={`inline-block px-2 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-bold shadow-soft ${categoryColor.bg} ${categoryColor.text}`}>
                 {post.category}
               </span>
             </div>
-          )}
+          )} */}
         </div>
       ) : (
-        <div className="w-full h-56 bg-linear-to-br from-[#DBEAFE] via-[#F0F9FF] to-[#F8FAFC] flex items-center justify-center relative overflow-hidden">
+        <div className="md:w-full w-32 md:h-56 h-full shrink-0 bg-linear-to-br from-[#DBEAFE] via-[#F0F9FF] to-[#F8FAFC] flex items-center justify-center relative overflow-hidden">
           <div className="absolute inset-0 bg-linear-to-r from-[#0EA5E9]/20 to-[#06B6D4]/20 opacity-50 group-hover:opacity-70 smooth"></div>
-          <span className="text-neutral-text-light text-sm font-medium relative z-10">Rasm yo'q</span>
+          <span className="text-neutral-text-light text-xs md:text-sm font-medium relative z-10">Rasm yo'q</span>
           {post.category && categoryColor && (
-            <div className="absolute top-4 left-4 z-20">
-              <span className={`inline-block px-4 py-2 rounded-full text-sm font-bold shadow-soft ${categoryColor.bg} ${categoryColor.text}`}>
+            <div className="absolute top-2 left-2 md:top-4 md:left-4 z-20">
+              <span className={`inline-block px-2 py-1 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-bold shadow-soft ${categoryColor.bg} ${categoryColor.text}`}>
                 {post.category}
               </span>
             </div>
@@ -60,19 +61,19 @@ export default function PostCard({ post }) {
       )}
 
       {/* Content */}
-      <div className="p-6">
+      <div className="p-4 md:p-6 flex-1 flex flex-col">
         {/* Title */}
-        <h2 className="text-xl md:text-2xl font-bold text-neutral-text-dark mb-3 group-hover:text-[#0EA5E9] smooth line-clamp-2 leading-tight">
+        <h2 className="text-base md:text-xl lg:text-2xl font-bold text-neutral-text-dark mb-2 md:mb-3 group-hover:text-[#0EA5E9] smooth line-clamp-2 leading-tight">
           {post.title}
         </h2>
 
         {/* Description */}
         {post.description && (
-          <p className="text-neutral-text-gray text-sm md:text-base mb-5 line-clamp-3 leading-relaxed">{post.description}</p>
+          <p className="text-neutral-text-gray text-xs md:text-sm lg:text-base mb-3 md:mb-5 line-clamp-2 md:line-clamp-3 leading-relaxed flex-1">{post.description}</p>
         )}
 
         {/* Meta */}
-        <div className="flex items-center justify-between text-xs text-neutral-text-light pt-4 border-t border-neutral-border/50">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-2 md:gap-0 text-xs text-neutral-text-light pt-3 md:pt-4 border-t border-neutral-border/50 mt-auto">
           <div className="flex items-center gap-2">
             <span className="text-[#0EA5E9]">📅</span>
             <span>{formattedDate}</span>
@@ -83,12 +84,6 @@ export default function PostCard({ post }) {
               <span>{post.readingTime} daqiqa</span>
             </div>
           )}
-        </div>
-
-        {/* Read more (appears on hover) */}
-        <div className="mt-4 flex items-center text-[#0EA5E9] font-semibold opacity-0 group-hover:opacity-100 smooth">
-          O'qish
-          <span className="ml-2 group-hover:translate-x-2 smooth inline-block">→</span>
         </div>
       </div>
     </Link>

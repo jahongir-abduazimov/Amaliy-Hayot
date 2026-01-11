@@ -234,8 +234,8 @@ export default function BlogList({ posts }) {
                 onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
                 disabled={currentPage === 1}
                 className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 ${currentPage === 1
-                    ? 'bg-neutral-light-gray text-neutral-text-light cursor-not-allowed'
-                    : 'bg-[#0EA5E9] text-white hover:bg-[#0284C7] smooth cursor-pointer'
+                  ? 'bg-neutral-light-gray text-neutral-text-light cursor-not-allowed'
+                  : 'bg-[#0EA5E9] text-white hover:bg-[#0284C7] smooth cursor-pointer'
                   }`}
               >
                 ← Oldingi
@@ -267,8 +267,8 @@ export default function BlogList({ posts }) {
                       key={page}
                       onClick={() => setCurrentPage(page)}
                       className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 cursor-pointer ${currentPage === page
-                          ? 'bg-[#0EA5E9] text-white'
-                          : 'bg-neutral-light-gray text-neutral-text-dark hover:bg-neutral-border smooth'
+                        ? 'bg-[#0EA5E9] text-white'
+                        : 'bg-neutral-light-gray text-neutral-text-dark hover:bg-neutral-border smooth'
                         }`}
                     >
                       {page}
@@ -282,8 +282,8 @@ export default function BlogList({ posts }) {
                 onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
                 disabled={currentPage === totalPages}
                 className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 ${currentPage === totalPages
-                    ? 'bg-neutral-light-gray text-neutral-text-light cursor-not-allowed'
-                    : 'bg-[#0EA5E9] text-white hover:bg-[#0284C7] smooth cursor-pointer'
+                  ? 'bg-neutral-light-gray text-neutral-text-light cursor-not-allowed'
+                  : 'bg-[#0EA5E9] text-white hover:bg-[#0284C7] smooth cursor-pointer'
                   }`}
               >
                 Keyingi →

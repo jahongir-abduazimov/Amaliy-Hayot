@@ -1,8 +1,9 @@
-import { getAllPostSlugs, getPostBySlug } from '@/lib/posts';
+import { getAllPostSlugs, getPostBySlug, getRelatedPosts } from '@/lib/posts';
 import { markdownToHtml, getReadingTime } from '@/lib/posts';
 import TableOfContents from '@/components/TableOfContents';
 import ReadingProgress from '@/components/ReadingProgress';
 import SocialShare from '@/components/SocialShare';
+import PostCard from '@/components/PostCard';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 
@@ -65,6 +66,9 @@ export default async function BlogPost({ params }) {
   const date = new Date(post.date);
   const months = ['yanvar', 'fevral', 'mart', 'aprel', 'may', 'iyun', 'iyul', 'avgust', 'sentabr', 'oktabr', 'noyabr', 'dekabr'];
   const formattedDate = `${date.getDate()} ${months[date.getMonth()]}, ${date.getFullYear()}`;
+
+  // Get related posts
+  const relatedPosts = getRelatedPosts(slug, post.category, 3);
 
   // Generate JSON-LD structured data
   const jsonLd = {
@@ -193,6 +197,20 @@ export default async function BlogPost({ params }) {
             </aside> */}
           </div>
         </div>
+
+        {/* Related Posts Section */}
+        {relatedPosts.length > 0 && (
+          <section className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8 mt-16 md:mt-20">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8 md:mb-10">
+              Mavzuga oid maqolalar
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+              {relatedPosts.map((relatedPost) => (
+                <PostCard key={relatedPost.slug} post={relatedPost} />
+              ))}
+            </div>
+          </section>
+        )}
       </article>
     </>
   );

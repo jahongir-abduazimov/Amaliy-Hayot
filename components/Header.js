@@ -53,13 +53,9 @@ export default function Header() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-neutral-text-gray hover:text-[#0EA5E9] smooth relative group font-medium"
+                    className={`text-neutral-text-gray hover:text-[#0EA5E9] smooth relative group font-medium ${isActive ? 'text-[#0EA5E9]' : ''}`}
                   >
                     {link.label}
-                    <span
-                      className={`absolute bottom-0 left-0 h-0.5 bg-[#0EA5E9] smooth ${isActive ? 'w-full' : 'w-0 group-hover:w-full'
-                        }`}
-                    />
                   </Link>
                 </li>
               );
