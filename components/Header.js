@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import SearchModal from './SearchModal';
+import Logo from "../public/images/logo.png"
+import Image from 'next/image';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -40,12 +42,8 @@ export default function Header() {
             href="/"
             className="flex items-center gap-3 group"
           >
-            <div className="w-10 h-10 bg-ocean-gradient rounded-xl flex items-center justify-center shadow-blue">
-              <span className="text-2xl">📚</span>
-            </div>
-            <span className="text-xl font-bold text-neutral-text-dark group-hover:text-[#0EA5E9] smooth">
-              Amaliy Hayot
-            </span>
+            <Image src={Logo} alt="Logo" className="w-12 md:w-14" />
+            <span className="text-lg md:text-3xl font-bold text-primary">Amaliy Hayot</span>
           </Link>
 
           {/* Desktop Navigation */}

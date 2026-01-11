@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import Logo from "../public/images/logo.png"
+import Image from 'next/image';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -35,15 +37,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {/* About */}
           <div className="space-y-4">
-            <Link href="/" className="inline-block group">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="w-10 h-10 bg-ocean-gradient rounded-xl flex items-center justify-center shadow-blue">
-                  <span className="text-2xl">📚</span>
-                </div>
-                <h3 className="text-xl font-bold text-neutral-text-dark group-hover:text-[#0EA5E9] smooth">
-                  Amaliy Hayot
-                </h3>
-              </div>
+            <Link href="/" className="flex items-center gap-3">
+              <Image src={Logo} alt="Logo" className="w-12 md:w-14" />
+              <span className="text-lg md:text-3xl font-bold text-primary">Amaliy Hayot</span>
             </Link>
             <p className="text-sm md:text-base text-neutral-text-gray leading-relaxed">
               O'zbekistonda kundalik hayotga oid foydali ma'lumotlar, yo'riqnomalar va maslahatlar.
