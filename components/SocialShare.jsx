@@ -14,21 +14,22 @@ export default function SocialShare({
   description,
   variant = "inline",
 }) {
-  const currentUrl = typeof window !== "undefined" ? window.location.href : url;
-  const shareText = `${title}${description ? ` - ${description}` : ""}`;
+  // Use the provided url prop which contains the full URL, fallback to window.location.href only if url is not provided
+  const shareUrl = url || (typeof window !== "undefined" ? window.location.href : "");
+  const shareText = `${title}`;
 
   const shareLinks = {
     telegram: `https://t.me/share/url?url=${encodeURIComponent(
-      currentUrl
+      shareUrl
     )}&text=${encodeURIComponent(shareText)}`,
     facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-      currentUrl
+      shareUrl
     )}`,
     twitter: `https://twitter.com/intent/tweet?url=${encodeURIComponent(
-      currentUrl
+      shareUrl
     )}&text=${encodeURIComponent(shareText)}`,
     whatsapp: `https://wa.me/?text=${encodeURIComponent(
-      shareText + " " + currentUrl
+      shareText + " " + shareUrl
     )}`,
   };
 

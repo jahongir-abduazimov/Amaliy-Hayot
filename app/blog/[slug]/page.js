@@ -28,6 +28,9 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://amaliy-hayot.vercel.app';
+  const fullImageUrl = post.image ? (post.image.startsWith('http') ? post.image : `${baseUrl}${post.image}`) : null;
+
   return {
     title: post.title,
     description: post.description,
@@ -39,13 +42,14 @@ export async function generateMetadata({ params }) {
       type: 'article',
       publishedTime: post.date,
       authors: [post.author || 'Amaliy Hayot'],
-      images: post.image ? [post.image] : [],
+      url: `${baseUrl}/blog/${slug}`,
+      images: fullImageUrl ? [fullImageUrl] : [],
     },
     twitter: {
-      card: 'summary_large_image',
+      card: 'summary',
       title: post.title,
       description: post.description,
-      images: post.image ? [post.image] : [],
+      images: fullImageUrl ? [fullImageUrl] : [],
     },
   };
 }
@@ -200,7 +204,7 @@ export default async function BlogPost({ params }) {
 
         {/* Related Posts Section */}
         {relatedPosts.length > 0 && (
-          <section className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8 mt-16 md:mt-20">
+          <section className="mt-16 md:mt-20">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8 md:mb-10">
               Mavzuga oid maqolalar
             </h2>
