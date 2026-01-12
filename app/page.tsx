@@ -110,13 +110,6 @@ export default function Home() {
                   So'nggi Maqolalar
                 </h2>
               </div>
-              <Link
-                href="/blog"
-                className="bg-transparent cursor-pointer border-2 border-[#F97316] text-[#F97316] px-6 py-3 sm:px-6 sm:py-2 md:px-8 md:py-3 rounded-xl text-sm sm:text-base md:text-lg font-bold hover:bg-[#F97316] hover:text-white smooth inline-flex items-center justify-center whitespace-nowrap"
-              >
-                Barcha maqolalarni ko'rish
-                <span className="inline-block ml-2 group-hover:translate-x-1 smooth">→</span>
-              </Link>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">

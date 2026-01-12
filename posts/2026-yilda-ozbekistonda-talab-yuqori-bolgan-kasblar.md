@@ -2,9 +2,9 @@
 title: "2026-yilda O‘zbekistonda talab yuqori bo‘lgan kasblar: qaysi yo‘nalishni tanlash kerak?"
 date: 2026-01-11
 description: "2026-yilda O‘zbekistonda eng talab yuqori bo‘lgan kasblar, ularni o‘rganish yo‘llari va real daromad imkoniyatlari. Kasb tanlash bo‘yicha amaliy qo‘llanma."
-image: "/images/2026-talab-yuqori-kasblar-uzbekistan.webp"
+image: "/images/education/2026-talab-yuqori-kasblar-uzbekistan.webp"
 author: "Amaliy Hayot"
-category: "Ta'lim va kasbiy rivojlanish"
+category: "Ta'lim"
 keywords:
   - talab yuqori kasblar 2026
   - o‘zbekistonda kasb tanlash

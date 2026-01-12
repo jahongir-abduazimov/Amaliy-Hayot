@@ -2,7 +2,7 @@
 title: "my.gov.uz dan qanday foydalanish - To'liq yo'riqnoma"
 date: "2026-01-09"
 description: "my.gov.uz portali orqali davlat xizmatlaridan foydalanish, ro'yxatdan o'tish va barcha imkoniyatlar haqida batafsil yo'riqnoma."
-image: "/images/mygov.png"
+image: "/images/public-services/mygov.png"
 author: "Amaliy Hayot"
 category: "Davlat xizmatlari"
 keywords: "mygov, my gov uz, davlat xizmatlari, online xizmatlar, elektron hukumat"

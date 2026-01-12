@@ -2,7 +2,7 @@
 title: "O'zbekistonda ID karta qanday olinadi - 2026 yil yo'riqnomasi"
 date: "2026-01-10"
 description: "ID karta olish uchun kerakli hujjatlar, qadamlar va foydali maslahatlar. Yangi avlod ID kartasi haqida to'liq ma'lumot."
-image: "/images/id-card.jpg"
+image: "/images/documents/id-card.jpg"
 author: "Amaliy Hayot"
 category: "Hujjatlar"
 keywords: "id karta, id karta olish, shaxsni tasdiqlovchi hujjat, mygov, o'zbekiston"

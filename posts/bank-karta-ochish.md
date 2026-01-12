@@ -2,7 +2,7 @@
 title: "O'zbekistonda bank kartasi qanday ochiladi - 2026"
 date: "2026-01-08"
 description: "Bank kartasi ochish, turlari, narxlari va qaysi bankni tanlash haqida to'liq yo'riqnoma. Humo, Visa, Mastercard taqqoslash."
-image: "/images/bank-card.jpg"
+image: "/images/finance/bank-card.jpg"
 author: "Amaliy Hayot"
 category: "Moliya"
 keywords: "bank kartasi, humo, visa, uzcard, bank karta ochish, plastik karta"

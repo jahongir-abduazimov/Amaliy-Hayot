@@ -18,49 +18,49 @@ const categoryMapping = {
 const categories = [
   {
     key: 'Hujjatlar',
-    label: 'Hujjatlar va rasmiy xizmatlar (ID karta, pasport va boshqalar)',
+    label: 'Hujjatlar',
     icon: '📄',
     color: 'blue'
   },
   {
     key: 'Davlat xizmatlari',
-    label: 'Davlat xizmatlari (my.gov.uz va boshqa portallar)',
+    label: 'Davlat xizmatlari',
     icon: '🏛️',
     color: 'purple'
   },
   {
     key: 'Moliya',
-    label: 'Moliya va bank xizmatlari',
+    label: 'Moliya',
     icon: '💰',
     color: 'emerald'
   },
   {
     key: 'Ta\'lim',
-    label: 'Ta\'lim va kasbiy rivojlanish',
+    label: 'Ta\'lim',
     icon: '🎓',
     color: 'blue'
   },
   {
     key: 'Salomatlik',
-    label: 'Salomatlik va tibbiy xizmatlar',
+    label: 'Salomatlik',
     icon: '🏥',
     color: 'emerald'
   },
   {
     key: 'Transport',
-    label: 'Transport va yo\'l harakati',
+    label: 'Transport',
     icon: '🚗',
     color: 'orange'
   },
   {
     key: 'Texnologiya',
-    label: 'Texnologiya va internet',
+    label: 'Texnologiya',
     icon: '💻',
     color: 'cyan'
   },
   {
     key: 'Boshqa',
-    label: 'Boshqa',
+    label: 'Boshqa maqolalar',
     icon: '📌',
     color: 'gray'
   },
@@ -97,10 +97,14 @@ export default function BlogList({ posts }) {
   // Calculate total pages
   const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE);
 
-  // Handle category change from select
-  const handleCategoryChange = (event) => {
-    const value = event.target.value;
-    setSelectedCategory(value === 'Barchasi' ? null : value);
+  // Handle category selection
+  const handleCategoryClick = (categoryKey) => {
+    if (categoryKey === selectedCategory) {
+      // If clicking the same category, deselect it
+      setSelectedCategory(null);
+    } else {
+      setSelectedCategory(categoryKey);
+    }
     setCurrentPage(1);
   };
 
@@ -146,51 +150,78 @@ export default function BlogList({ posts }) {
       {/* Category Filters */}
       <section className="bg-white pb-8 md:pb-12 border-b border-neutral-border/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6">
-            {/* Category Select */}
-            <div className="w-full md:w-auto md:min-w-[400px]">
-              <label htmlFor="category-select" className="block text-sm font-semibold text-neutral-text-dark mb-2 text-center md:text-left">
-                Kategoriyani tanlang:
-              </label>
-              <select
-                id="category-select"
-                value={selectedCategory || 'Barchasi'}
-                onChange={handleCategoryChange}
-                className="w-full px-4 py-3 rounded-xl border-2 border-neutral-border bg-white text-neutral-text-dark font-semibold text-base md:text-lg focus:border-[#0EA5E9] focus:outline-none focus:ring-2 focus:ring-[#0EA5E9]/20 transition-all duration-200 smooth appearance-none cursor-pointer"
-                style={{
-                  backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%230EA5E9'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E")`,
-                  backgroundRepeat: 'no-repeat',
-                  backgroundPosition: 'right 1rem center',
-                  backgroundSize: '1.5em 1.5em',
-                  paddingRight: '3rem'
-                }}
-              >
-                <option value="Barchasi">📚 Barchasi ({posts.length})</option>
+          <div className="flex flex-col items-center gap-6">
+            {/* Category Title */}
+            <div className="text-center">
+              <h2 className="text-lg md:text-xl font-semibold text-neutral-text-dark mb-2">
+                Kategoriyalar
+              </h2>
+              <p className="text-sm text-neutral-text-gray">
+                Kategoriyani tanlang yoki barcha maqolalarni ko'ring
+              </p>
+            </div>
+
+            {/* Category Buttons */}
+            <div className="w-full">
+              <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4">
+                {/* All Categories Button */}
+                <button
+                  onClick={() => handleCategoryClick(null)}
+                  className={`px-4 py-2.5 md:px-6 md:py-3 rounded-xl border-2 font-semibold text-sm md:text-base transition-all duration-200 smooth cursor-pointer flex items-center gap-2 ${selectedCategory === null
+                      ? 'bg-[#0EA5E9] text-white border-[#0EA5E9] shadow-lg shadow-[#0EA5E9]/20'
+                      : 'bg-white text-neutral-text-dark border-neutral-border hover:border-[#0EA5E9] hover:bg-blue-50'
+                    }`}
+                >
+                  <span>📚</span>
+                  <span>Barchasi</span>
+                  <span className="px-2 py-0.5 rounded-full text-xs bg-white/20 text-inherit">
+                    {posts.length}
+                  </span>
+                </button>
+
+                {/* Category Buttons */}
                 {categories.map((category) => {
                   const count = getCategoryCount(category.key);
+                  const isActive = selectedCategory === category.key;
+                  const colorClass = colorClasses[category.color];
+
                   return (
-                    <option key={category.key} value={category.key}>
-                      {category.icon} {category.label} ({count})
-                    </option>
+                    <button
+                      key={category.key}
+                      onClick={() => handleCategoryClick(category.key)}
+                      className={`px-4 py-2.5 md:px-6 md:py-3 rounded-xl border-2 font-semibold text-sm md:text-base transition-all duration-200 smooth cursor-pointer flex items-center gap-2 ${isActive
+                          ? `${colorClass.active} shadow-lg`
+                          : `${colorClass.base}`
+                        }`}
+                    >
+                      <span>{category.icon}</span>
+                      <span>{category.label}</span>
+                      <span className={`px-2 py-0.5 rounded-full text-xs ${isActive
+                          ? 'bg-white/20 text-inherit'
+                          : 'bg-white/60 text-inherit'
+                        }`}>
+                        {count}
+                      </span>
+                    </button>
                   );
                 })}
-              </select>
+              </div>
             </div>
-          </div>
 
-          {/* Results count */}
-          <div className="mt-6 text-center">
-            <p className="text-neutral-text-gray text-sm md:text-base">
-              {selectedCategory ? (
-                <>
-                  <span className="font-semibold text-neutral-text-dark">{filteredPosts.length}</span> ta maqola topildi
-                </>
-              ) : (
-                <>
-                  Jami <span className="font-semibold text-neutral-text-dark">{posts.length}</span> ta maqola
-                </>
-              )}
-            </p>
+            {/* Results count */}
+            <div className="mt-4 text-center">
+              <p className="text-neutral-text-gray text-sm md:text-base">
+                {selectedCategory ? (
+                  <>
+                    <span className="font-semibold text-neutral-text-dark">{filteredPosts.length}</span> ta maqola topildi
+                  </>
+                ) : (
+                  <>
+                    Jami <span className="font-semibold text-neutral-text-dark">{posts.length}</span> ta maqola
+                  </>
+                )}
+              </p>
+            </div>
           </div>
         </div>
       </section>
