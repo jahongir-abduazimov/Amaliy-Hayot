@@ -38,7 +38,7 @@ export default function Footer() {
           {/* About */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-3">
-              <Image src={Logo} alt="Logo" className="w-12 md:w-14" />
+              <Image src={Logo} alt="Amaliy Hayot - O'zbekistonda kundalik hayot yo'riqnomalari" className="w-12 md:w-14" width={56} height={56} />
               <span className="text-lg md:text-3xl font-bold text-primary">Amaliy Hayot</span>
             </Link>
             <p className="text-sm md:text-base text-neutral-text-gray leading-relaxed">

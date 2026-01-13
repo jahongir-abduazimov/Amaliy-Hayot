@@ -5,7 +5,7 @@ description: "Qon bosimini qanday to‘g‘ri nazorat qilish mumkin? 2026-yil ho
 image: "/images/health/qon-bosimini-nazorat-qilish.jpg"
 author: "Amaliy Hayot"
 category: Salomatlik
-keywords: ["qon bosimi", "arterial bosim", "gipertoniya", "bosimni tushirish", "salomatlik", "yurak kasalliklari", "qon bosimini o‘lchash", "sog‘lom turmush tarzi"]
+keywords: "qon bosimi, arterial bosim, gipertoniya, bosimni tushirish, salomatlik, yurak kasalliklari, qon bosimini o‘lchash, sog‘lom turmush tarzi"
 ---
 
 # Qon bosimini nazorat qilish

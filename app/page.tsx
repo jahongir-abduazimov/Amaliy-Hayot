@@ -11,6 +11,31 @@ export const metadata: Metadata = {
   title: "Amaliy Hayot",
   description: "O'zbekistonda kundalik hayotga oid foydali ma'lumotlar, yo'riqnomalar va maslahatlar.",
   keywords: "o'zbekiston, yo'riqnoma, id karta, bank kartasi, mygov, davlat xizmatlari, hayot maslahatlari, texnologiya",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Amaliy Hayot - O'zbekistonda kundalik hayot yo'riqnomalari",
+    description: "O'zbekistonda kundalik hayotga oid foydali ma'lumotlar, yo'riqnomalar va maslahatlar.",
+    type: "website",
+    url: "/",
+    siteName: "Amaliy Hayot",
+    locale: "uz_UZ",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Amaliy Hayot - O'zbekistonda kundalik hayot yo'riqnomalari",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Amaliy Hayot - O'zbekistonda kundalik hayot yo'riqnomalari",
+    description: "O'zbekistonda kundalik hayotga oid foydali ma'lumotlar, yo'riqnomalar va maslahatlar.",
+    images: ["/images/logo.png"],
+  },
 };
 
 export default function Home() {

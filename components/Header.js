@@ -30,18 +30,18 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 w-full z-50 smooth ${scrolled
-          ? 'bg-white/95 backdrop-blur-md shadow'
-          : 'bg-white/80 backdrop-blur-sm'
+        ? 'bg-white/95 backdrop-blur-md shadow'
+        : 'bg-white/80 backdrop-blur-sm'
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <nav className="flex items-center justify-between h-20">
+        <nav className="flex items-center justify-between md:h-20 h-16">
           {/* Logo */}
           <Link
             href="/"
             className="flex items-center gap-3 group"
           >
-            <Image src={Logo} alt="Logo" className="w-12 md:w-14" />
+            <Image src={Logo} alt="Amaliy Hayot - O'zbekistonda kundalik hayot yo'riqnomalari" className="w-10 md:w-14" width={56} height={56} />
             <span className="text-lg md:text-3xl font-bold text-primary">Amaliy Hayot</span>
           </Link>
 
@@ -132,8 +132,8 @@ export default function Header() {
                   key={link.href}
                   href={link.href}
                   className={`block px-4 py-3 rounded-xl font-medium smooth ${isActive
-                      ? 'text-[#0EA5E9] bg-[#DBEAFE] border-l-4 border-[#0EA5E9]'
-                      : 'text-neutral-text-dark hover:text-[#0EA5E9] hover:bg-[#F8FAFC]'
+                    ? 'text-[#0EA5E9] bg-[#DBEAFE] border-l-4 border-[#0EA5E9]'
+                    : 'text-neutral-text-dark hover:text-[#0EA5E9] hover:bg-[#F8FAFC]'
                     }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >

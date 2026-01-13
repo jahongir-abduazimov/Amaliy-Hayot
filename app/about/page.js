@@ -2,6 +2,31 @@ export const metadata = {
   title: 'Biz haqimizda',
   description: "Amaliy Hayot - O'zbekistonda kundalik hayotga oid foydali ma'lumotlar, yo'riqnomalar va maslahatlar beruvchi blog sayt.",
   keywords: "biz haqimizda, amaliy hayot, o'zbekiston blog, yo'riqnomalar",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: 'Biz haqimizda | Amaliy Hayot',
+    description: "Amaliy Hayot - O'zbekistonda kundalik hayotga oid foydali ma'lumotlar, yo'riqnomalar va maslahatlar beruvchi blog sayt.",
+    type: "website",
+    url: "/about",
+    siteName: "Amaliy Hayot",
+    locale: "uz_UZ",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Amaliy Hayot - Biz haqimizda",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: 'Biz haqimizda | Amaliy Hayot',
+    description: "Amaliy Hayot - O'zbekistonda kundalik hayotga oid foydali ma'lumotlar, yo'riqnomalar va maslahatlar beruvchi blog sayt.",
+    images: ["/images/logo.png"],
+  },
 };
 
 export default function About() {

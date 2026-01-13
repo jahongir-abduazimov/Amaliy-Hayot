@@ -29,27 +29,52 @@ export async function generateMetadata({ params }) {
   }
 
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://amaliy-hayot.vercel.app';
+  const postUrl = `${baseUrl}/blog/${slug}`;
   const fullImageUrl = post.image ? (post.image.startsWith('http') ? post.image : `${baseUrl}${post.image}`) : null;
+  const defaultImageUrl = `${baseUrl}/images/logo.png`;
 
   return {
     title: post.title,
     description: post.description,
     keywords: post.keywords,
     authors: [{ name: post.author || 'Amaliy Hayot' }],
+    alternates: {
+      canonical: postUrl,
+    },
     openGraph: {
       title: post.title,
       description: post.description,
       type: 'article',
       publishedTime: post.date,
+      modifiedTime: post.date,
       authors: [post.author || 'Amaliy Hayot'],
-      url: `${baseUrl}/blog/${slug}`,
-      images: fullImageUrl ? [fullImageUrl] : [],
+      url: postUrl,
+      siteName: 'Amaliy Hayot',
+      locale: 'uz_UZ',
+      images: fullImageUrl ? [
+        {
+          url: fullImageUrl,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        }
+      ] : [
+        {
+          url: defaultImageUrl,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        }
+      ],
+      ...(post.category && { section: post.category }),
     },
     twitter: {
-      card: 'summary',
+      card: 'summary_large_image',
       title: post.title,
       description: post.description,
-      images: fullImageUrl ? [fullImageUrl] : [],
+      images: fullImageUrl ? [fullImageUrl] : [defaultImageUrl],
+      creator: '@amaliyhayot',
+      site: '@amaliyhayot',
     },
   };
 }
@@ -74,14 +99,19 @@ export default async function BlogPost({ params }) {
   // Get related posts
   const relatedPosts = getRelatedPosts(slug, post.category, 3);
 
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://amaliy-hayot.vercel.app';
+  const postUrl = `${baseUrl}/blog/${slug}`;
+  const fullImageUrl = post.image ? (post.image.startsWith('http') ? post.image : `${baseUrl}${post.image}`) : null;
+
   // Generate JSON-LD structured data
-  const jsonLd = {
+  const articleJsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'BlogPosting',
     headline: post.title,
     description: post.description,
-    image: post.image ? `${process.env.NEXT_PUBLIC_SITE_URL || 'https://amaliy-hayot.vercel.app'}${post.image}` : undefined,
+    image: fullImageUrl || `${baseUrl}/images/logo.png`,
     datePublished: post.date,
+    dateModified: post.date,
     author: {
       '@type': 'Person',
       name: post.author || 'Amaliy Hayot',
@@ -89,14 +119,54 @@ export default async function BlogPost({ params }) {
     publisher: {
       '@type': 'Organization',
       name: 'Amaliy Hayot',
+      logo: {
+        '@type': 'ImageObject',
+        url: `${baseUrl}/images/logo.png`,
+      },
     },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': postUrl,
+    },
+    ...(post.category && { articleSection: post.category }),
+    ...(post.keywords && { keywords: post.keywords }),
+  };
+
+  // BreadcrumbList structured data
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Bosh sahifa',
+        item: baseUrl,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Maqolalar',
+        item: `${baseUrl}/blog`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: post.title,
+        item: postUrl,
+      },
+    ],
   };
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <ReadingProgress />
       <article className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8 pb-16 lg:pb-30 pt-26 md:pt-38">

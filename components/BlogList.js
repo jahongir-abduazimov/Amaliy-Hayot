@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef } from 'react';
 import PostCard from './PostCard';
 
 // Category mapping - maps existing categories to new display names
@@ -59,11 +59,29 @@ const categories = [
     color: 'cyan'
   },
   {
-    key: 'Boshqa',
-    label: 'Boshqa maqolalar',
-    icon: '📌',
-    color: 'gray'
+    key: 'Uy-joy va Kommunal',
+    label: 'Uy-joy va Kommunal',
+    icon: '🏠',
+    color: 'pink'
   },
+  {
+    key: 'Ish va Karyera',
+    label: 'Ish va Karyera',
+    icon: '💼',
+    color: 'indigo'
+  },
+  {
+    key: 'Oila va Bolalar',
+    label: 'Oila va Bolalar',
+    icon: '👨‍👩‍👧‍👦',
+    color: 'amber'
+  },
+  // {
+  //   key: 'Boshqa',
+  //   label: 'Boshqa maqolalar',
+  //   icon: '📌',
+  //   color: 'gray'
+  // },
 ];
 
 const POSTS_PER_PAGE = 9;
@@ -71,6 +89,7 @@ const POSTS_PER_PAGE = 9;
 export default function BlogList({ posts }) {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
+  const postsListRef = useRef(null);
 
   // Filter posts by category
   const filteredPosts = useMemo(() => {
@@ -80,7 +99,7 @@ export default function BlogList({ posts }) {
 
     if (selectedCategory === 'Boshqa') {
       // Show posts that don't match any of the defined categories
-      const definedCategories = ['Hujjatlar', 'Moliya', 'Davlat xizmatlari', 'Ta\'lim', 'Salomatlik', 'Transport', 'Texnologiya'];
+      const definedCategories = ['Hujjatlar', 'Moliya', 'Davlat xizmatlari', 'Ta\'lim', 'Salomatlik', 'Transport', 'Texnologiya', 'Uy-joy va Kommunal', 'Ish va Karyera', 'Oila va Bolalar'];
       return posts.filter(post => !definedCategories.includes(post.category));
     }
 
@@ -97,6 +116,13 @@ export default function BlogList({ posts }) {
   // Calculate total pages
   const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE);
 
+  // Scroll to posts list
+  const scrollToPostsList = () => {
+    if (postsListRef.current) {
+      postsListRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   // Handle category selection
   const handleCategoryClick = (categoryKey) => {
     if (categoryKey === selectedCategory) {
@@ -111,7 +137,7 @@ export default function BlogList({ posts }) {
   // Get category count
   const getCategoryCount = (categoryKey) => {
     if (categoryKey === 'Boshqa') {
-      const definedCategories = ['Hujjatlar', 'Moliya', 'Davlat xizmatlari', 'Ta\'lim', 'Salomatlik', 'Transport', 'Texnologiya'];
+      const definedCategories = ['Hujjatlar', 'Moliya', 'Davlat xizmatlari', 'Ta\'lim', 'Salomatlik', 'Transport', 'Texnologiya', 'Uy-joy va Kommunal', 'Ish va Karyera', 'Oila va Bolalar'];
       return posts.filter(post => !definedCategories.includes(post.category)).length;
     }
     return posts.filter(post => post.category === categoryKey).length;
@@ -143,6 +169,18 @@ export default function BlogList({ posts }) {
       base: 'bg-gray-50 text-gray-700 hover:bg-gray-100 border-gray-200',
       active: 'bg-gray-600 text-white border-gray-600',
     },
+    pink: {
+      base: 'bg-pink-50 text-pink-700 hover:bg-pink-100 border-pink-200',
+      active: 'bg-[#EC4899] text-white border-[#EC4899]',
+    },
+    indigo: {
+      base: 'bg-indigo-50 text-indigo-700 hover:bg-indigo-100 border-indigo-200',
+      active: 'bg-[#6366F1] text-white border-[#6366F1]',
+    },
+    amber: {
+      base: 'bg-amber-50 text-amber-700 hover:bg-amber-100 border-amber-200',
+      active: 'bg-[#F59E0B] text-white border-[#F59E0B]',
+    },
   };
 
   return (
@@ -168,8 +206,8 @@ export default function BlogList({ posts }) {
                 <button
                   onClick={() => handleCategoryClick(null)}
                   className={`px-4 py-2.5 md:px-6 md:py-3 rounded-xl border-2 font-semibold text-sm md:text-base transition-all duration-200 smooth cursor-pointer flex items-center gap-2 ${selectedCategory === null
-                      ? 'bg-[#0EA5E9] text-white border-[#0EA5E9] shadow-lg shadow-[#0EA5E9]/20'
-                      : 'bg-white text-neutral-text-dark border-neutral-border hover:border-[#0EA5E9] hover:bg-blue-50'
+                    ? 'bg-[#0EA5E9] text-white border-[#0EA5E9] shadow-lg shadow-[#0EA5E9]/20'
+                    : 'bg-white text-neutral-text-dark border-neutral-border hover:border-[#0EA5E9] hover:bg-blue-50'
                     }`}
                 >
                   <span>📚</span>
@@ -190,15 +228,15 @@ export default function BlogList({ posts }) {
                       key={category.key}
                       onClick={() => handleCategoryClick(category.key)}
                       className={`px-4 py-2.5 md:px-6 md:py-3 rounded-xl border-2 font-semibold text-sm md:text-base transition-all duration-200 smooth cursor-pointer flex items-center gap-2 ${isActive
-                          ? `${colorClass.active} shadow-lg`
-                          : `${colorClass.base}`
+                        ? `${colorClass.active} shadow-lg`
+                        : `${colorClass.base}`
                         }`}
                     >
                       <span>{category.icon}</span>
                       <span>{category.label}</span>
                       <span className={`px-2 py-0.5 rounded-full text-xs ${isActive
-                          ? 'bg-white/20 text-inherit'
-                          : 'bg-white/60 text-inherit'
+                        ? 'bg-white/20 text-inherit'
+                        : 'bg-white/60 text-inherit'
                         }`}>
                         {count}
                       </span>
@@ -228,7 +266,7 @@ export default function BlogList({ posts }) {
 
       {/* Posts Grid */}
       {paginatedPosts.length > 0 ? (
-        <section className="bg-white py-12 md:py-20">
+        <section ref={postsListRef} className="bg-white py-12 md:py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {paginatedPosts.map((post) => (
@@ -262,7 +300,11 @@ export default function BlogList({ posts }) {
             <div className="flex items-center justify-center gap-2">
               {/* Previous button */}
               <button
-                onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+                onClick={() => {
+                  const newPage = Math.max(1, currentPage - 1);
+                  setCurrentPage(newPage);
+                  setTimeout(() => scrollToPostsList(), 0);
+                }}
                 disabled={currentPage === 1}
                 className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 ${currentPage === 1
                   ? 'bg-neutral-light-gray text-neutral-text-light cursor-not-allowed'
@@ -296,7 +338,10 @@ export default function BlogList({ posts }) {
                   return (
                     <button
                       key={page}
-                      onClick={() => setCurrentPage(page)}
+                      onClick={() => {
+                        setCurrentPage(page);
+                        setTimeout(() => scrollToPostsList(), 0);
+                      }}
                       className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 cursor-pointer ${currentPage === page
                         ? 'bg-[#0EA5E9] text-white'
                         : 'bg-neutral-light-gray text-neutral-text-dark hover:bg-neutral-border smooth'
@@ -310,7 +355,11 @@ export default function BlogList({ posts }) {
 
               {/* Next button */}
               <button
-                onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
+                onClick={() => {
+                  const newPage = Math.min(totalPages, currentPage + 1);
+                  setCurrentPage(newPage);
+                  setTimeout(() => scrollToPostsList(), 0);
+                }}
                 disabled={currentPage === totalPages}
                 className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 ${currentPage === totalPages
                   ? 'bg-neutral-light-gray text-neutral-text-light cursor-not-allowed'

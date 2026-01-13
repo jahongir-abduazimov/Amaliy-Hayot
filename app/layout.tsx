@@ -40,11 +40,22 @@ export const metadata: Metadata = {
     title: "Amaliy Hayot - O'zbekistonda kundalik hayot yo'riqnomalari",
     description: "O'zbekistonda kundalik hayotga oid foydali ma'lumotlar, yo'riqnomalar va maslahatlar.",
     siteName: "Amaliy Hayot",
+    images: [
+      {
+        url: "/images/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Amaliy Hayot - O'zbekistonda kundalik hayot yo'riqnomalari",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Amaliy Hayot - O'zbekistonda kundalik hayot yo'riqnomalari",
     description: "O'zbekistonda kundalik hayotga oid foydali ma'lumotlar, yo'riqnomalar va maslahatlar.",
+    images: ["/images/logo.png"],
+    creator: "@amaliyhayot",
+    site: "@amaliyhayot",
   },
   robots: {
     index: true,
@@ -64,8 +75,60 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://amaliy-hayot.vercel.app";
+
+  // Organization structured data
+  const organizationJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Amaliy Hayot',
+    url: baseUrl,
+    logo: `${baseUrl}/images/logo.png`,
+    description: "O'zbekistonda kundalik hayotga oid foydali ma'lumotlar, yo'riqnomalar va maslahatlar beruvchi blog sayt.",
+    sameAs: [],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'Customer Service',
+    },
+  };
+
+  // WebSite structured data with SearchAction
+  const websiteJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Amaliy Hayot',
+    url: baseUrl,
+    description: "O'zbekistonda kundalik hayotga oid foydali ma'lumotlar, yo'riqnomalar va maslahatlar.",
+    publisher: {
+      '@type': 'Organization',
+      name: 'Amaliy Hayot',
+      logo: {
+        '@type': 'ImageObject',
+        url: `${baseUrl}/images/logo.png`,
+      },
+    },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${baseUrl}/blog?q={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
+    },
+  };
+
   return (
     <html lang="uz">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >

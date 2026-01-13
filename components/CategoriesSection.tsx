@@ -28,6 +28,9 @@ export default function CategoriesSection({ posts = [] }: CategoriesSectionProps
     { name: 'Transport', icon: '🚗', color: 'coral', count: categoriesMap['Transport'] || 0 },
     { name: 'Salomatlik', icon: '🏥', color: 'emerald', count: categoriesMap['Salomatlik'] || 0 },
     { name: 'Ta\'lim', icon: '🎓', color: 'blue', count: categoriesMap['Ta\'lim'] || 0 },
+    { name: 'Uy-joy va Kommunal', icon: '🏠', color: 'pink', count: categoriesMap['Uy-joy va Kommunal'] || 0 },
+    { name: 'Ish va Karyera', icon: '💼', color: 'indigo', count: categoriesMap['Ish va Karyera'] || 0 },
+    { name: 'Oila va Bolalar', icon: '👨‍👩‍👧‍👦', color: 'amber', count: categoriesMap['Oila va Bolalar'] || 0 },
   ].filter(cat => cat.count > 0 || categoriesMap[cat.name] === undefined); // Show all if no posts yet
 
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
@@ -48,6 +51,18 @@ export default function CategoriesSection({ posts = [] }: CategoriesSectionProps
     coral: {
       base: 'bg-orange-50 text-orange-700 hover:bg-orange-100',
       active: 'bg-[#F97316] text-white',
+    },
+    pink: {
+      base: 'bg-pink-50 text-pink-700 hover:bg-pink-100',
+      active: 'bg-[#EC4899] text-white',
+    },
+    indigo: {
+      base: 'bg-indigo-50 text-indigo-700 hover:bg-indigo-100',
+      active: 'bg-[#6366F1] text-white',
+    },
+    amber: {
+      base: 'bg-amber-50 text-amber-700 hover:bg-amber-100',
+      active: 'bg-[#F59E0B] text-white',
     },
   };
 

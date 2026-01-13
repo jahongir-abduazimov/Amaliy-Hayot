@@ -5,7 +5,7 @@ description: "2026-yilda O‘zbekistonda bank kartalari, mobil ilovalar va onlay
 image: "/images/finance/bank-kartalar-xavfsizligi-2026.jpg"
 author: "Amaliy Hayot"
 category: "Moliya"
-keywords: ["bank kartasi xavfsizligi", "onlayn to‘lovlar", "Uzcard Humo", "mobil banking", "internet firibgarlik", "2026 moliya", "karta himoyasi", "O‘zbekiston banklari"]
+keywords: "bank kartasi xavfsizligi, onlayn to‘lovlar, Uzcard Humo, mobil banking, internet firibgarlik, 2026 moliya, karta himoyasi, O‘zbekiston banklari"
 ---
 
 # 2026-yilda O‘zbekistonda bank kartalari va onlayn to‘lovlardan xavfsiz foydalanish

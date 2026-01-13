@@ -5,7 +5,7 @@ description: "2026-yilda O‘zbekistonda elektron raqamli imzo (E-IMZO)ni olish,
 image: "/images/technology/e-imzo-2026.jpg"
 author: "Amaliy Hayot"
 category: "Texnologiya"
-keywords: ["E-IMZO", "elektron raqamli imzo", "E-IMZO olish 2026", "my.gov.uz", "davlat xizmatlari onlayn", "soliq hisobotlari", "elektron hujjat", "raqamli imzo O‘zbekiston"]
+keywords: "E-IMZO, elektron raqamli imzo, E-IMZO olish 2026, my.gov.uz, davlat xizmatlari onlayn, soliq hisobotlari, elektron hujjat, raqamli imzo O‘zbekiston"
 ---
 
 # Elektron raqamli imzo (E-IMZO) 2026-yilda qanday olinadi va undan to‘g‘ri foydalanish yo‘llari
