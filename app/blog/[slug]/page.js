@@ -169,7 +169,7 @@ export default async function BlogPost({ params }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <ReadingProgress />
-      <article className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8 pb-16 lg:pb-30 pt-26 md:pt-38">
+      <article className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8 pb-16 lg:pb-30 pt-22 md:pt-34">
         <div className="max-w-[1000px] mx-auto">
           {/* Article Header */}
           <header className="mb-10 md:mb-12 space-y-6">

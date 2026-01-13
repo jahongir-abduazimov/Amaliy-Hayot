@@ -92,7 +92,7 @@ export default function SearchModal({ isOpen, onClose }) {
               placeholder="Maqolalarni qidirish..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-12 pr-4 py-4 rounded-xl border-2 border-neutral-border focus:border-[#0EA5E9] focus:outline-none text-lg bg-white text-neutral-text-dark"
+              className="w-full pl-12 pr-4 py-3 rounded-xl border-2 border-neutral-border focus:border-[#0EA5E9] focus:outline-none text-lg bg-white text-neutral-text-dark"
               autoFocus
             />
             {searchQuery && (

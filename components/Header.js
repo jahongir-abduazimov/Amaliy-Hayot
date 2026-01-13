@@ -90,7 +90,7 @@ export default function Header() {
               }}
               className="hidden md:block bg-[#0EA5E9] text-white px-6 py-3 rounded-xl font-bold shadow-blue hover:bg-[#0369A1] smooth cursor-pointer"
             >
-              Obuna bo'lish
+              Obuna bo'ling
             </button>
 
             {/* Mobile menu button */}
