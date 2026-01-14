@@ -31,7 +31,7 @@ export const metadata = {
 
 export default function About() {
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-30">
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-30">
       {/* Hero Section */}
       <div className="text-center mb-12 md:mb-16 relative">
         <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -49,7 +49,7 @@ export default function About() {
         </p>
       </div>
 
-      <div className="bg-white rounded-2xl shadow-lg border border-border/50 p-8 md:p-12 lg:p-16 hover:shadow-xl transition-shadow duration-300">
+      <div className="">
         <div className="prose prose-lg md:prose-xl max-w-none
           prose-headings:text-foreground prose-headings:font-bold prose-headings:tracking-tight
           prose-h2:text-2xl md:prose-h2:text-3xl prose-h2:font-bold prose-h2:mt-10 prose-h2:mb-6 prose-h2:pt-2 prose-h2:border-b prose-h2:border-border/30 prose-h2:pb-3
@@ -139,6 +139,101 @@ export default function About() {
             Agar sizda savollar yoki takliflar bo'lsa, biz bilan bog'laning. Biz har doim
             o'quvchilarimizdan fikr-mulohazalarni kutib qolamiz!
           </p>
+
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Email */}
+            {/* <div className="p-6 bg-linear-to-br from-blue-50 to-blue-100 rounded-xl border border-blue-200 hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-blue-500 rounded-lg">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Email orqali</h3>
+                  <a
+                    href="mailto:info@amaliyhayot.uz"
+                    className="text-blue-600 hover:text-blue-800 font-medium break-all"
+                  >
+                    info@amaliyhayot.uz
+                  </a>
+                  <p className="text-sm text-gray-600 mt-2">
+                    Bizga email yuboring va 24 soat ichida javob olasiz
+                  </p>
+                </div>
+              </div>
+            </div> */}
+
+            {/* Telegram */}
+            <div className="p-6 bg-linear-to-br from-cyan-50 to-cyan-100 rounded-xl border border-cyan-200 hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-cyan-500 rounded-lg">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Telegram</h3>
+                  <a
+                    href="https://t.me/abduazimov707"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-cyan-600 hover:text-cyan-800 font-medium"
+                  >
+                    @abduazimov707
+                  </a>
+                  <p className="text-sm text-gray-600 mt-2">
+                    Telegram orqali tezkor javob oling
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Facebook */}
+            <div className="p-6 bg-linear-to-br from-indigo-50 to-indigo-100 rounded-xl border border-indigo-200 hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-indigo-500 rounded-lg">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Facebook</h3>
+                  <a
+                    href="https://facebook.com/amaliyhayot"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-indigo-600 hover:text-indigo-800 font-medium"
+                  >
+                    facebook.com/amaliyhayot
+                  </a>
+                  <p className="text-sm text-gray-600 mt-2">
+                    Facebook sahifamizga qo'shiling
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Working Hours */}
+            {/* <div className="p-6 bg-linear-to-br from-green-50 to-green-100 rounded-xl border border-green-200 hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-green-500 rounded-lg">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Ish vaqti</h3>
+                  <p className="text-gray-700 font-medium">
+                    Dushanba - Juma: 9:00 - 18:00
+                  </p>
+                  <p className="text-sm text-gray-600 mt-2">
+                    Email va Telegram orqali 24/7 javob beramiz
+                  </p>
+                </div>
+              </div>
+            </div> */}
+          </div>
 
           <div className="mt-10 p-6 bg-linear-to-r from-primary/10 via-secondary/10 to-primary/10 rounded-xl border border-primary/20 text-center">
             <p className="text-xl md:text-2xl font-bold text-primary mb-2">

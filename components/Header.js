@@ -83,15 +83,14 @@ export default function Header() {
                 />
               </svg>
             </button>
-            <button
-              onClick={() => {
-                document.getElementById('newsletter-section')?.scrollIntoView({ behavior: 'smooth' });
-                setMobileMenuOpen(false);
-              }}
+            <Link
+              href="https://t.me/amaliyhayot_uz"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hidden md:block bg-[#0EA5E9] text-white px-6 py-3 rounded-xl font-bold shadow-blue hover:bg-[#0369A1] smooth cursor-pointer"
             >
               Obuna bo'ling
-            </button>
+            </Link>
 
             {/* Mobile menu button */}
             <button
