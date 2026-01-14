@@ -34,7 +34,7 @@ export const metadata = {
 
 export default function BlogPage() {
   const posts = getAllPosts();
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://amaliy-hayot.vercel.app';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://amaliyhayot.uz';
 
   // CollectionPage structured data
   const collectionJsonLd = {

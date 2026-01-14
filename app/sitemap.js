@@ -1,7 +1,7 @@
 import { getAllPosts } from '@/lib/posts';
 
 export default function sitemap() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://amaliy-hayot.vercel.app';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://amaliyhayot.uz';
   const posts = getAllPosts();
 
   // Static pages

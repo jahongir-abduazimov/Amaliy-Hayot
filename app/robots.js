@@ -1,5 +1,5 @@
 export default function robots() {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://amaliy-hayot.vercel.app';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://amaliyhayot.uz';
 
   return {
     rules: {

@@ -28,7 +28,7 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://amaliy-hayot.vercel.app';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://amaliyhayot.uz';
   const postUrl = `${baseUrl}/blog/${slug}`;
   const fullImageUrl = post.image ? (post.image.startsWith('http') ? post.image : `${baseUrl}${post.image}`) : null;
   const defaultImageUrl = `${baseUrl}/images/logo.png`;
@@ -99,7 +99,7 @@ export default async function BlogPost({ params }) {
   // Get related posts
   const relatedPosts = getRelatedPosts(slug, post.category, 3);
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://amaliy-hayot.vercel.app';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://amaliyhayot.uz';
   const postUrl = `${baseUrl}/blog/${slug}`;
   const fullImageUrl = post.image ? (post.image.startsWith('http') ? post.image : `${baseUrl}${post.image}`) : null;
 
@@ -255,7 +255,7 @@ export default async function BlogPost({ params }) {
               {/* Social Share */}
               <div className="mt-8">
                 <SocialShare
-                  url={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://amaliy-hayot.vercel.app'}/blog/${slug}`}
+                  url={`${process.env.NEXT_PUBLIC_SITE_URL || 'https://amaliyhayot.uz'}/blog/${slug}`}
                   title={post.title}
                   description={post.description}
                   variant="inline"
