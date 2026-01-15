@@ -8,6 +8,8 @@ export default function Footer() {
   const footerLinks = [
     { href: '/', label: 'Bosh sahifa' },
     { href: '/about', label: 'Biz haqimizda' },
+    { href: '/contact', label: 'Bog\'lanish' },
+    { href: '/privacy', label: 'Maxfiylik siyosati' },
   ];
 
   const socialLinks = [

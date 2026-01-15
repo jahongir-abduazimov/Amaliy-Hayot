@@ -25,6 +25,7 @@ export default function Header() {
     { href: '/', label: 'Bosh sahifa' },
     { href: '/blog', label: 'Maqolalar' },
     { href: '/about', label: 'Biz haqimizda' },
+    { href: '/contact', label: 'Bog\'lanish' },
   ];
 
   return (
@@ -42,7 +43,7 @@ export default function Header() {
             className="flex items-center gap-3 group"
           >
             <Image src={Logo} alt="Amaliy Hayot - O'zbekistonda kundalik hayot yo'riqnomalari" className="w-10 md:w-14" width={56} height={56} />
-            <span className="text-lg md:text-3xl font-bold text-primary">Amaliy Hayot</span>
+            <span className="text-lg md:text-3xl font-bold text-primary block sm:hidden lg:block">Amaliy Hayot</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -120,7 +121,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         <div
-          className={`md:hidden overflow-hidden smooth ${mobileMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
+          className={`md:hidden overflow-hidden smooth ${mobileMenuOpen ? 'max-h-84 opacity-100' : 'max-h-0 opacity-0'
             }`}
         >
           <nav className="py-4 border-t border-neutral-border space-y-2">
