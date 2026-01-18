@@ -223,7 +223,7 @@ export default async function BlogPost({ params }) {
               />
               {post.category && (
                 <div className="absolute top-6 left-6 z-20">
-                  <span className="inline-block px-4 py-2 text-sm font-bold text-white bg-primary/90 backdrop-blur-md rounded-full shadow-lg">
+                  <span className="inline-block px-4 py-2 text-sm font-bold text-white bg-primary/50 backdrop-blur-xs rounded-full shadow-lg">
                     {post.category}
                   </span>
                 </div>

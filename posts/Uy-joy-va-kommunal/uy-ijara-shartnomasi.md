@@ -5,14 +5,7 @@ description: "Uy ijara shartnomasi qanday tuziladi? O‘zbekistonda uy ijarasini
 image: /images/housing-and-utilities/uy-ijara-shartnomasi.jpg
 author: "Amaliy Hayot"
 category: Uy-joy va Kommunal
-keywords:
-  - uy ijara shartnomasi
-  - ijara shartnomasi namuna
-  - uy ijarasi hujjatlari
-  - uy ijaraga berish
-  - uy ijarasi qonun
-  - notarius ijara shartnomasi
-  - uy ijara shartnomasi bepul
+keywords: "uy ijara shartnomasi, ijara shartnomasi namuna, uy ijarasi hujjatlari, uy ijaraga berish, uy ijarasi qonun, notarius ijara shartnomasi, uy ijara shartnomasi bepul"
 ---
 
 # Uy ijara shartnomasi qanday tuziladi? (Namuna bilan)
