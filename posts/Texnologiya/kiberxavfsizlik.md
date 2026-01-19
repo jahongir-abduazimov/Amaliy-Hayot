@@ -5,7 +5,7 @@ description: "Kiberxavfsizlik nima, u nega muhim va 2026-yilda O‘zbekistonda s
 image: "/images/technology/kiberxavfsizlik.jpeg"
 author: "Amaliy Hayot"
 category: Texnologiya
-keywords: ["kiberxavfsizlik", "internet xavfsizligi", "shaxsiy ma’lumotlarni himoya qilish", "parol xavfsizligi", "phishing hujumlar", "onlayn firibgarlik", "O‘zbekiston internet xavfsizligi", "ma’lumotlar himoyasi"]
+keywords: "kiberxavfsizlik, internet xavfsizligi, shaxsiy ma’lumotlarni himoya qilish, parol xavfsizligi, phishing hujumlar, onlayn firibgarlik, O‘zbekiston internet xavfsizligi, ma’lumotlar himoyasi"
 ---
 
 # Kiberxavfsizlik: shaxsiy ma’lumotlarni himoyalash bo‘yicha to‘liq qo‘llanma
