@@ -31,6 +31,7 @@ export default function CategoriesSection({ posts = [] }: CategoriesSectionProps
     { name: 'Uy-joy va Kommunal', icon: '🏠', color: 'pink', count: categoriesMap['Uy-joy va Kommunal'] || 0 },
     { name: 'Ish va Karyera', icon: '💼', color: 'indigo', count: categoriesMap['Ish va Karyera'] || 0 },
     { name: 'Oila va Bolalar', icon: '👨‍👩‍👧‍👦', color: 'amber', count: categoriesMap['Oila va Bolalar'] || 0 },
+    { name: 'Jarimalar', icon: '🏛️', color: 'purple', count: categoriesMap['Jarimalar'] || 0 },
   ].filter(cat => cat.count > 0 || categoriesMap[cat.name] === undefined); // Show all if no posts yet
 
   const [activeCategory, setActiveCategory] = useState<string | null>(null);

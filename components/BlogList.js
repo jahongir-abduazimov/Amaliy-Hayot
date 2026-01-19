@@ -76,6 +76,12 @@ const categories = [
     icon: '👨‍👩‍👧‍👦',
     color: 'amber'
   },
+  {
+    key: 'Jarimalar',
+    label: 'Jarimalar',
+    icon: '🏛️',
+    color: 'purple'
+  },
   // {
   //   key: 'Boshqa',
   //   label: 'Boshqa maqolalar',
