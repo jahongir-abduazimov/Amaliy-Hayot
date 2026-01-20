@@ -22,6 +22,7 @@ Tezlikni oshirish eng keng tarqalgan qoidabuzarliklardan biri hisoblanadi. 2026 
 - **Shahar ichida** 20 km/s oshirilganda: 100 000–150 000 so‘m  
 - **Shahar tashqarisida** 20 km/s oshirilganda: 150 000–200 000 so‘m  
 - **Juda katta tezlik oshirilganda** (50 km/s va undan yuqori): 200 000–400 000 so‘m va haydovchilik guvohnomasini vaqtincha olib qo‘yish mumkin  
+- **Radar orqali tushgan jarimalar**ni tekshirish usullari👉: [Batafsil](https://amaliyhayot.uz/blog/radar-jarima-tekshirish)
 
 ### 2. Yashil chiroqda to‘xtamaslik
 Trafik chiroqlariga rioya qilmaslik ham katta xavf tug‘diradi. Bu qoidabuzarlik uchun jarima miqdori:
