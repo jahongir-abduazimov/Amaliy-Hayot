@@ -303,7 +303,7 @@ html {
 }
 
 .prose ul > li::before {
-  content: "→";
+  content: "—";
   position: absolute;
   left: -24px;
   color: var(--primary);
