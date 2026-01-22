@@ -5,7 +5,7 @@ description: "2026-yilda O‘zbekistonda pensiya olish tartibi, nafaqa turlari, 
 image: "/images/public-services/pensiya-nafaqa.jpg"
 author: "Amaliy Hayot"
 category: Davlat xizmatlari
-keywords: ["pensiya olish", "nafaqa hisoblash", "pensiya yoshi 2026", "O‘zbekiston pensiya", "ish staji", "davlat nafaqasi", "pensiya hujjatlari"]
+keywords: "pensiya olish, nafaqa hisoblash, pensiya yoshi 2026, O‘zbekiston pensiya, ish staji, davlat nafaqasi, pensiya hujjatlari"
 ---
 
 # Pensiya olish va nafaqa hisoblash bo‘yicha amaliy maslahatlar (2026)
