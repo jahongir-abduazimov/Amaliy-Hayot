@@ -5,7 +5,7 @@ description: "O‘zbekiston bo‘yicha 2026 yilda yo‘l harakati qoidalarini bu
 image: "/images/fines/yh-jarimalar.jpg"
 author: "Amaliy Hayot"
 category: Jarimalar
-keywords: ["yo‘l harakati qoidalari", "jarima 2026", "transport qoidalari", "O‘zbekiston", "haydovchi", "avtomobil", "tezyurar", "tezlik", "to‘lov", "jarimalarni oldini olish"]
+keywords: "yo‘l harakati qoidalari, jarima 2026, transport qoidalari, O‘zbekiston, haydovchi, avtomobil, tezyurar, tezlik, to‘lov, jarimalarni oldini olish"
 ---
 
 # Yo‘l harakati qoidalarini buzganlik uchun jarimalar 2026

@@ -327,6 +327,14 @@ html {
   transition: all 0.2s ease;
 }
 
+.prose a::after {
+  content: "→";
+  position: absolute;
+  color: var(--primary);
+  margin-left: 4px;
+  font-weight: bold;
+}
+
 .prose a:hover {
   color: var(--primary-dark);
   border-bottom-color: var(--primary-dark);
