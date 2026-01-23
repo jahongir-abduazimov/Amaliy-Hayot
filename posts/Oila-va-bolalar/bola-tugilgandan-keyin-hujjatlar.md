@@ -117,7 +117,7 @@ bilan bog‘liq muammolar yuzaga kelishi mumkin.
 
 ### Kerakli hujjatlar:
 
-- Tug‘ilganlik guvohnomasi  ([Tug‘ilganlik guvohnomasini olish bi'yicha qo'llanma](https://amaliyhayot.uz/blog/tugilganlik-guvohnomasi-2026))
+- Tug‘ilganlik guvohnomasi  ([Tug‘ilganlik guvohnomasini olish bo‘yicha qo‘llanma](https://amaliyhayot.uz/blog/tugilganlik-guvohnomasi-2026))
 - Ota-onaning pasportlari  
 - Uy egasining roziligi (agar zarur bo‘lsa)
 
