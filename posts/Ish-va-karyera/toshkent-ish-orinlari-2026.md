@@ -148,6 +148,8 @@ Bu ishlar uchun ko‘pincha **tajriba shart emas**.
 ### Rezyume muhimmi?
 Ha. Hatto oddiy ishlar uchun ham qisqa va tushunarli rezyume ustunlik beradi.
 
+[Rezyume yaratish uchun qo'llanma](https://amaliyhayot.uz/blog/rezume-cv-tuzish)
+
 ---
 
 ## FAQ — Tez-tez beriladigan savollar

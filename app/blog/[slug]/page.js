@@ -1,6 +1,6 @@
 import { getAllPostSlugs, getPostBySlug, getRelatedPosts } from '@/lib/posts';
 import { markdownToHtml, getReadingTime } from '@/lib/posts';
-import TableOfContents from '@/components/TableOfContents';
+// import TableOfContents from '@/components/TableOfContents';
 import ReadingProgress from '@/components/ReadingProgress';
 import SocialShare from '@/components/SocialShare';
 import PostCard from '@/components/PostCard';
@@ -169,8 +169,8 @@ export default async function BlogPost({ params }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <ReadingProgress />
-      <article className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8 pb-16 lg:pb-30 pt-22 md:pt-34">
-        <div className="max-w-[1000px] mx-auto">
+      <article className="max-w-250 mx-auto px-4 sm:px-6 lg:px-8 pb-16 lg:pb-30 pt-22 md:pt-34">
+        <div className="max-w-250 mx-auto">
           {/* Article Header */}
           <header className="mb-10 md:mb-12 space-y-6">
             {post.category && !post.image && (
@@ -195,7 +195,7 @@ export default async function BlogPost({ params }) {
                 <svg className="w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <span className="font-medium">{readingTime} daqiqa o'qish</span>
+                <span className="font-medium">{readingTime} daqiqa o‘qish</span>
               </div>
 
               {post.author && (
@@ -211,7 +211,7 @@ export default async function BlogPost({ params }) {
 
           {/* Header Image */}
           {post.image ? (
-            <div className="relative w-full h-72 md:h-[500px] rounded-2xl overflow-hidden mb-10 md:mb-12 bg-linear-to-br from-gray-100 to-gray-200 shadow-xl">
+            <div className="relative w-full h-72 md:h-125 rounded-2xl overflow-hidden mb-10 md:mb-12 bg-linear-to-br from-gray-100 to-gray-200 shadow-xl">
               <div className="absolute inset-0 bg-linear-to-t from-black/30 to-transparent z-10"></div>
               <Image
                 src={post.image}
@@ -230,9 +230,9 @@ export default async function BlogPost({ params }) {
               )}
             </div>
           ) : (
-            <div className="w-full h-72 md:h-[500px] rounded-2xl overflow-hidden mb-10 md:mb-12 bg-linear-to-br from-primary/10 via-secondary/10 to-accent/10 flex items-center justify-center shadow-xl relative">
+            <div className="w-full h-72 md:h-125 rounded-2xl overflow-hidden mb-10 md:mb-12 bg-linear-to-br from-primary/10 via-secondary/10 to-accent/10 flex items-center justify-center shadow-xl relative">
               <div className="absolute inset-0 bg-linear-to-br from-primary/20 to-secondary/20 opacity-50"></div>
-              <span className="text-gray-500 text-lg font-medium relative z-10">Rasm yo'q</span>
+              <span className="text-gray-500 text-lg font-medium relative z-10">Rasm yo‘q</span>
               {post.category && (
                 <div className="absolute top-6 left-6">
                   <span className="inline-block px-4 py-2 text-sm font-bold text-primary bg-white/90 backdrop-blur-md rounded-full shadow-lg">
