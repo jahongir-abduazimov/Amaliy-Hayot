@@ -17,11 +17,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Amaliy Hayot - O'zbekistonda kundalik hayot yo'riqnomalari",
+    default: "Amaliy Hayot – Practical Guides for Life in Uzbekistan",
     template: "%s | Amaliy Hayot",
   },
-  description: "O'zbekistonda kundalik hayotga oid foydali ma'lumotlar, yo'riqnomalar va maslahatlar. ID karta, bank kartasi, davlat xizmatlari va boshqalar haqida to'liq ma'lumot.",
-  keywords: "o'zbekiston, yo'riqnoma, id karta, bank kartasi, mygov, davlat xizmatlari, hayot maslahatlari",
+  description: "Practical guides for documents, fines, healthcare, cars, and government services in Uzbekistan.",
+  keywords: "uzbekistan, guides, id card, bank card, mygov, government services, life advice",
   authors: [{ name: "Amaliy Hayot" }],
   creator: "Amaliy Hayot",
   publisher: "Amaliy Hayot",
@@ -30,30 +30,30 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://amaliyhayot.uz"),
+  metadataBase: new URL("https://amaliyhayot.uz"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
-    locale: "uz_UZ",
+    locale: "en_US",
     url: "/",
-    title: "Amaliy Hayot - O'zbekistonda kundalik hayot yo'riqnomalari",
-    description: "O'zbekistonda kundalik hayotga oid foydali ma'lumotlar, yo'riqnomalar va maslahatlar.",
+    title: "Amaliy Hayot – Practical Guides for Life in Uzbekistan",
+    description: "Practical guides for documents, fines, healthcare, cars, and government services in Uzbekistan.",
     siteName: "Amaliy Hayot",
     images: [
       {
         url: "/images/logo.png",
         width: 1200,
         height: 630,
-        alt: "Amaliy Hayot - O'zbekistonda kundalik hayot yo'riqnomalari",
+        alt: "Amaliy Hayot – Practical Guides for Life in Uzbekistan",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Amaliy Hayot - O'zbekistonda kundalik hayot yo'riqnomalari",
-    description: "O'zbekistonda kundalik hayotga oid foydali ma'lumotlar, yo'riqnomalar va maslahatlar.",
+    title: "Amaliy Hayot – Practical Guides for Life in Uzbekistan",
+    description: "Practical guides for documents, fines, healthcare, cars, and government services in Uzbekistan.",
     images: ["/images/logo.png"],
     creator: "@amaliyhayot",
     site: "@amaliyhayot",
@@ -85,7 +85,7 @@ export default function RootLayout({
     name: 'Amaliy Hayot',
     url: baseUrl,
     logo: `${baseUrl}/images/logo.png`,
-    description: "O'zbekistonda kundalik hayotga oid foydali ma'lumotlar, yo'riqnomalar va maslahatlar beruvchi blog sayt.",
+    description: "Practical guides for documents, fines, healthcare, cars, and government services in Uzbekistan.",
     sameAs: [],
     contactPoint: {
       '@type': 'ContactPoint',
@@ -99,7 +99,7 @@ export default function RootLayout({
     '@type': 'WebSite',
     name: 'Amaliy Hayot',
     url: baseUrl,
-    description: "O'zbekistonda kundalik hayotga oid foydali ma'lumotlar, yo'riqnomalar va maslahatlar.",
+    description: "Practical guides for documents, fines, healthcare, cars, and government services in Uzbekistan.",
     publisher: {
       '@type': 'Organization',
       name: 'Amaliy Hayot',
@@ -119,7 +119,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="uz">
+    <html lang="en">
       <head>
         <script
           type="application/ld+json"

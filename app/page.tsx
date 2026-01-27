@@ -1,46 +1,47 @@
 import { getAllPosts } from '@/lib/posts';
 import PostCard from '@/components/PostCard';
-import CategoriesSection from '@/components/CategoriesSection';
-import NewsletterSection from '@/components/NewsletterSection';
-import StatsSection from '@/components/StatsSection';
+// import CategoriesSection from '@/components/CategoriesSection';
+// import NewsletterSection from '@/components/NewsletterSection';
+// import StatsSection from '@/components/StatsSection';
 import SearchButton from '@/components/SearchButton';
-import Link from 'next/link';
+// import Link from 'next/link';
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Amaliy Hayot",
-  description: "O'zbekistonda kundalik hayotga oid foydali ma'lumotlar, yo'riqnomalar va maslahatlar.",
-  keywords: "o'zbekiston, yo'riqnoma, id karta, bank kartasi, mygov, davlat xizmatlari, hayot maslahatlari, texnologiya",
+  title: "Amaliy Hayot – Practical Guides for Life in Uzbekistan",
+  description: "Practical guides for documents, fines, healthcare, cars, and government services in Uzbekistan.",
+  keywords: "uzbekistan, guides, id card, bank card, mygov, government services, life advice, technology",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Amaliy Hayot - O'zbekistonda kundalik hayot yo'riqnomalari",
-    description: "O'zbekistonda kundalik hayotga oid foydali ma'lumotlar, yo'riqnomalar va maslahatlar.",
+    title: "Amaliy Hayot – Practical Guides for Life in Uzbekistan",
+    description: "Practical guides for documents, fines, healthcare, cars, and government services in Uzbekistan.",
     type: "website",
     url: "/",
     siteName: "Amaliy Hayot",
-    locale: "uz_UZ",
+    locale: "en_US",
     images: [
       {
         url: "/images/logo.png",
         width: 1200,
         height: 630,
-        alt: "Amaliy Hayot - O'zbekistonda kundalik hayot yo'riqnomalari",
+        alt: "Amaliy Hayot – Practical Guides for Life in Uzbekistan",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Amaliy Hayot - O'zbekistonda kundalik hayot yo'riqnomalari",
-    description: "O'zbekistonda kundalik hayotga oid foydali ma'lumotlar, yo'riqnomalar va maslahatlar.",
+    title: "Amaliy Hayot – Practical Guides for Life in Uzbekistan",
+    description: "Practical guides for documents, fines, healthcare, cars, and government services in Uzbekistan.",
     images: ["/images/logo.png"],
   },
 };
 
 export default function Home() {
   const posts = getAllPosts();
-  const featuredPosts = posts.slice(0, 3);
+  // const featuredPosts = posts.slice(0, 3);
   const latestPosts = posts.slice(0, 6);
 
   return (
@@ -57,13 +58,13 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-4 sm:mb-6 text-neutral-text-dark leading-tight">
-              O'zbekistonda hayotni{' '}
+              O‘zbekistonda hayotni{' '}
               <span className="gradient-text">osonlashtiruvchi</span>{' '}
-              yo'riqnomalar
+              yo‘riqnomalar
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-neutral-text-gray mb-8 sm:mb-10 leading-relaxed px-2">
-              Hujjatlar, xizmatlar va kundalik hayot haqida foydali ma'lumotlar -
+              Hujjatlar, xizmatlar va kundalik hayot haqida foydali ma’lumotlar -
               barchasi bir joyda
             </p>
 
@@ -72,7 +73,7 @@ export default function Home() {
                 href="#maqolalar"
                 className="group bg-[#0EA5E9] text-white px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 rounded-xl text-base sm:text-lg font-bold shadow-blue hover:bg-[#0369A1] smooth inline-flex items-center justify-center cursor-pointer"
               >
-                Maqolalarni o'qish
+                Maqolalarni o‘qish
                 <span className="inline-block ml-2 group-hover:translate-x-1 smooth">→</span>
               </a>
 
@@ -93,6 +94,17 @@ export default function Home() {
                 <span className="text-[#0EA5E9]">✓</span> Bepul
               </span>
             </div> */}
+          </div>
+        </div>
+      </section>
+
+      {/* English Introduction Section */}
+      <section className="bg-neutral-off-white py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="max-w-3xl mx-auto">
+            <p className="text-sm text-neutral-text-gray leading-relaxed">
+              Welcome to Amaliy Hayot. This website provides practical guides for life in Uzbekistan, including government services, documents, fines, healthcare, and financial information.
+            </p>
           </div>
         </div>
       </section>
@@ -132,7 +144,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-12 gap-4">
               <div>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-neutral-text-dark mb-2">
-                  So'nggi Maqolalar
+                  So‘nggi Maqolalar
                 </h2>
               </div>
             </div>
@@ -145,13 +157,13 @@ export default function Home() {
 
             {posts.length > 6 && (
               <div className="text-center mt-12">
-                <a
+                <Link
                   href="/blog"
                   className="inline-flex items-center text-[#0EA5E9] font-semibold hover:text-[#0369A1] smooth"
                 >
-                  Barcha maqolalarni ko'rish
+                  Barcha maqolalarni ko‘rish
                   <span className="ml-2 inline-block">→</span>
-                </a>
+                </Link>
               </div>
             )}
           </div>
@@ -168,7 +180,7 @@ export default function Home() {
               </svg>
             </div>
             <p className="text-lg text-neutral-text-gray mb-2">Hozircha maqolalar mavjud emas</p>
-            <p className="text-sm text-neutral-text-light">Tez orada yangi maqolalar qo'shiladi</p>
+            <p className="text-sm text-neutral-text-light">Tez orada yangi maqolalar qo‘shiladi</p>
           </div>
         </section>
       )}
@@ -180,10 +192,10 @@ export default function Home() {
             <div className="bg-white border border-neutral-border rounded-2xl p-8 text-center card-hover">
               <div className="text-5xl mb-4">🎯</div>
               <h3 className="text-2xl font-bold text-neutral-text-dark mb-3">
-                To'liq Ma'lumot
+                To‘liq Ma’lumot
               </h3>
               <p className="text-neutral-text-gray leading-relaxed">
-                Har bir mavzu bo'yicha batafsil va qamrab oluvchi yo'riqnomalar
+                Har bir mavzu bo‘yicha batafsil va qamrab oluvchi yo‘riqnomalar
               </p>
             </div>
 
@@ -193,7 +205,7 @@ export default function Home() {
                 Tez Yangilanish
               </h3>
               <p className="text-neutral-text-gray leading-relaxed">
-                Eng yangi qoidalar va o'zgarishlar haqida doimiy yangilanishlar
+                Eng yangi qoidalar va o‘zgarishlar haqida doimiy yangilanishlar
               </p>
             </div>
 
@@ -203,7 +215,7 @@ export default function Home() {
                 Ishonchli Manbalar
               </h3>
               <p className="text-neutral-text-gray leading-relaxed">
-                Barcha ma'lumotlar rasmiy manbalarga asoslangan va tekshirilgan
+                Barcha ma’lumotlar rasmiy manbalarga asoslangan va tekshirilgan
               </p>
             </div>
           </div>
