@@ -8,7 +8,7 @@ category: "Salomatlik"
 keywords: "oshqozon og‘rig‘i, qorin og‘rishi, gastrit, ichak muammolari, hazm buzilishi, oshqozon kasalliklari, oshqozon kislotaligi, qorin dam bo‘lishi"
 ---
 
-# Oshqozon og‘rig‘ining eng ko‘p uchraydigan sabablari
+<!-- # Oshqozon og‘rig‘ining eng ko‘p uchraydigan sabablari -->
 
 Oshqozon og‘rig‘i deyarli har bir inson hayotida kamida bir marta uchraydi. Ba’zida bu oddiy ovqat hazm qilinmasligi bilan bog‘liq bo‘lsa, ba’zan esa jiddiy kasalliklarning belgisi bo‘lishi mumkin. Ko‘pchilik oshqozon og‘rig‘ini e’tiborsiz qoldiradi, og‘riq qoldiruvchi dori ichib vaqtincha bosadi, ammo muammoning asl sababini aniqlamaydi.
 

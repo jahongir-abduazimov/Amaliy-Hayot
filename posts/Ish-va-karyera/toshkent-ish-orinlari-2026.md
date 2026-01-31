@@ -8,7 +8,7 @@ category: Ish va Karyera
 keywords: "Toshkentda ish o‘rinlari 2026, eng ko‘p talab qilinadigan kasblar, Toshkent ish bozori, 2026 yil ishlar, O‘zbekistonda ish topish, ofis ishlari Toshkent, IT ish o‘rinlari, xizmat ko‘rsatish ishlari"
 ---
 
-# Toshkentda eng ko‘p ish o‘rinlari: 2026 yil TOP 20
+<!-- # Toshkentda eng ko‘p ish o‘rinlari: 2026 yil TOP 20 -->
 
 Toshkent — O‘zbekistonning eng yirik mehnat bozori. 2026 yilga kelib poytaxtda aholi soni, bizneslar, xizmat ko‘rsatish sohasi va raqamli iqtisodiyot keskin kengaymoqda. Bu esa yangi ish o‘rinlari, yangi kasblar va yuqori raqobatni anglatadi.
 

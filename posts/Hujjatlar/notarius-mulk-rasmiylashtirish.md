@@ -8,7 +8,7 @@ category: Hujjatlar
 keywords: "notarius, mulkni rasmiylashtirish, uy-joy hujjatlari, notarial bitim, kadastr, mulk huquqi, shartnoma, yer uchastkasi"
 ---
 
-# Notarius orqali mulkni rasmiylashtirish
+<!-- # Notarius orqali mulkni rasmiylashtirish -->
 
 Mulkni rasmiylashtirish — bu faqatgina hujjat to‘ldirish emas, balki kelajakdagi huquqiy muammolarning oldini olish demakdir. O‘zbekiston amaliyotida uy-joy, yer uchastkasi yoki boshqa ko‘chmas mulk bilan bog‘liq bitimlarning aksariyati **notarius orqali** amalga oshiriladi. Ushbu maqolada 2026-yil holatiga ko‘ra notarius orqali mulkni rasmiylashtirishning barcha bosqichlari, kerakli hujjatlar, to‘lovlar va muhim jihatlar batafsil tushuntiriladi.
 

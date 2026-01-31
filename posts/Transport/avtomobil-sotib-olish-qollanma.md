@@ -8,7 +8,7 @@ category: Transport
 keywords: "avtomobil sotib olish, mashina hujjatlari, avto bozor O‘zbekiston, avtomobil tekshirish, ikkinchi qo‘l mashina, avtomobil xarajatlari, transport maslahat"
 ---
 
-# Avtomobilni to‘g‘ri sotib olish: hujjatlar, tekshiruv va tejamkor tanlov
+<!-- # Avtomobilni to‘g‘ri sotib olish: hujjatlar, tekshiruv va tejamkor tanlov -->
 
 Avtomobil sotib olish — ko‘pchilik uchun katta moliyaviy qaror. Noto‘g‘ri tanlov esa ortiqcha xarajat, hujjat muammolari yoki xavfsizlikka tahdid bo‘lishi mumkin. Ushbu maqolada O‘zbekiston sharoitida avtomobilni **to‘g‘ri, xavfsiz va tejamkor** sotib olish uchun zarur bo‘lgan barcha bosqichlar bosqichma-bosqich tushuntiriladi.
 

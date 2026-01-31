@@ -8,7 +8,7 @@ category: Salomatlik
 keywords: "qon bosimi, arterial bosim, gipertoniya, bosimni tushirish, salomatlik, yurak kasalliklari, qon bosimini o‘lchash, sog‘lom turmush tarzi"
 ---
 
-# Qon bosimini nazorat qilish
+<!-- # Qon bosimini nazorat qilish -->
 
 Qon bosimi — inson salomatligini belgilovchi eng muhim ko‘rsatkichlardan biridir. Ko‘pchilik faqat bosimi ko‘tarilganda yoki o‘zini yomon his qilganda bunga e’tibor beradi. Aslida esa qon bosimini muntazam nazorat qilish yurak-qon tomir kasalliklarining oldini olish, uzoq va sog‘lom hayot kechirish uchun juda muhim.
 

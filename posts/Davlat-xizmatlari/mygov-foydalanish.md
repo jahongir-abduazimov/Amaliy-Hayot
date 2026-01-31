@@ -8,7 +8,7 @@ category: "Davlat xizmatlari"
 keywords: "mygov, my gov uz, davlat xizmatlari, online xizmatlar, elektron hukumat"
 ---
 
-# my.gov.uz dan qanday foydalanish - 2026
+<!-- # my.gov.uz dan qanday foydalanish - 2026 -->
 
 my.gov.uz - bu O'zbekistonda barcha davlat xizmatlarini bir joyda to'plagan yagona elektron portal. Bu yo'riqnomada portaldan to'liq foydalanishni o'rganasiz.
 

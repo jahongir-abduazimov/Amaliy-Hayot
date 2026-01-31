@@ -8,7 +8,7 @@ category: Transport
 keywords: "avtomobilni rasmiylashtirish, notarius orqali mashina sotish, avtomobil oldi-sotdi shartnomasi, mashina hujjatlari, transport rasmiylashtirish 2026, notarius xizmatlari, mashina sotib olish"
 ---
 
-# Avtomobilni notarius orqali rasmiylashtirish tartibi
+<!-- # Avtomobilni notarius orqali rasmiylashtirish tartibi -->
 
 O‘zbekistonda avtomobil sotib olish yoki sotish jarayoni rasmiy va qonuniy bo‘lishi uchun notarius orqali rasmiylashtiriladi. Ayniqsa 2026-yilda transport vositalari bilan bog‘liq huquqiy tartiblar yanada raqamlashtirilgan va nazorat kuchaytirilgan. Shu sababli avtomobilni notarius orqali rasmiylashtirish tartibini to‘liq va aniq bilish har bir haydovchi va xaridor uchun muhim.
 

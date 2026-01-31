@@ -8,7 +8,7 @@ category: Moliya
 keywords: "bank kartasi yo‘qoldi, karta yo‘qolsa nima qilish kerak, kartani bloklash, bank kartani tiklash, karta PIN kodi, plastik karta yo‘qolishi, O‘zbekistonda bank kartalari"
 ---
 
-# Bank kartasi yo‘qoldi — nima qilish kerak?
+<!-- # Bank kartasi yo‘qoldi — nima qilish kerak? -->
 
 Bank kartasi yo‘qolishi — kundalik hayotda tez-tez uchraydigan, ammo e’tiborsizlik qimmatga tushishi mumkin bo‘lgan holat. Ayniqsa, kartada pul bo‘lsa yoki u onlayn to‘lovlarga ulangan bo‘lsa, har bir daqiqa muhim.
 

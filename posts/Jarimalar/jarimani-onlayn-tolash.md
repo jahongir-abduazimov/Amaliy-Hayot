@@ -8,7 +8,7 @@ category: Jarimalar
 keywords: "jarimani onlayn to‘lash, jarima to‘lash 2026, YHXBB jarima to‘lash, my.gov.uz jarima, jarimani tekshirish, onlayn jarima to‘lash O‘zbekiston, jarima qarzdorligi"
 ---
 
-# Jarimani onlayn to‘lash tartibi
+<!-- # Jarimani onlayn to‘lash tartibi -->
 
 O‘zbekistonda jarimalarni **onlayn to‘lash** tizimi so‘nggi yillarda ancha qulaylashdi. 2026-yil holatiga ko‘ra, haydovchilar, tadbirkorlar va oddiy fuqarolar jarimani bankka bormasdan, navbat kutmasdan, telefon yoki kompyuter orqali bir necha daqiqada to‘lashlari mumkin.
 

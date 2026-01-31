@@ -8,7 +8,7 @@ category: "Moliya"
 keywords: "bank kartasi, humo, visa, uzcard, bank karta ochish, plastik karta"
 ---
 
-# O'zbekistonda bank kartasi qanday ochiladi
+<!-- # O'zbekistonda bank kartasi qanday ochiladi -->
 
 Bank kartasi - bu zamonaviy hayotning ajralmas qismi. Online xaridlar, to'lovlar, pul o'tkazmalari - barchasi karta orqali. Bu yo'riqnomada karta ochish va to'g'ri bank tanlashni o'rganasiz.
 

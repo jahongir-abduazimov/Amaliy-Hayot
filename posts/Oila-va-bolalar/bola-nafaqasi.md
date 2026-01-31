@@ -8,7 +8,7 @@ category: Oila va Bolalar
 keywords: "bola tug‘ilgandan keyin nafaqa, tug‘ruq puli 2026, bola parvarishi nafaqasi, kam ta’minlangan oilalar nafaqasi, bola uchun davlat yordami, bola nafaqasi hujjatlari, O‘zbekistonda nafaqalar"
 ---
 
-# Bola tug‘ilgandan keyin qanday nafaqalar bor?
+<!-- # Bola tug‘ilgandan keyin qanday nafaqalar bor? -->
 
 O‘zbekistonda bola tug‘ilishi — nafaqat oila hayotidagi muhim voqea, balki davlat tomonidan qo‘llab-quvvatlanadigan ijtimoiy jarayon ham hisoblanadi. Shu sababli, bola tug‘ilgandan keyin ota-onalarga turli **nafaqalar va moddiy yordamlar** beriladi. Ammo ko‘plab oilalar qaysi nafaqa qachon, kimga va qanday tartibda berilishini to‘liq bilmaydi.
 

@@ -8,7 +8,7 @@ category: Texnologiya
 keywords: "kiberxavfsizlik, internet xavfsizligi, shaxsiy ma’lumotlarni himoya qilish, parol xavfsizligi, phishing hujumlar, onlayn firibgarlik, O‘zbekiston internet xavfsizligi, ma’lumotlar himoyasi"
 ---
 
-# Kiberxavfsizlik: shaxsiy ma’lumotlarni himoyalash bo‘yicha to‘liq qo‘llanma
+<!-- # Kiberxavfsizlik: shaxsiy ma’lumotlarni himoyalash bo‘yicha to‘liq qo‘llanma -->
 
 Internet bugungi kunda hayotimizning ajralmas qismiga aylangan. Bank to‘lovlari, davlat xizmatlari, ijtimoiy tarmoqlar, ish va ta’lim — barchasi onlayn muhitga ko‘chdi. Shu bilan birga, kiberxavfsizlik masalasi ham dolzarb muammoga aylandi. 2026-yilga kelib, O‘zbekistonda ham onlayn firibgarliklar, akkaunt o‘g‘irlash va shaxsiy ma’lumotlar sizib chiqishi bilan bog‘liq holatlar ko‘paymoqda.
 

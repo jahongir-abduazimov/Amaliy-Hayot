@@ -8,7 +8,7 @@ category: Jarimalar
 keywords: "yo‘l harakati qoidalari, jarima 2026, transport qoidalari, O‘zbekiston, haydovchi, avtomobil, tezyurar, tezlik, to‘lov, jarimalarni oldini olish"
 ---
 
-# Yo‘l harakati qoidalarini buzganlik uchun jarimalar 2026
+<!-- # Yo‘l harakati qoidalarini buzganlik uchun jarimalar 2026 -->
 
 O‘zbekistonda yo‘l harakati qoidalarini buzganlik jarimalari 2026 yilda ham haydovchilar va piyodalar uchun muhim e’tibor talab qiladigan masala bo‘lib qolmoqda. Har yili qoidalarni buzganlik oqibatida jismoniy shaxslar va transport vositalari egalari turli miqdordagi jarimalarga tortiladi. Ushbu maqolada siz 2026 yilgi jarimalar, ularning turlari, miqdorlari, to‘lov tartibi va jarimalardan qanday qochish mumkinligi haqida barcha amaliy ma’lumotlarni topasiz.  
 

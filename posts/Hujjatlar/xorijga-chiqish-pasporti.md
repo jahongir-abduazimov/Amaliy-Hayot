@@ -8,7 +8,7 @@ category: Hujjatlar
 keywords: "xorijga chiqish pasporti, qizil pasport olish, biometrik pasport, pasport olish 2026, my.gov.uz pasport, davlat boji pasport, pasport hujjatlari"
 ---
 
-# Xorijga chiqish pasportini (qizil pasport) olish tartibi (2026)
+<!-- # Xorijga chiqish pasportini (qizil pasport) olish tartibi (2026) -->
 
 Xorijga chiqish pasporti (xalq orasida **qizil pasport** deb ataladi) — O‘zbekiston fuqarosining chet elga chiqishi va xorijda shaxsini tasdiqlovchi asosiy rasmiy hujjatidir. 2026-yilda ham bu hujjatni olish tartibi raqamlashtirilgan bo‘lib, ariza topshirish, to‘lov qilish va holatni kuzatish ancha qulaylashgan.
 

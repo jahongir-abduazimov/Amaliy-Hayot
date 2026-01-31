@@ -8,7 +8,7 @@ category: Transport
 keywords: "avtomobil ro‘yxatga olish, mashina rasmiylashtirish, yangi avtomobil hujjatlari, ikkinchi qo‘l mashina, davlat boji avtomobil, YHXBB ro‘yxatdan o‘tkazish, texnik pasport olish, avtomobil xaridi"
 ---
 
-# Avtomobil ro‘yxatga olish: 2026-yilda jarayon va narxlar
+<!-- # Avtomobil ro‘yxatga olish: 2026-yilda jarayon va narxlar -->
 
 O‘zbekistonda avtomobil sotib olish — yirik moliyaviy qaror (major purchase) bo‘lib, uni qonuniy va muammosiz foydalanish uchun **ro‘yxatdan o‘tkazish** majburiy hisoblanadi. 2026-yilda avtomobilni ro‘yxatga olish tartibi aniq bosqichlarga ega bo‘lib, jarayon **YHXBB (Yo‘l harakati xavfsizligi bosh boshqarmasi)** orqali amalga oshiriladi.
 

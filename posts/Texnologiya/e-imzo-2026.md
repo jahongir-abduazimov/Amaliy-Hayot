@@ -8,7 +8,7 @@ category: "Texnologiya"
 keywords: "E-IMZO, elektron raqamli imzo, E-IMZO olish 2026, my.gov.uz, davlat xizmatlari onlayn, soliq hisobotlari, elektron hujjat, raqamli imzo O‘zbekiston"
 ---
 
-# Elektron raqamli imzo (E-IMZO) 2026-yilda qanday olinadi va undan to‘g‘ri foydalanish yo‘llari
+<!-- # Elektron raqamli imzo (E-IMZO) 2026-yilda qanday olinadi va undan to‘g‘ri foydalanish yo‘llari -->
 
 2026-yilga kelib O‘zbekistonda **elektron raqamli imzo (E-IMZO)** deyarli barcha muhim davlat va biznes jarayonlarining ajralmas qismiga aylandi. Soliq hisobotlari topshirish, davlat xizmatlaridan foydalanish, bank operatsiyalari, shartnomalar imzolash — bularning barchasi E-IMZO orqali amalga oshirilmoqda.
 

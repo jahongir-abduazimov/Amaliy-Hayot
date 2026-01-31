@@ -8,7 +8,7 @@ category: "Jarimalar"
 keywords: "radar jarima tekshirish, jarimani qanday bilish mumkin, YHXX jarima tekshirish, e-jarima O‘zbekiston, radar jarima 2026, avtomobil jarimasi tekshirish, my.gov.uz jarima"
 ---
 
-# Radar orqali tushgan jarimani qanday tekshirish mumkin?
+<!-- # Radar orqali tushgan jarimani qanday tekshirish mumkin? -->
 
 O‘zbekistonda avtomobillar soni oshgani sari yo‘l harakati qoidabuzarliklarini avtomatik aniqlash tizimlari — radarlar va kameralar ham keng qo‘llanilmoqda. Tezlikni oshirish, svetofor qoidalarini buzish yoki yo‘l chizig‘ini bosish kabi holatlar ko‘pincha **haydovchi to‘xtatilmasdan**, avtomatik tarzda jarimaga aylanadi.
 

@@ -8,7 +8,7 @@ category: Ta'lim
 keywords: "grant 2026, stipendiya 2026, xorijda o‘qish grantlari, O‘zbekiston stipendiyalari, xalqaro stipendiyalar, talabalar uchun grant, bakalavr magistr grant"
 ---
 
-# O‘zbekiston va xorij universitetlari uchun grant va stipendiyalar ro‘yxati (2026)
+<!-- # O‘zbekiston va xorij universitetlari uchun grant va stipendiyalar ro‘yxati (2026) -->
 
 Oliy ta’lim olish bugungi kunda katta moliyaviy xarajatlarni talab qiladi. Shu sababli **grant va stipendiyalar** minglab yoshlar uchun eng muhim imkoniyatlardan biridir. 2026-yilda ham O‘zbekiston va xorijiy universitetlar tomonidan davlat, xalqaro tashkilotlar hamda xususiy fondlar orqali turli grant va stipendiya dasturlari e’lon qilingan.
 

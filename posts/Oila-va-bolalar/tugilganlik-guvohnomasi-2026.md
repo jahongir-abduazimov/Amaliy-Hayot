@@ -8,7 +8,7 @@ category: Oila va Bolalar
 keywords: "tug‘ilganlik guvohnomasi, bola hujjatlari, FHDYO, my.gov.uz, tug‘ilganlikni ro‘yxatga olish, 2026, bola tug‘ilishi"
 ---
 
-# Tug‘ilganlik guvohnomasini qanday olish — 2026 yil uchun to‘liq yo‘riqnoma
+<!-- # Tug‘ilganlik guvohnomasini qanday olish — 2026 yil uchun to‘liq yo‘riqnoma -->
 
 Bola tug‘ilishi — oiladagi eng muhim voqealardan biri. Ammo quvonch bilan birga muhim hujjatlarni rasmiylashtirish mas’uliyati ham keladi. Shulardan eng asosiysi — **tug‘ilganlik guvohnomasi**. Ushbu hujjat bola shaxsini tasdiqlovchi birinchi rasmiy hujjat bo‘lib, kelgusida bog‘cha, maktab, pasport, tibbiy xizmatlar va nafaqalar uchun zarur bo‘ladi.
 

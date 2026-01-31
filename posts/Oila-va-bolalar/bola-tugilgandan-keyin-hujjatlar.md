@@ -8,7 +8,7 @@ category: Oila va Bolalar
 keywords: "bola tug‘ilganda hujjatlar, tug‘ilganlik guvohnomasi 2026, JShShIR bola, bolaga propiska, bolalar nafaqasi hujjatlari, FHDYO, my.gov.uz bola"
 ---
 
-# Bola tug‘ilgandan keyin qanday hujjatlar rasmiylashtiriladi?
+<!-- # Bola tug‘ilgandan keyin qanday hujjatlar rasmiylashtiriladi? -->
 
 Farzand dunyoga kelishi — oiladagi eng quvonchli voqealardan biri. Ammo quvonch bilan birga ota-onani muhim huquqiy va tashkiliy masalalar ham kutadi. Xususan, bola tug‘ilgandan keyin **qanday hujjatlar rasmiylashtirilishi kerak**, ularni **qayerda va qancha muddatda olish lozim**, kechikish qanday oqibatlarga olib kelishi mumkin — bu savollar ko‘pchilikni qiziqtiradi.
 

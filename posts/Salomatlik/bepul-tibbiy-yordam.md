@@ -8,7 +8,7 @@ category: Salomatlik
 keywords: "bepul tibbiy yordam, davlat tibbiy xizmatlari, O‘zbekiston sog‘liqni saqlash, bepul davolanish, tibbiy yordam olish tartibi, poliklinika xizmatlari, shoshilinch yordam"
 ---
 
-# Bepul tibbiy yordam: Kim olishi mumkin va qanday?
+<!-- # Bepul tibbiy yordam: Kim olishi mumkin va qanday? -->
 
 Sog‘liq — inson hayotidagi eng muhim boylik. O‘zbekistonda davlat tomonidan aholini ijtimoiy himoya qilish maqsadida **bepul tibbiy yordam** tizimi yo‘lga qo‘yilgan. Ammo ko‘pchilik fuqarolar: *“Qaysi tibbiy xizmatlar bepul?”, “Kimlar undan foydalanishi mumkin?”, “Qanday hujjatlar kerak?”* kabi savollarga aniq javob topa olmaydi.
 

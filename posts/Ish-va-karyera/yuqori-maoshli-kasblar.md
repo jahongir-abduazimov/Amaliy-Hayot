@@ -8,7 +8,7 @@ category: Ish va Karyera
 keywords: "yuqori maoshli kasblar, O‘zbekistonda ish haqi, eng daromadli kasblar, IT kasblar, shifokor maoshi, muhandis maoshi, ish va karyera, 2026 ish bozori"
 ---
 
-# O‘zbekistonda eng yuqori maoshli kasblar
+<!-- # O‘zbekistonda eng yuqori maoshli kasblar -->
 
 O‘zbekistonda ish bozori so‘nggi yillarda jadal rivojlanmoqda. Xususiy sektor kengayishi, IT va texnologiyalar kirib kelishi, sog‘liqni saqlash va sanoat sohalariga investitsiyalar oshishi natijasida ayrim kasblarga bo‘lgan talab keskin ortdi. Tabiiyki, talab yuqori bo‘lgan sohalarda **maoshlar ham yuqori** bo‘ladi.
 

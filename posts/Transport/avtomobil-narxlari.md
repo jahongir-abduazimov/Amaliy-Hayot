@@ -8,7 +8,7 @@ category: Transport
 keywords: "avtomobil narxlari 2026, O‘zbekiston avtomobil bozori, yangi avtomobil narxi, ishlatilgan mashina narxi, avto bozor tahlili, avtomobil importi, elektromobil narxlari"
 ---
 
-# Avtomobil narxlari tendensiyalari O‘zbekistonda 2026
+<!-- # Avtomobil narxlari tendensiyalari O‘zbekistonda 2026 -->
 
 O‘zbekistonda avtomobil bozori so‘nggi yillarda eng ko‘p muhokama qilinadigan mavzulardan biriga aylandi. 2026-yilga kelib ham bu yo‘nalish dolzarbligini yo‘qotgani yo‘q. Yangi avtomobillar, ikkilamchi bozor, import mashinalar va elektromobillar narxi aholining kundalik hayotiga bevosita ta’sir qilmoqda.
 

@@ -8,7 +8,7 @@ category: "Ta'lim"
 keywords: "O‘zbekiston universitetlari, TOP universitetlar 2026, OTM reytingi, davlat universitetlari, xususiy universitetlar, oliy ta'lim O‘zbekiston, qaysi universitet yaxshi, talaba bo‘lish 2026"
 ---
 
-# O‘zbekistondagi TOP 20 universitetlar reytingi 2026
+<!-- # O‘zbekistondagi TOP 20 universitetlar reytingi 2026 -->
 
 Oliy ta’lim muassasasini tanlash — bu faqat diplom olish emas, balki kelajak kasb, daromad va ijtimoiy mavqeni belgilovchi muhim qarordir. Shu sababli **2026-yil holatiga ko‘ra O‘zbekistondagi TOP 20 universitetlar reytingi** abituriyentlar, ota-onalar va qayta o‘qishni rejalayotganlar uchun tayyorlandi.
 

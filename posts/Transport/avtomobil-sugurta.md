@@ -8,7 +8,7 @@ category: Transport
 keywords: "avtomobil sug‘urtasi, OSAGO, majburiy sug‘urta, mashina sug‘urtasi, yo‘l-transport hodisasi, sug‘urta polisi, transport sug‘urtasi, haydovchi javobgarligi"
 ---
 
-# Avtomobilni sug‘urta qilish va majburiy sug‘urta (OSAGO) haqida
+<!-- # Avtomobilni sug‘urta qilish va majburiy sug‘urta (OSAGO) haqida -->
 
 Avtomobil — qulaylik bilan birga mas’uliyat ham demakdir. Yo‘l-transport hodisalari, kutilmagan to‘qnashuvlar, uchinchi shaxslarga yetkazilgan zararlar haydovchi uchun katta moliyaviy yuk bo‘lishi mumkin. Shu sababli avtomobilni sug‘urtalash, ayniqsa **majburiy sug‘urta (OSAGO)** har bir haydovchi bilishi va to‘g‘ri rasmiylashtirishi kerak bo‘lgan masaladir.
 

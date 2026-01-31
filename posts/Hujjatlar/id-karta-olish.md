@@ -8,7 +8,7 @@ category: "Hujjatlar"
 keywords: "id karta, id karta olish, shaxsni tasdiqlovchi hujjat, mygov, o'zbekiston"
 ---
 
-# O'zbekistonda ID karta qanday olinadi - 2026
+<!-- # O'zbekistonda ID karta qanday olinadi - 2026 -->
 
 ID karta (shaxsni tasdiqlovchi elektron hujjat) - bu yangi avlod biometrik pasport o'rnini bosuvchi zamonaviy hujjat. Bu yo'riqnomada ID karta olish jarayonini qadamma-qadam tushuntiramiz.
 

@@ -8,7 +8,7 @@ category: "Ta'lim"
 keywords: "talab yuqori kasblar 2026, o‘zbekistonda kasb tanlash, kelajak kasblari, yaxshi daromadli kasblar, IT kasblari o‘zbekiston, kasbiy rivojlanish, qaysi kasbni tanlash kerak, 2026 kasblar ro‘yxati"
 ---
 
-# 2026-yilda O‘zbekistonda talab yuqori bo‘lgan kasblar
+<!-- # 2026-yilda O‘zbekistonda talab yuqori bo‘lgan kasblar -->
 
 2026-yilda O‘zbekistonda mehnat bozori avvalgidan ancha o‘zgargan. Raqamlashtirish, xususiy bizneslar sonining oshishi, davlat xizmatlarining onlayn shaklga o‘tishi va masofaviy ishlarning kengayishi natijasida ayrim kasblarga talab keskin oshdi.
 

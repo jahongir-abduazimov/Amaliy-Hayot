@@ -8,7 +8,7 @@ category: Uy-joy va Kommunal
 keywords: "uy ijara shartnomasi, ijara shartnomasi namuna, uy ijarasi hujjatlari, uy ijaraga berish, uy ijarasi qonun, notarius ijara shartnomasi, uy ijara shartnomasi bepul"
 ---
 
-# Uy ijara shartnomasi qanday tuziladi? (Namuna bilan)
+<!-- # Uy ijara shartnomasi qanday tuziladi? (Namuna bilan) -->
 
 Uy ijaraga berish yoki ijaraga olish jarayonida eng muhim hujjat — **uy ijara shartnomasi** hisoblanadi. O‘zbekistonda hali ham ko‘plab fuqarolar og‘zaki kelishuv bilan cheklanadi. Bu esa kelajakda **nizo, moliyaviy zarar yoki sud muammolari**ga olib kelishi mumkin.
 

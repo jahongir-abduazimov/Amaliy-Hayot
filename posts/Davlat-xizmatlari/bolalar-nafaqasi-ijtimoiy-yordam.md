@@ -8,7 +8,7 @@ category: Davlat xizmatlari
 keywords: "bolalar nafaqasi 2026, ijtimoiy yordam O‘zbekiston, kam ta'minlangan oilalar, bola puli, nafaqa olish tartibi, my.gov.uz nafaqa"
 ---
 
-# Bolalar nafaqasi va ijtimoiy yordam dasturlari 2026
+<!-- # Bolalar nafaqasi va ijtimoiy yordam dasturlari 2026 -->
 
 O‘zbekistonda bolali oilalarni qo‘llab-quvvatlash davlat siyosatining muhim yo‘nalishlaridan biridir. **2026-yilda bolalar nafaqasi va ijtimoiy yordam dasturlari** orqali kam ta’minlangan oilalar, yolg‘iz ota-onalar, nogironligi bo‘lgan bolalar va ijtimoiy himoyaga muhtoj qatlamlar davlat tomonidan moliyaviy yordam olmoqda.
 

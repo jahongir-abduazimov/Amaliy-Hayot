@@ -8,7 +8,7 @@ category: "Ish va Karyera"
 keywords: "rezyume tuzish, cv yozish, ishga kirish rezyume, professional rezyume, cv namunasi, ish topish maslahatlari, hr rezyume talablari"
 ---
 
-# Rezyume va CV tuzish bo‘yicha eng yaxshi metodlar
+<!-- # Rezyume va CV tuzish bo‘yicha eng yaxshi metodlar -->
 
 Bugungi mehnat bozorida yaxshi rezyume — ishga kirish yo‘lidagi eng muhim hujjatdir. Ko‘plab nomzodlar tajribasi yetarli bo‘lsa ham, noto‘g‘ri tuzilgan rezyume sababli suhbatga chaqirilmaydi. Chunki ish beruvchi yoki HR mutaxassis bir rezyumeni o‘rtacha 10–15 soniya ichida ko‘zdan kechiradi.
 

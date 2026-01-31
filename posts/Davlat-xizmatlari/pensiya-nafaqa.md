@@ -8,7 +8,7 @@ category: Davlat xizmatlari
 keywords: "pensiya olish, nafaqa hisoblash, pensiya yoshi 2026, O‘zbekiston pensiya, ish staji, davlat nafaqasi, pensiya hujjatlari"
 ---
 
-# Pensiya olish va nafaqa hisoblash bo‘yicha amaliy maslahatlar (2026)
+<!-- # Pensiya olish va nafaqa hisoblash bo‘yicha amaliy maslahatlar (2026) -->
 
 Pensiya va nafaqa masalalari O‘zbekiston aholisi uchun eng muhim ijtimoiy mavzulardan biridir. Ko‘pchilik pensiya yoshiga yetganda yoki nafaqa olish zarurati tug‘ilganda hujjatlar, hisob-kitoblar va qonuniy talablar bo‘yicha qiyinchiliklarga duch keladi. Ushbu maqolada **2026-yil holatiga ko‘ra** O‘zbekistonda pensiya olish, nafaqa turlari va ularni to‘g‘ri hisoblash bo‘yicha **amaliy, sodda va tushunarli maslahatlar** beriladi.
 

@@ -8,7 +8,7 @@ category: "Ish va Karyera"
 keywords: "CV yozish, rezyume namuna, ish topish, HR maslahatlari, job application, resume, karyera, ish qidirish"
 ---
 
-# Mukammal CV qanday yoziladi: ish topishda yutadigan rezyume tayyorlash bo‘yicha to‘liq qo‘llanma
+<!-- # Mukammal CV qanday yoziladi: ish topishda yutadigan rezyume tayyorlash bo‘yicha to‘liq qo‘llanma -->
 
 Ish qidirayotgan odam uchun **CV (rezyume)** – bu shunchaki hujjat emas, balki o‘zingizni ish beruvchiga tanishtiradigan eng muhim marketing vositasidir. Ko‘plab yaxshi mutaxassislar faqat CV noto‘g‘ri yozilgani sabab ishga chaqirilmaydi. Shu sababli bu maqolada siz **O‘zbekiston sharoitida ishlaydigan, HR mutaxassislarga yoqadigan va Google orqali ham ko‘p qidiriladigan** mukammal CV tayyorlash bo‘yicha to‘liq yo‘riqnoma olasiz.
 

@@ -8,7 +8,7 @@ category: Uy-joy va Kommunal
 keywords: "Toshkent uy ijarasi, 2026 uy narxlari, arzon uy ijarasi Toshkent, kvartira ijarasi, ijara narxlari 2026, uy olish Toshkent"
 ---
 
-# Toshkentda uy ijarasi: qayerda arzonroq? 2026-yil narxlari
+<!-- # Toshkentda uy ijarasi: qayerda arzonroq? 2026-yil narxlari -->
 
 Toshkentda uy ijarasi masalasi 2026-yilda ham dolzarbligicha qolmoqda. Talabalar, yosh oilalar, viloyatdan kelib ishlayotganlar va vaqtincha yashashga majbur bo‘lganlar uchun eng muhim savol bitta: **qayerda uy ijarasi arzonroq va qulayroq?**
 
