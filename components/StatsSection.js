@@ -1,28 +1,28 @@
 export default function StatsSection() {
   const stats = [
     {
-      icon: '📚',
-      number: '500+',
-      label: 'Maqolalar',
-      description: 'To\'liq yo\'riqnomalar',
+      icon: "📚",
+      number: "500+",
+      label: "Maqolalar",
+      description: "To‘liq yo‘riqnomalar",
     },
     {
-      icon: '👥',
-      number: '50K+',
-      label: 'O\'quvchilar',
-      description: 'Doimiy o\'quvchilar',
+      icon: "👥",
+      number: "50K+",
+      label: "O‘quvchilar",
+      description: "Doimiy o‘quvchilar",
     },
     {
-      icon: '⭐',
-      number: '4.9/5',
-      label: 'Babolash',
-      description: 'Foydalanuvchilar bahosi',
+      icon: "⭐",
+      number: "4.9/5",
+      label: "Babolash",
+      description: "Foydalanuvchilar bahosi",
     },
     {
-      icon: '📱',
-      number: '24/7',
-      label: 'Mavjud',
-      description: 'Har doim ochiq',
+      icon: "📱",
+      number: "24/7",
+      label: "Mavjud",
+      description: "Har doim ochiq",
     },
   ];
 

@@ -1,56 +1,61 @@
-import { getAllPosts } from '@/lib/posts';
-import BlogList from '@/components/BlogList';
+import { getAllPosts } from "@/lib/posts";
+import BlogList from "@/components/BlogList";
 
 export const metadata = {
-  title: 'Barcha Maqolalar',
-  description: "O'zbekistonda kundalik hayotga oid barcha maqolalar va yo'riqnomalar. ID karta, bank kartasi, my.gov.uz va boshqa mavzular bo'yicha to'liq ma'lumotlar.",
-  keywords: "maqolalar, blog, yo'riqnomalar, o'zbekiston, id karta, bank kartasi, mygov, davlat xizmatlari",
+  title: "Barcha Maqolalar",
+  description:
+    "O‘zbekistonda kundalik hayotga oid barcha maqolalar va yo‘riqnomalar. ID karta, bank kartasi, my.gov.uz va boshqa mavzular bo‘yicha to‘liq ma‘lumotlar.",
+  keywords:
+    "maqolalar, blog, yo‘riqnomalar, o‘zbekiston, id karta, bank kartasi, mygov, davlat xizmatlari",
   alternates: {
-    canonical: '/blog',
+    canonical: "/blog",
   },
   openGraph: {
-    title: 'Barcha Maqolalar | Amaliy Hayot',
-    description: "O'zbekistonda kundalik hayotga oid barcha maqolalar va yo'riqnomalar.",
-    type: 'website',
-    url: '/blog',
-    siteName: 'Amaliy Hayot',
-    locale: 'uz_UZ',
+    title: "Barcha Maqolalar | Amaliy Hayot",
+    description:
+      "O‘zbekistonda kundalik hayotga oid barcha maqolalar va yo‘riqnomalar.",
+    type: "website",
+    url: "/blog",
+    siteName: "Amaliy Hayot",
+    locale: "uz_UZ",
     images: [
       {
-        url: '/images/logo.png',
+        url: "/images/logo.png",
         width: 1200,
         height: 630,
-        alt: 'Amaliy Hayot - Barcha Maqolalar',
+        alt: "Amaliy Hayot - Barcha Maqolalar",
       },
     ],
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Barcha Maqolalar | Amaliy Hayot',
-    description: "O'zbekistonda kundalik hayotga oid barcha maqolalar va yo'riqnomalar.",
-    images: ['/images/logo.png'],
+    card: "summary_large_image",
+    title: "Barcha Maqolalar | Amaliy Hayot",
+    description:
+      "O‘zbekistonda kundalik hayotga oid barcha maqolalar va yo‘riqnomalar.",
+    images: ["/images/logo.png"],
   },
 };
 
 export default function BlogPage() {
   const posts = getAllPosts();
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://amaliyhayot.uz';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://amaliyhayot.uz";
 
   // CollectionPage structured data
   const collectionJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'CollectionPage',
-    name: 'Barcha Maqolalar',
-    description: "O'zbekistonda kundalik hayotga oid barcha maqolalar va yo'riqnomalar.",
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Barcha Maqolalar",
+    description:
+      "O‘zbekistonda kundalik hayotga oid barcha maqolalar va yo‘riqnomalar.",
     url: `${baseUrl}/blog`,
     mainEntity: {
-      '@type': 'ItemList',
+      "@type": "ItemList",
       numberOfItems: posts.length,
       itemListElement: posts.slice(0, 10).map((post, index) => ({
-        '@type': 'ListItem',
+        "@type": "ListItem",
         position: index + 1,
         item: {
-          '@type': 'BlogPosting',
+          "@type": "BlogPosting",
           headline: post.title,
           url: `${baseUrl}/blog/${post.slug}`,
         },
@@ -81,7 +86,8 @@ export default function BlogPage() {
               </h1>
 
               <p className="text-xl md:text-2xl text-neutral-text-gray mb-8 leading-relaxed">
-                O'zbekistonda kundalik hayotga oid barcha foydali ma'lumotlar va yo'riqnomalar
+                O‘zbekistonda kundalik hayotga oid barcha foydali ma’lumotlar va
+                yo‘riqnomalar
               </p>
 
               <div className="inline-flex items-center gap-2 px-6 py-3 bg-[#0EA5E9]/10 text-[#0EA5E9] rounded-full font-semibold">

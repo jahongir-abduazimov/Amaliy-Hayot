@@ -4,8 +4,8 @@ date: 2026-01-14
 description: "2026-yil holatiga ko‘ra O‘zbekistondagi eng yaxshi TOP 20 universitetlar reytingi. Davlat va nodavlat OTMlar, ta’lim sifati, diplom qiymati va qabul imkoniyatlari haqida ishonchli va tushunarli qo‘llanma."
 image: "/images/education/top-universitetlar-2026.jpg"
 author: "Amaliy Hayot"
-category: "Ta'lim"
-keywords: "O‘zbekiston universitetlari, TOP universitetlar 2026, OTM reytingi, davlat universitetlari, xususiy universitetlar, oliy ta'lim O‘zbekiston, qaysi universitet yaxshi, talaba bo‘lish 2026"
+category: "Ta’lim"
+keywords: "O‘zbekiston universitetlari, TOP universitetlar 2026, OTM reytingi, davlat universitetlari, xususiy universitetlar, oliy ta’lim O‘zbekiston, qaysi universitet yaxshi, talaba bo‘lish 2026"
 ---
 
 <!-- # O‘zbekistondagi TOP 20 universitetlar reytingi 2026 -->

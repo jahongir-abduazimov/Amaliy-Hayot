@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import { useState, useEffect, useMemo } from 'react';
-import { createPortal } from 'react-dom';
-import Link from 'next/link';
+import { useState, useEffect, useMemo } from "react";
+import { createPortal } from "react-dom";
+import Link from "next/link";
 
 export default function SearchModal({ isOpen, onClose }) {
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
   const [allPosts, setAllPosts] = useState([]);
   const [mounted, setMounted] = useState(false);
 
@@ -16,9 +16,9 @@ export default function SearchModal({ isOpen, onClose }) {
   useEffect(() => {
     // Fetch posts from API when modal opens
     if (isOpen) {
-      fetch('/api/posts')
-        .then(res => res.json())
-        .then(data => setAllPosts(data))
+      fetch("/api/posts")
+        .then((res) => res.json())
+        .then((data) => setAllPosts(data))
         .catch(() => setAllPosts([]));
     }
   }, [isOpen]);
@@ -30,15 +30,19 @@ export default function SearchModal({ isOpen, onClose }) {
     }
 
     const query = searchQuery.toLowerCase().trim();
-    return allPosts.filter(post => {
-      const title = (post.title || '').toLowerCase();
-      const description = (post.description || '').toLowerCase();
-      const category = (post.category || '').toLowerCase();
+    return allPosts
+      .filter((post) => {
+        const title = (post.title || "").toLowerCase();
+        const description = (post.description || "").toLowerCase();
+        const category = (post.category || "").toLowerCase();
 
-      return title.includes(query) ||
-        description.includes(query) ||
-        category.includes(query);
-    }).slice(0, 10); // Limit to 10 results
+        return (
+          title.includes(query) ||
+          description.includes(query) ||
+          category.includes(query)
+        );
+      })
+      .slice(0, 10); // Limit to 10 results
   }, [allPosts, searchQuery]);
 
   // Handle escape key
@@ -46,17 +50,17 @@ export default function SearchModal({ isOpen, onClose }) {
     if (!isOpen) return;
 
     const handleEscape = (e) => {
-      if (e.key === 'Escape') {
+      if (e.key === "Escape") {
         onClose();
       }
     };
 
-    document.addEventListener('keydown', handleEscape);
-    document.body.style.overflow = 'hidden';
+    document.addEventListener("keydown", handleEscape);
+    document.body.style.overflow = "hidden";
 
     return () => {
-      document.removeEventListener('keydown', handleEscape);
-      document.body.style.overflow = 'unset';
+      document.removeEventListener("keydown", handleEscape);
+      document.body.style.overflow = "unset";
     };
   }, [isOpen, onClose]);
 
@@ -97,11 +101,21 @@ export default function SearchModal({ isOpen, onClose }) {
             />
             {searchQuery && (
               <button
-                onClick={() => setSearchQuery('')}
+                onClick={() => setSearchQuery("")}
                 className="absolute right-4 top-1/2 transform -translate-y-1/2 text-neutral-text-light hover:text-neutral-text-dark cursor-pointer"
               >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 </svg>
               </button>
             )}
@@ -141,18 +155,36 @@ export default function SearchModal({ isOpen, onClose }) {
           ) : searchQuery.trim() && filteredPosts.length === 0 ? (
             <div className="p-12 text-center">
               <div className="inline-block p-4 bg-neutral-light-gray rounded-2xl mb-4">
-                <svg className="w-12 h-12 text-neutral-text-light mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                <svg
+                  className="w-12 h-12 text-neutral-text-light mx-auto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
                 </svg>
               </div>
-              <p className="text-lg text-neutral-text-gray mb-2">Natija topilmadi</p>
-              <p className="text-sm text-neutral-text-light">Boshqa kalit so'zlar bilan qidirib ko'ring</p>
+              <p className="text-lg text-neutral-text-gray mb-2">
+                Natija topilmadi
+              </p>
+              <p className="text-sm text-neutral-text-light">
+                Boshqa kalit so‘zlar bilan qidirib ko‘ring
+              </p>
             </div>
           ) : (
             <div className="p-12 text-center">
               <div className="text-4xl mb-4">🔍</div>
-              <p className="text-lg text-neutral-text-gray">Maqolalarni qidirish</p>
-              <p className="text-sm text-neutral-text-light mt-2">Qidiruv so'zini kiriting</p>
+              <p className="text-lg text-neutral-text-gray">
+                Maqolalarni qidirish
+              </p>
+              <p className="text-sm text-neutral-text-light mt-2">
+                Qidiruv so‘zini kiriting
+              </p>
             </div>
           )}
         </div>

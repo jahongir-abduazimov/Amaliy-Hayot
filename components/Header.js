@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useState, useEffect } from 'react';
-import { usePathname } from 'next/navigation';
-import SearchModal from './SearchModal';
-import Logo from "../public/images/logo.png"
-import Image from 'next/image';
+import Link from "next/link";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import SearchModal from "./SearchModal";
+import Logo from "../public/images/logo.png";
+import Image from "next/image";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -17,33 +17,39 @@ export default function Header() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
-    { href: '/', label: 'Bosh sahifa' },
-    { href: '/blog', label: 'Maqolalar' },
-    { href: '/about', label: 'Biz haqimizda' },
-    { href: '/contact', label: 'Bog\'lanish' },
+    { href: "/", label: "Bosh sahifa" },
+    { href: "/blog", label: "Maqolalar" },
+    { href: "/about", label: "Biz haqimizda" },
+    { href: "/contact", label: "Bog‘lanish" },
   ];
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 smooth ${scrolled
-        ? 'bg-white/95 backdrop-blur-md shadow'
-        : 'bg-white/80 backdrop-blur-sm'
-        }`}
+      className={`fixed top-0 w-full z-50 smooth ${
+        scrolled
+          ? "bg-white/95 backdrop-blur-md shadow"
+          : "bg-white/80 backdrop-blur-sm"
+      }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav className="flex items-center justify-between md:h-20 h-16">
           {/* Logo */}
-          <Link
-            href="/"
-            className="flex items-center gap-3 group"
-          >
-            <Image src={Logo} alt="Amaliy Hayot - O'zbekistonda kundalik hayot yo'riqnomalari" className="w-10 md:w-14" width={56} height={56} />
-            <span className="text-lg md:text-3xl font-bold text-primary block sm:hidden lg:block">Amaliy Hayot</span>
+          <Link href="/" className="flex items-center gap-3 group">
+            <Image
+              src={Logo}
+              alt="Amaliy Hayot - O‘zbekistonda kundalik hayot yo‘riqnomalari"
+              className="w-10 md:w-14"
+              width={56}
+              height={56}
+            />
+            <span className="text-lg md:text-3xl font-bold text-primary block sm:hidden lg:block">
+              Amaliy Hayot
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -54,7 +60,7 @@ export default function Header() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className={`text-neutral-text-gray hover:text-[#0EA5E9] smooth relative group font-medium ${isActive ? 'text-[#0EA5E9]' : ''}`}
+                    className={`text-neutral-text-gray hover:text-[#0EA5E9] smooth relative group font-medium ${isActive ? "text-[#0EA5E9]" : ""}`}
                   >
                     {link.label}
                   </Link>
@@ -90,7 +96,7 @@ export default function Header() {
               rel="noopener noreferrer"
               className="hidden md:block bg-[#0EA5E9] text-white px-6 py-3 rounded-xl font-bold shadow-blue hover:bg-[#0369A1] smooth cursor-pointer"
             >
-              Obuna bo'ling
+              Obuna bo‘ling
             </Link>
 
             {/* Mobile menu button */}
@@ -101,7 +107,7 @@ export default function Header() {
               aria-expanded={mobileMenuOpen}
             >
               <svg
-                className={`w-6 h-6 smooth ${mobileMenuOpen ? 'rotate-90' : ''}`}
+                className={`w-6 h-6 smooth ${mobileMenuOpen ? "rotate-90" : ""}`}
                 fill="none"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -121,8 +127,9 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         <div
-          className={`md:hidden overflow-hidden smooth ${mobileMenuOpen ? 'max-h-84 opacity-100' : 'max-h-0 opacity-0'
-            }`}
+          className={`md:hidden overflow-hidden smooth ${
+            mobileMenuOpen ? "max-h-84 opacity-100" : "max-h-0 opacity-0"
+          }`}
         >
           <nav className="py-4 border-t border-neutral-border space-y-2">
             {navLinks.map((link) => {
@@ -131,10 +138,11 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`block px-4 py-3 rounded-xl font-medium smooth ${isActive
-                    ? 'text-[#0EA5E9] bg-[#DBEAFE] border-l-4 border-[#0EA5E9]'
-                    : 'text-neutral-text-dark hover:text-[#0EA5E9] hover:bg-[#F8FAFC]'
-                    }`}
+                  className={`block px-4 py-3 rounded-xl font-medium smooth ${
+                    isActive
+                      ? "text-[#0EA5E9] bg-[#DBEAFE] border-l-4 border-[#0EA5E9]"
+                      : "text-neutral-text-dark hover:text-[#0EA5E9] hover:bg-[#F8FAFC]"
+                  }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.label}
@@ -143,12 +151,14 @@ export default function Header() {
             })}
             <button
               onClick={() => {
-                document.getElementById('newsletter-section')?.scrollIntoView({ behavior: 'smooth' });
+                document
+                  .getElementById("newsletter-section")
+                  ?.scrollIntoView({ behavior: "smooth" });
                 setMobileMenuOpen(false);
               }}
               className="w-full mt-2 bg-[#0EA5E9] text-white px-4 py-3 rounded-xl font-bold shadow-blue hover:bg-[#0369A1] smooth cursor-pointer"
             >
-              Obuna bo'lish
+              Obuna bo‘lish
             </button>
           </nav>
         </div>

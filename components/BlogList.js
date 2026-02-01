@@ -1,86 +1,86 @@
-'use client';
+"use client";
 
-import { useState, useMemo, useRef } from 'react';
-import PostCard from './PostCard';
+import { useState, useMemo, useRef } from "react";
+import PostCard from "./PostCard";
 
 // Category mapping - maps existing categories to new display names
 const categoryMapping = {
-  'Hujjatlar': 'Hujjatlar va rasmiy xizmatlar (ID karta, pasport va boshqalar)',
-  'Moliya': 'Moliya va bank xizmatlari',
-  'Davlat xizmatlari': 'Davlat xizmatlari (my.gov.uz va boshqa portallar)',
-  'Ta\'lim': 'Ta\'lim va kasbiy rivojlanish',
-  'Salomatlik': 'Salomatlik va tibbiy xizmatlar',
-  'Transport': 'Transport va yo\'l harakati',
-  'Texnologiya': 'Texnologiya va internet',
+  Hujjatlar: "Hujjatlar va rasmiy xizmatlar (ID karta, pasport va boshqalar)",
+  Moliya: "Moliya va bank xizmatlari",
+  "Davlat xizmatlari": "Davlat xizmatlari (my.gov.uz va boshqa portallar)",
+  "Ta'lim": "Ta'lim va kasbiy rivojlanish",
+  Salomatlik: "Salomatlik va tibbiy xizmatlar",
+  Transport: "Transport va yo'l harakati",
+  Texnologiya: "Texnologiya va internet",
 };
 
 // All available categories with icons
 const categories = [
   {
-    key: 'Hujjatlar',
-    label: 'Hujjatlar',
-    icon: '📄',
-    color: 'blue'
+    key: "Hujjatlar",
+    label: "Hujjatlar",
+    icon: "📄",
+    color: "blue",
   },
   {
-    key: 'Davlat xizmatlari',
-    label: 'Davlat xizmatlari',
-    icon: '🏛️',
-    color: 'purple'
+    key: "Davlat xizmatlari",
+    label: "Davlat xizmatlari",
+    icon: "🏛️",
+    color: "purple",
   },
   {
-    key: 'Moliya',
-    label: 'Moliya',
-    icon: '💰',
-    color: 'emerald'
+    key: "Moliya",
+    label: "Moliya",
+    icon: "💰",
+    color: "emerald",
   },
   {
-    key: 'Ta\'lim',
-    label: 'Ta\'lim',
-    icon: '🎓',
-    color: 'blue'
+    key: "Ta’lim",
+    label: "Ta’lim",
+    icon: "🎓",
+    color: "blue",
   },
   {
-    key: 'Salomatlik',
-    label: 'Salomatlik',
-    icon: '🏥',
-    color: 'emerald'
+    key: "Salomatlik",
+    label: "Salomatlik",
+    icon: "🏥",
+    color: "emerald",
   },
   {
-    key: 'Transport',
-    label: 'Transport',
-    icon: '🚗',
-    color: 'orange'
+    key: "Transport",
+    label: "Transport",
+    icon: "🚗",
+    color: "orange",
   },
   {
-    key: 'Texnologiya',
-    label: 'Texnologiya',
-    icon: '💻',
-    color: 'cyan'
+    key: "Texnologiya",
+    label: "Texnologiya",
+    icon: "💻",
+    color: "cyan",
   },
   {
-    key: 'Uy-joy va Kommunal',
-    label: 'Uy-joy va Kommunal',
-    icon: '🏠',
-    color: 'pink'
+    key: "Uy-joy va Kommunal",
+    label: "Uy-joy va Kommunal",
+    icon: "🏠",
+    color: "pink",
   },
   {
-    key: 'Ish va Karyera',
-    label: 'Ish va Karyera',
-    icon: '💼',
-    color: 'indigo'
+    key: "Ish va Karyera",
+    label: "Ish va Karyera",
+    icon: "💼",
+    color: "indigo",
   },
   {
-    key: 'Oila va Bolalar',
-    label: 'Oila va Bolalar',
-    icon: '👨‍👩‍👧‍👦',
-    color: 'amber'
+    key: "Oila va Bolalar",
+    label: "Oila va Bolalar",
+    icon: "👨‍👩‍👧‍👦",
+    color: "amber",
   },
   {
-    key: 'Jarimalar',
-    label: 'Jarimalar',
-    icon: '🏛️',
-    color: 'purple'
+    key: "Jarimalar",
+    label: "Jarimalar",
+    icon: "🏛️",
+    color: "purple",
   },
   // {
   //   key: 'Boshqa',
@@ -103,13 +103,24 @@ export default function BlogList({ posts }) {
       return posts;
     }
 
-    if (selectedCategory === 'Boshqa') {
+    if (selectedCategory === "Boshqa") {
       // Show posts that don't match any of the defined categories
-      const definedCategories = ['Hujjatlar', 'Moliya', 'Davlat xizmatlari', 'Ta\'lim', 'Salomatlik', 'Transport', 'Texnologiya', 'Uy-joy va Kommunal', 'Ish va Karyera', 'Oila va Bolalar'];
-      return posts.filter(post => !definedCategories.includes(post.category));
+      const definedCategories = [
+        "Hujjatlar",
+        "Moliya",
+        "Davlat xizmatlari",
+        "Ta’lim",
+        "Salomatlik",
+        "Transport",
+        "Texnologiya",
+        "Uy-joy va Kommunal",
+        "Ish va Karyera",
+        "Oila va Bolalar",
+      ];
+      return posts.filter((post) => !definedCategories.includes(post.category));
     }
 
-    return posts.filter(post => post.category === selectedCategory);
+    return posts.filter((post) => post.category === selectedCategory);
   }, [posts, selectedCategory]);
 
   // Paginate filtered posts
@@ -125,7 +136,10 @@ export default function BlogList({ posts }) {
   // Scroll to posts list
   const scrollToPostsList = () => {
     if (postsListRef.current) {
-      postsListRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      postsListRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
     }
   };
 
@@ -142,50 +156,62 @@ export default function BlogList({ posts }) {
 
   // Get category count
   const getCategoryCount = (categoryKey) => {
-    if (categoryKey === 'Boshqa') {
-      const definedCategories = ['Hujjatlar', 'Moliya', 'Davlat xizmatlari', 'Ta\'lim', 'Salomatlik', 'Transport', 'Texnologiya', 'Uy-joy va Kommunal', 'Ish va Karyera', 'Oila va Bolalar'];
-      return posts.filter(post => !definedCategories.includes(post.category)).length;
+    if (categoryKey === "Boshqa") {
+      const definedCategories = [
+        "Hujjatlar",
+        "Moliya",
+        "Davlat xizmatlari",
+        "Ta’lim",
+        "Salomatlik",
+        "Transport",
+        "Texnologiya",
+        "Uy-joy va Kommunal",
+        "Ish va Karyera",
+        "Oila va Bolalar",
+      ];
+      return posts.filter((post) => !definedCategories.includes(post.category))
+        .length;
     }
-    return posts.filter(post => post.category === categoryKey).length;
+    return posts.filter((post) => post.category === categoryKey).length;
   };
 
   // Color classes for category buttons
   const colorClasses = {
     blue: {
-      base: 'bg-blue-50 text-blue-700 hover:bg-blue-100 border-blue-200',
-      active: 'bg-[#0EA5E9] text-white border-[#0EA5E9]',
+      base: "bg-blue-50 text-blue-700 hover:bg-blue-100 border-blue-200",
+      active: "bg-[#0EA5E9] text-white border-[#0EA5E9]",
     },
     emerald: {
-      base: 'bg-emerald-50 text-emerald-700 hover:bg-emerald-100 border-emerald-200',
-      active: 'bg-[#10B981] text-white border-[#10B981]',
+      base: "bg-emerald-50 text-emerald-700 hover:bg-emerald-100 border-emerald-200",
+      active: "bg-[#10B981] text-white border-[#10B981]",
     },
     purple: {
-      base: 'bg-purple-50 text-purple-700 hover:bg-purple-100 border-purple-200',
-      active: 'bg-[#8B5CF6] text-white border-[#8B5CF6]',
+      base: "bg-purple-50 text-purple-700 hover:bg-purple-100 border-purple-200",
+      active: "bg-[#8B5CF6] text-white border-[#8B5CF6]",
     },
     orange: {
-      base: 'bg-orange-50 text-orange-700 hover:bg-orange-100 border-orange-200',
-      active: 'bg-[#F97316] text-white border-[#F97316]',
+      base: "bg-orange-50 text-orange-700 hover:bg-orange-100 border-orange-200",
+      active: "bg-[#F97316] text-white border-[#F97316]",
     },
     cyan: {
-      base: 'bg-cyan-50 text-cyan-700 hover:bg-cyan-100 border-cyan-200',
-      active: 'bg-[#06B6D4] text-white border-[#06B6D4]',
+      base: "bg-cyan-50 text-cyan-700 hover:bg-cyan-100 border-cyan-200",
+      active: "bg-[#06B6D4] text-white border-[#06B6D4]",
     },
     gray: {
-      base: 'bg-gray-50 text-gray-700 hover:bg-gray-100 border-gray-200',
-      active: 'bg-gray-600 text-white border-gray-600',
+      base: "bg-gray-50 text-gray-700 hover:bg-gray-100 border-gray-200",
+      active: "bg-gray-600 text-white border-gray-600",
     },
     pink: {
-      base: 'bg-pink-50 text-pink-700 hover:bg-pink-100 border-pink-200',
-      active: 'bg-[#EC4899] text-white border-[#EC4899]',
+      base: "bg-pink-50 text-pink-700 hover:bg-pink-100 border-pink-200",
+      active: "bg-[#EC4899] text-white border-[#EC4899]",
     },
     indigo: {
-      base: 'bg-indigo-50 text-indigo-700 hover:bg-indigo-100 border-indigo-200',
-      active: 'bg-[#6366F1] text-white border-[#6366F1]',
+      base: "bg-indigo-50 text-indigo-700 hover:bg-indigo-100 border-indigo-200",
+      active: "bg-[#6366F1] text-white border-[#6366F1]",
     },
     amber: {
-      base: 'bg-amber-50 text-amber-700 hover:bg-amber-100 border-amber-200',
-      active: 'bg-[#F59E0B] text-white border-[#F59E0B]',
+      base: "bg-amber-50 text-amber-700 hover:bg-amber-100 border-amber-200",
+      active: "bg-[#F59E0B] text-white border-[#F59E0B]",
     },
   };
 
@@ -201,7 +227,7 @@ export default function BlogList({ posts }) {
                 Kategoriyalar
               </h2>
               <p className="text-sm text-neutral-text-gray">
-                Kategoriyani tanlang yoki barcha maqolalarni ko'ring
+                Kategoriyani tanlang yoki barcha maqolalarni ko‘ring
               </p>
             </div>
 
@@ -211,10 +237,11 @@ export default function BlogList({ posts }) {
                 {/* All Categories Button */}
                 <button
                   onClick={() => handleCategoryClick(null)}
-                  className={`px-4 py-2.5 md:px-6 md:py-3 rounded-xl border-2 font-semibold text-sm md:text-base transition-all duration-200 smooth cursor-pointer flex items-center gap-2 ${selectedCategory === null
-                    ? 'bg-[#0EA5E9] text-white border-[#0EA5E9] shadow-lg shadow-[#0EA5E9]/20'
-                    : 'bg-white text-neutral-text-dark border-neutral-border hover:border-[#0EA5E9] hover:bg-blue-50'
-                    }`}
+                  className={`px-4 py-2.5 md:px-6 md:py-3 rounded-xl border-2 font-semibold text-sm md:text-base transition-all duration-200 smooth cursor-pointer flex items-center gap-2 ${
+                    selectedCategory === null
+                      ? "bg-[#0EA5E9] text-white border-[#0EA5E9] shadow-lg shadow-[#0EA5E9]/20"
+                      : "bg-white text-neutral-text-dark border-neutral-border hover:border-[#0EA5E9] hover:bg-blue-50"
+                  }`}
                 >
                   <span>📚</span>
                   <span>Barchasi</span>
@@ -233,17 +260,21 @@ export default function BlogList({ posts }) {
                     <button
                       key={category.key}
                       onClick={() => handleCategoryClick(category.key)}
-                      className={`px-4 py-2.5 md:px-6 md:py-3 rounded-xl border-2 font-semibold text-sm md:text-base transition-all duration-200 smooth cursor-pointer flex items-center gap-2 ${isActive
-                        ? `${colorClass.active} shadow-lg`
-                        : `${colorClass.base}`
-                        }`}
+                      className={`px-4 py-2.5 md:px-6 md:py-3 rounded-xl border-2 font-semibold text-sm md:text-base transition-all duration-200 smooth cursor-pointer flex items-center gap-2 ${
+                        isActive
+                          ? `${colorClass.active} shadow-lg`
+                          : `${colorClass.base}`
+                      }`}
                     >
                       <span>{category.icon}</span>
                       <span>{category.label}</span>
-                      <span className={`px-2 py-0.5 rounded-full text-xs ${isActive
-                        ? 'bg-white/20 text-inherit'
-                        : 'bg-white/60 text-inherit'
-                        }`}>
+                      <span
+                        className={`px-2 py-0.5 rounded-full text-xs ${
+                          isActive
+                            ? "bg-white/20 text-inherit"
+                            : "bg-white/60 text-inherit"
+                        }`}
+                      >
                         {count}
                       </span>
                     </button>
@@ -257,11 +288,18 @@ export default function BlogList({ posts }) {
               <p className="text-neutral-text-gray text-sm md:text-base">
                 {selectedCategory ? (
                   <>
-                    <span className="font-semibold text-neutral-text-dark">{filteredPosts.length}</span> ta maqola topildi
+                    <span className="font-semibold text-neutral-text-dark">
+                      {filteredPosts.length}
+                    </span>{" "}
+                    ta maqola topildi
                   </>
                 ) : (
                   <>
-                    Jami <span className="font-semibold text-neutral-text-dark">{posts.length}</span> ta maqola
+                    Jami{" "}
+                    <span className="font-semibold text-neutral-text-dark">
+                      {posts.length}
+                    </span>{" "}
+                    ta maqola
                   </>
                 )}
               </p>
@@ -285,15 +323,29 @@ export default function BlogList({ posts }) {
         <section className="bg-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-16 md:py-20">
             <div className="inline-block p-4 bg-neutral-light-gray rounded-2xl mb-4">
-              <svg className="w-12 h-12 text-neutral-text-light mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              <svg
+                className="w-12 h-12 text-neutral-text-light mx-auto"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
               </svg>
             </div>
             <p className="text-lg text-neutral-text-gray mb-2">
-              {selectedCategory ? 'Bu kategoriyada maqolalar topilmadi' : 'Hozircha maqolalar mavjud emas'}
+              {selectedCategory
+                ? "Bu kategoriyada maqolalar topilmadi"
+                : "Hozircha maqolalar mavjud emas"}
             </p>
             <p className="text-sm text-neutral-text-light">
-              {selectedCategory ? 'Boshqa kategoriyalarni ko\'rib chiqing' : 'Tez orada yangi maqolalar qo\'shiladi'}
+              {selectedCategory
+                ? "Boshqa kategoriyalarni ko‘rib chiqing"
+                : "Tez orada yangi maqolalar qo‘shiladi"}
             </p>
           </div>
         </section>
@@ -312,51 +364,61 @@ export default function BlogList({ posts }) {
                   setTimeout(() => scrollToPostsList(), 0);
                 }}
                 disabled={currentPage === 1}
-                className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 ${currentPage === 1
-                  ? 'bg-neutral-light-gray text-neutral-text-light cursor-not-allowed'
-                  : 'bg-[#0EA5E9] text-white hover:bg-[#0284C7] smooth cursor-pointer'
-                  }`}
+                className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 ${
+                  currentPage === 1
+                    ? "bg-neutral-light-gray text-neutral-text-light cursor-not-allowed"
+                    : "bg-[#0EA5E9] text-white hover:bg-[#0284C7] smooth cursor-pointer"
+                }`}
               >
                 ← Oldingi
               </button>
 
               {/* Page numbers */}
               <div className="flex items-center gap-2">
-                {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => {
-                  // Show first page, last page, current page, and pages around current
-                  const showPage =
-                    page === 1 ||
-                    page === totalPages ||
-                    (page >= currentPage - 1 && page <= currentPage + 1);
+                {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+                  (page) => {
+                    // Show first page, last page, current page, and pages around current
+                    const showPage =
+                      page === 1 ||
+                      page === totalPages ||
+                      (page >= currentPage - 1 && page <= currentPage + 1);
 
-                  if (!showPage) {
-                    // Show ellipsis
-                    if (page === currentPage - 2 || page === currentPage + 2) {
-                      return (
-                        <span key={page} className="px-2 text-neutral-text-light">
-                          ...
-                        </span>
-                      );
+                    if (!showPage) {
+                      // Show ellipsis
+                      if (
+                        page === currentPage - 2 ||
+                        page === currentPage + 2
+                      ) {
+                        return (
+                          <span
+                            key={page}
+                            className="px-2 text-neutral-text-light"
+                          >
+                            ...
+                          </span>
+                        );
+                      }
+                      return null;
                     }
-                    return null;
-                  }
 
-                  return (
-                    <button
-                      key={page}
-                      onClick={() => {
-                        setCurrentPage(page);
-                        setTimeout(() => scrollToPostsList(), 0);
-                      }}
-                      className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 cursor-pointer ${currentPage === page
-                        ? 'bg-[#0EA5E9] text-white'
-                        : 'bg-neutral-light-gray text-neutral-text-dark hover:bg-neutral-border smooth'
+                    return (
+                      <button
+                        key={page}
+                        onClick={() => {
+                          setCurrentPage(page);
+                          setTimeout(() => scrollToPostsList(), 0);
+                        }}
+                        className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 cursor-pointer ${
+                          currentPage === page
+                            ? "bg-[#0EA5E9] text-white"
+                            : "bg-neutral-light-gray text-neutral-text-dark hover:bg-neutral-border smooth"
                         }`}
-                    >
-                      {page}
-                    </button>
-                  );
-                })}
+                      >
+                        {page}
+                      </button>
+                    );
+                  },
+                )}
               </div>
 
               {/* Next button */}
@@ -367,10 +429,11 @@ export default function BlogList({ posts }) {
                   setTimeout(() => scrollToPostsList(), 0);
                 }}
                 disabled={currentPage === totalPages}
-                className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 ${currentPage === totalPages
-                  ? 'bg-neutral-light-gray text-neutral-text-light cursor-not-allowed'
-                  : 'bg-[#0EA5E9] text-white hover:bg-[#0284C7] smooth cursor-pointer'
-                  }`}
+                className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 ${
+                  currentPage === totalPages
+                    ? "bg-neutral-light-gray text-neutral-text-light cursor-not-allowed"
+                    : "bg-[#0EA5E9] text-white hover:bg-[#0284C7] smooth cursor-pointer"
+                }`}
               >
                 Keyingi →
               </button>

@@ -4,7 +4,7 @@ date: 2026-01-22
 description: "2026-yilda O‘zbekiston va xorijiy universitetlarda o‘qish uchun mavjud grant va stipendiyalar ro‘yxati. Davlat, xalqaro va xususiy stipendiyalar, hujjatlar, talablar va maslahatlar."
 image: "/images/education/grant-stipendiya-2026.jpg"
 author: "Amaliy Hayot"
-category: Ta'lim
+category: Ta’lim
 keywords: "grant 2026, stipendiya 2026, xorijda o‘qish grantlari, O‘zbekiston stipendiyalari, xalqaro stipendiyalar, talabalar uchun grant, bakalavr magistr grant"
 ---
 

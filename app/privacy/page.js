@@ -1,16 +1,16 @@
 export const metadata = {
   title: "Maxfiylik siyosati",
   description:
-    "Amaliy Hayot saytining maxfiylik siyosati. Shaxsiy ma'lumotlaringizni qanday to'plash, ishlatish va himoya qilishimiz haqida batafsil ma'lumot.",
+    "Amaliy Hayot saytining maxfiylik siyosati. Shaxsiy ma’lumotlaringizni qanday to‘plash, ishlatish va himoya qilishimiz haqida batafsil ma’lumot.",
   keywords:
-    "maxfiylik siyosati, shaxsiy ma'lumotlar, cookie, xavfsizlik, amaliy hayot",
+    "maxfiylik siyosati, shaxsiy ma’lumotlar, cookie, xavfsizlik, amaliy hayot",
   alternates: {
     canonical: "/privacy",
   },
   openGraph: {
     title: "Maxfiylik siyosati | Amaliy Hayot",
     description:
-      "Amaliy Hayot saytining maxfiylik siyosati. Shaxsiy ma'lumotlaringizni qanday to'plash, ishlatish va himoya qilishimiz haqida batafsil ma'lumot.",
+      "Amaliy Hayot saytining maxfiylik siyosati. Shaxsiy ma’lumotlaringizni qanday to‘plash, ishlatish va himoya qilishimiz haqida batafsil ma’lumot.",
     type: "website",
     url: "/privacy",
     siteName: "Amaliy Hayot",
@@ -28,7 +28,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Maxfiylik siyosati | Amaliy Hayot",
     description:
-      "Amaliy Hayot saytining maxfiylik siyosati. Shaxsiy ma'lumotlaringizni qanday to'plash, ishlatish va himoya qilishimiz haqida batafsil ma'lumot.",
+      "Amaliy Hayot saytining maxfiylik siyosati. Shaxsiy ma’lumotlaringizni qanday to‘plash, ishlatish va himoya qilishimiz haqida batafsil ma’lumot.",
     images: ["/images/logo.png"],
   },
 };

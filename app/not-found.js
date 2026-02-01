@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function NotFound() {
   return (
@@ -9,7 +9,8 @@ export default function NotFound() {
           Sahifa topilmadi
         </h2>
         <p className="text-gray-600 mb-8">
-          Kechirasiz, qidirayotgan sahifangiz topilmadi. U o'chirilgan yoki mavjud emas.
+          Kechirasiz, qidirayotgan sahifangiz topilmadi. U o‘chirilgan yoki
+          mavjud emas.
         </p>
         <Link
           href="/"

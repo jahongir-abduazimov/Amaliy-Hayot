@@ -77,7 +77,7 @@ Agar bank kartalari bo'lsa:
 - Texnik ko'rik
 - Jarima tekshirish
 
-### 🎓 Ta'lim
+### 🎓 Ta’lim
 
 - Maktab, universitet ma'lumotlari
 - Stipendiya
