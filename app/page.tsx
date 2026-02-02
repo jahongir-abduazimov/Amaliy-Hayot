@@ -9,32 +9,36 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Amaliy Hayot – Practical Guides for Life in Uzbekistan",
-  description: "Practical guides for documents, fines, healthcare, cars, and government services in Uzbekistan.",
-  keywords: "uzbekistan, guides, id card, bank card, mygov, government services, life advice, technology",
+  title: "Amaliy Hayot – O‘zbekistonda hayot uchun amaliy qo‘llanmalar",
+  description:
+    "O‘zbekistonda hujjatlar, jarimalar, sog‘liqni saqlash, avtomobillar va davlat xizmatlari bo‘yicha amaliy qo‘llanmalar.",
+  keywords:
+    "o‘zbekiston, amaliy qo‘llanmalar, hujjatlar, jarimalar, sog‘liqni saqlash, avtomobil, davlat xizmatlari, hayot bo‘yicha maslahatlar, texnologiya",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Amaliy Hayot – Practical Guides for Life in Uzbekistan",
-    description: "Practical guides for documents, fines, healthcare, cars, and government services in Uzbekistan.",
+    title: "Amaliy Hayot – O‘zbekistonda hayot uchun amaliy qo‘llanmalar",
+    description:
+      "O‘zbekistonda hujjatlar, jarimalar, sog‘liqni saqlash, avtomobillar va davlat xizmatlari bo‘yicha amaliy qo‘llanmalar.",
     type: "website",
     url: "/",
     siteName: "Amaliy Hayot",
-    locale: "en_US",
+    locale: "uz_UZ",
     images: [
       {
         url: "/images/logo.png",
         width: 1200,
         height: 630,
-        alt: "Amaliy Hayot – Practical Guides for Life in Uzbekistan",
+        alt: "Amaliy Hayot – O‘zbekistonda hayot uchun amaliy qo‘llanmalar",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Amaliy Hayot – Practical Guides for Life in Uzbekistan",
-    description: "Practical guides for documents, fines, healthcare, cars, and government services in Uzbekistan.",
+    title: "Amaliy Hayot – O‘zbekistonda hayot uchun amaliy qo‘llanmalar",
+    description:
+      "O‘zbekistonda hujjatlar, jarimalar, sog‘liqni saqlash, avtomobillar va davlat xizmatlari bo‘yicha amaliy qo‘llanmalar.",
     images: ["/images/logo.png"],
   },
 };
@@ -64,7 +68,7 @@ export default function Home() {
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-neutral-text-gray mb-8 sm:mb-10 leading-relaxed px-2">
-              Hujjatlar, xizmatlar va kundalik hayot haqida foydali ma’lumotlar -
+              Kundalik hayot haqida foydali ma’lumotlar -
               barchasi bir joyda
             </p>
 
@@ -98,12 +102,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* English Introduction Section */}
+      {/* Kirish bo‘limi */}
       <section className="bg-neutral-off-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-3xl mx-auto">
             <p className="text-sm text-neutral-text-gray leading-relaxed">
-              Welcome to Amaliy Hayot. This website provides practical guides for life in Uzbekistan, including government services, documents, fines, healthcare, and financial information.
+              Amaliy Hayot saytiga xush kelibsiz. Bu sayt O‘zbekistonda kundalik
+              hayot uchun amaliy yo‘riqnomalarni taqdim etadi: davlat xizmatlari,
+              hujjatlar, jarimalar, sog‘liqni saqlash va moliyaviy ma’lumotlar.
             </p>
           </div>
         </div>

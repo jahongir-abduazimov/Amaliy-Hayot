@@ -17,11 +17,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Amaliy Hayot – Practical Guides for Life in Uzbekistan",
+    default: "Amaliy Hayot – O‘zbekistonda hayot uchun amaliy qo‘llanmalar",
     template: "%s | Amaliy Hayot",
   },
-  description: "Practical guides for documents, fines, healthcare, cars, and government services in Uzbekistan.",
-  keywords: "uzbekistan, guides, id card, bank card, mygov, government services, life advice",
+  description:
+    "O‘zbekistonda hujjatlar, jarimalar, sog‘liqni saqlash, avtomobillar va davlat xizmatlari bo‘yicha amaliy qo‘llanmalar.",
+  keywords:
+    "o‘zbekiston, amaliy qo‘llanmalar, hujjatlar, jarimalar, sog‘liqni saqlash, avtomobil, davlat xizmatlari, hayot bo‘yicha maslahatlar",
   authors: [{ name: "Amaliy Hayot" }],
   creator: "Amaliy Hayot",
   publisher: "Amaliy Hayot",
@@ -36,24 +38,26 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "uz_UZ",
     url: "/",
-    title: "Amaliy Hayot – Practical Guides for Life in Uzbekistan",
-    description: "Practical guides for documents, fines, healthcare, cars, and government services in Uzbekistan.",
+    title: "Amaliy Hayot – O‘zbekistonda hayot uchun amaliy qo‘llanmalar",
+    description:
+      "O‘zbekistonda hujjatlar, jarimalar, sog‘liqni saqlash, avtomobillar va davlat xizmatlari bo‘yicha amaliy qo‘llanmalar.",
     siteName: "Amaliy Hayot",
     images: [
       {
         url: "/images/logo.png",
         width: 1200,
         height: 630,
-        alt: "Amaliy Hayot – Practical Guides for Life in Uzbekistan",
+        alt: "Amaliy Hayot – O‘zbekistonda hayot uchun amaliy qo‘llanmalar",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Amaliy Hayot – Practical Guides for Life in Uzbekistan",
-    description: "Practical guides for documents, fines, healthcare, cars, and government services in Uzbekistan.",
+    title: "Amaliy Hayot – O‘zbekistonda hayot uchun amaliy qo‘llanmalar",
+    description:
+      "O‘zbekistonda hujjatlar, jarimalar, sog‘liqni saqlash, avtomobillar va davlat xizmatlari bo‘yicha amaliy qo‘llanmalar.",
     images: ["/images/logo.png"],
     creator: "@amaliyhayot",
     site: "@amaliyhayot",
@@ -85,7 +89,8 @@ export default function RootLayout({
     name: 'Amaliy Hayot',
     url: baseUrl,
     logo: `${baseUrl}/images/logo.png`,
-    description: "Practical guides for documents, fines, healthcare, cars, and government services in Uzbekistan.",
+    description:
+      "O‘zbekistonda hujjatlar, jarimalar, sog‘liqni saqlash, avtomobillar va davlat xizmatlari bo‘yicha amaliy qo‘llanmalar.",
     sameAs: [],
     contactPoint: {
       '@type': 'ContactPoint',
@@ -99,7 +104,8 @@ export default function RootLayout({
     '@type': 'WebSite',
     name: 'Amaliy Hayot',
     url: baseUrl,
-    description: "Practical guides for documents, fines, healthcare, cars, and government services in Uzbekistan.",
+    description:
+      "O‘zbekistonda hujjatlar, jarimalar, sog‘liqni saqlash, avtomobillar va davlat xizmatlari bo‘yicha amaliy qo‘llanmalar.",
     publisher: {
       '@type': 'Organization',
       name: 'Amaliy Hayot',
@@ -119,7 +125,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
+    <html lang="uz">
       <head>
         <script
           type="application/ld+json"
