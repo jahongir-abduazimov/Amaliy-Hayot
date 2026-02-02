@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CookieBanner from "@/components/CookieBanner";
+import ConditionalScripts from "@/components/ConditionalScripts";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -140,45 +141,17 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >
-        {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-C0V2H81380"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-C0V2H81380');
-          `}
-        </Script>
-
-        {/* Yandex.Metrika counter */}
-        <Script id="yandex-metrika" strategy="afterInteractive">
-          {`
-            (function(m,e,t,r,i,k,a){
-                m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-                m[i].l=1*new Date();
-                for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-                k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-            })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106256595', 'ym');
-
-            ym(106256595, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
-          `}
-        </Script>
-        <noscript>
-          <div>
-            <img src="https://mc.yandex.ru/watch/106256595" style={{ position: 'absolute', left: '-9999px' }} alt="" />
-          </div>
-        </noscript>
-        {/* /Yandex.Metrika counter */}
+        {/* Conditional Scripts - Only load if user has given consent */}
+        <ConditionalScripts />
 
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="grow">{children}</main>
           <Footer />
         </div>
+
+        {/* Cookie Banner - Shows if user hasn't given consent */}
+        <CookieBanner />
       </body>
     </html>
   );
