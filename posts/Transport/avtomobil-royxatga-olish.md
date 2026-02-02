@@ -8,8 +8,6 @@ category: Transport
 keywords: "avtomobil ro‘yxatga olish, mashina rasmiylashtirish, yangi avtomobil hujjatlari, ikkinchi qo‘l mashina, davlat boji avtomobil, YHXBB ro‘yxatdan o‘tkazish, texnik pasport olish, avtomobil xaridi"
 ---
 
-<!-- # Avtomobil ro‘yxatga olish: 2026-yilda jarayon va narxlar -->
-
 O‘zbekistonda avtomobil sotib olish — yirik moliyaviy qaror (major purchase) bo‘lib, uni qonuniy va muammosiz foydalanish uchun **ro‘yxatdan o‘tkazish** majburiy hisoblanadi. 2026-yilda avtomobilni ro‘yxatga olish tartibi aniq bosqichlarga ega bo‘lib, jarayon **YHXBB (Yo‘l harakati xavfsizligi bosh boshqarmasi)** orqali amalga oshiriladi.
 
 Ushbu maqolada siz **yangi va ikkinchi qo‘l avtomobilni ro‘yxatdan o‘tkazish**, **kerakli hujjatlar**, **narxlar**, **muddat (timeline)** hamda eng muhim amaliy tavsiyalar bilan tanishasiz.
@@ -37,7 +35,7 @@ Shu sababli, avtomobil xarid qilingach **belgilangan muddatda** ro‘yxatdan o�
 
 ### Kerakli hujjatlar
 Yangi avtomobil uchun quyidagi hujjatlar talab etiladi:
-- Fuqarolik pasporti (ID-karta)
+- Fuqarolik pasporti ([ID-karta](https://amaliyhayot.uz/blog/id-karta-olish))
 - Avtomobil oldi-sotdi shartnomasi yoki diler hujjati
 - Avtomobilning elektron hisob-fakturasi
 - To‘lov kvitansiyalari (davlat boji)
@@ -46,10 +44,10 @@ Yangi avtomobil uchun quyidagi hujjatlar talab etiladi:
 
 ### Jarayon bosqichlari
 1. Avtomobil xarid qilinadi
-2. Sug‘urta rasmiylashtiriladi
+2. [Sug‘urta rasmiylashtiriladi](https://amaliyhayot.uz/blog/avtomobil-sugurta)
 3. Davlat boji to‘lanadi
 4. YHXBBda texnik ko‘rik (vizual tekshiruv)
-5. Texnik pasport va davlat raqami beriladi
+5. [Texnik pasport](https://amaliyhayot.uz/blog/tex-pasport) va davlat raqami beriladi
 
 ---
 
@@ -106,6 +104,8 @@ Agar navbat oldindan olingan bo‘lsa, jarayon tezroq yakunlanadi.
 - Ikkinchi qo‘l avtomobilni mustaqil ekspertizadan o‘tkazing
 - Shartnomani diqqat bilan o‘qing
 - To‘lovlarni faqat rasmiy kanallar orqali bajaring
+
+👉 [Avtomobilni to‘g‘ri sotib olish (qo‘llanma)](https://amaliyhayot.uz/blog/avtomobil-sotib-olish-qollanma)
 
 ---
 
