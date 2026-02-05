@@ -192,59 +192,43 @@ export default async function BlogPost({ params }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <ReadingProgress />
-      <article className="max-w-250 mx-auto px-4 sm:px-6 lg:px-8 pb-16 lg:pb-30 pt-22 md:pt-34">
-        <div className="max-w-250 mx-auto">
-          {/* Article Header */}
-          <header className="mb-10 md:mb-12 space-y-6">
-            {post.category && !post.image && (
-              <span className="inline-block px-4 py-2 text-sm font-bold text-primary bg-primary/10 rounded-full border border-primary/20">
-                {post.category}
-              </span>
-            )}
+      <article className="max-w-300 mx-auto px-4 sm:px-6 lg:px-8 pb-16 lg:pb-30 pt-20 md:pt-24 lg:pt-32">
+        <div className="flex flex-col lg:flex-row gap-8">
+          <div className="hidden lg:block lg:shrink-0">
+            <SocialShare
+              url={`${process.env.NEXT_PUBLIC_SITE_URL || "https://amaliyhayot.uz"}/blog/${slug}`}
+              title={post.title}
+              description={post.description}
+              variant="sidebar"
+            />
+          </div>
+          <div className="max-w-250">
+            {/* Article Header */}
+            <header className="mb-6 md:mb-8 space-y-2">
+              {post.category && !post.image && (
+                <span className="inline-block px-4 py-2 text-sm font-bold text-primary bg-primary/10 rounded-full border border-primary/20">
+                  {post.category}
+                </span>
+              )}
 
-            <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight tracking-tight">
-              {post.title}
-            </h1>
-
-            <div className="flex flex-wrap items-center gap-4 md:gap-6 pt-4 border-t border-border/50">
-              <div className="flex items-center gap-2 text-sm md:text-base text-gray-600">
-                <svg
-                  className="w-5 h-5 text-primary"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                  />
-                </svg>
-                <span className="font-medium">{formattedDate}</span>
+              {/* Social Share - Mobile (top of title) */}
+              <div className="lg:hidden">
+                <SocialShare
+                  url={`${process.env.NEXT_PUBLIC_SITE_URL || "https://amaliyhayot.uz"}/blog/${slug}`}
+                  title={post.title}
+                  description={post.description}
+                  variant="inline"
+                />
               </div>
 
-              <div className="flex items-center gap-2 text-sm md:text-base text-gray-600">
-                <svg
-                  className="w-5 h-5 text-secondary"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                <span className="font-medium">{readingTime} daqiqa o‘qish</span>
-              </div>
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight tracking-tight">
+                {post.title}
+              </h1>
 
-              {post.author && (
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 md:gap-6 pt-2">
                 <div className="flex items-center gap-2 text-sm md:text-base text-gray-600">
                   <svg
-                    className="w-5 h-5 text-accent"
+                    className="w-5 h-5 text-primary"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -253,77 +237,107 @@ export default async function BlogPost({ params }) {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                     />
                   </svg>
-                  <span className="font-medium">{post.author}</span>
+                  <span className="font-medium">{formattedDate}</span>
                 </div>
-              )}
-            </div>
-          </header>
 
-          {/* Header Image */}
-          {post.image ? (
-            <div className="relative w-full h-72 md:h-125 rounded-2xl overflow-hidden mb-10 md:mb-12 bg-linear-to-br from-gray-100 to-gray-200 shadow-xl">
-              <div className="absolute inset-0 bg-linear-to-t from-black/30 to-transparent z-10"></div>
-              <Image
-                src={post.image}
-                alt={post.title}
-                fill
-                className="object-cover"
-                priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 896px"
-              />
-              {post.category && (
-                <div className="absolute top-6 left-6 z-20">
-                  <span className="inline-block px-4 py-2 text-sm font-bold text-white bg-primary/50 backdrop-blur-xs rounded-full shadow-lg">
-                    {post.category}
+                <div className="flex items-center gap-2 text-sm md:text-base text-gray-600">
+                  <svg
+                    className="w-5 h-5 text-secondary"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span className="font-medium">
+                    {readingTime} daqiqa o‘qish
                   </span>
                 </div>
-              )}
-            </div>
-          ) : (
-            <div className="w-full h-72 md:h-125 rounded-2xl overflow-hidden mb-10 md:mb-12 bg-linear-to-br from-primary/10 via-secondary/10 to-accent/10 flex items-center justify-center shadow-xl relative">
-              <div className="absolute inset-0 bg-linear-to-br from-primary/20 to-secondary/20 opacity-50"></div>
-              <span className="text-gray-500 text-lg font-medium relative z-10">
-                Rasm yo‘q
-              </span>
-              {post.category && (
-                <div className="absolute top-6 left-6">
-                  <span className="inline-block px-4 py-2 text-sm font-bold text-primary bg-white/90 backdrop-blur-md rounded-full shadow-lg">
-                    {post.category}
-                  </span>
-                </div>
-              )}
-            </div>
-          )}
 
-          {/* Main Content */}
-          <div className="">
-            {/* Article Content */}
-            <div className="min-w-0">
-              <div
-                className="prose max-w-none"
-                dangerouslySetInnerHTML={{ __html: contentHtml }}
-              />
+                {post.author && (
+                  <div className="flex items-center gap-2 text-sm md:text-base text-gray-600">
+                    <svg
+                      className="w-5 h-5 text-accent"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                      />
+                    </svg>
+                    <span className="font-medium">{post.author}</span>
+                  </div>
+                )}
+              </div>
+            </header>
 
-              {/* Social Share */}
-              <div className="mt-8">
-                <SocialShare
-                  url={`${process.env.NEXT_PUBLIC_SITE_URL || "https://amaliyhayot.uz"}/blog/${slug}`}
-                  title={post.title}
-                  description={post.description}
-                  variant="inline"
+            {/* Header Image */}
+            {post.image ? (
+              <div className="relative w-full h-72 md:h-125 rounded-2xl overflow-hidden mb-6 md:mb-8 bg-linear-to-br from-gray-100 to-gray-200">
+                <div className="absolute inset-0 bg-linear-to-t from-black/30 to-transparent z-10"></div>
+                <Image
+                  src={post.image}
+                  alt={post.title}
+                  fill
+                  className="object-cover"
+                  priority
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 896px"
+                />
+                {post.category && (
+                  <div className="absolute top-6 left-6 z-20">
+                    <span className="inline-block px-4 py-2 text-sm font-bold text-white bg-primary/50 backdrop-blur-xs rounded-full shadow-lg">
+                      {post.category}
+                    </span>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <div className="w-full h-72 md:h-125 rounded-2xl overflow-hidden mb-6 md:mb-8 bg-linear-to-br from-primary/10 via-secondary/10 to-accent/10 flex items-center justify-center shadow-xl relative">
+                <div className="absolute inset-0 bg-linear-to-br from-primary/20 to-secondary/20 opacity-50"></div>
+                <span className="text-gray-500 text-lg font-medium relative z-10">
+                  Rasm yo‘q
+                </span>
+                {post.category && (
+                  <div className="absolute top-6 left-6">
+                    <span className="inline-block px-4 py-2 text-sm font-bold text-primary bg-white/90 backdrop-blur-md rounded-full shadow-lg">
+                      {post.category}
+                    </span>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Main Content */}
+            <div className="lg:flex lg:gap-8">
+              {/* Social Share - Desktop (left side, sticky) */}
+
+              {/* Article Content */}
+              <div className="min-w-0 flex-1">
+                <div
+                  className="prose max-w-none"
+                  dangerouslySetInnerHTML={{ __html: contentHtml }}
                 />
               </div>
-            </div>
 
-            {/* Table of Contents Sidebar */}
-            {/* <aside className="hidden lg:block">
+              {/* Table of Contents Sidebar */}
+              {/* <aside className="hidden lg:block">
               <div className="sticky top-24">
                 <TableOfContents content={contentHtml} />
               </div>
             </aside> */}
+            </div>
           </div>
         </div>
 

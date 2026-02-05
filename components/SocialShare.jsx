@@ -1,12 +1,14 @@
 "use client";
 
+import Link from "next/link";
+
 /**
  * SocialShare - Social media share buttons
  * @param {Object} props
  * @param {string} props.url - URL to share
  * @param {string} props.title - Title to share
  * @param {string} props.description - Description to share
- * @param {string} props.variant - 'floating' or 'inline' (default: 'inline')
+ * @param {string} props.variant - 'floating', 'inline', or 'sidebar' (default: 'inline')
  */
 export default function SocialShare({
   url,
@@ -26,9 +28,6 @@ export default function SocialShare({
     facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
       shareUrl,
     )}`,
-    twitter: `https://twitter.com/intent/tweet?url=${encodeURIComponent(
-      shareUrl,
-    )}&text=${encodeURIComponent(shareText)}`,
     whatsapp: `https://wa.me/?text=${encodeURIComponent(
       shareText + " " + shareUrl,
     )}`,
@@ -38,22 +37,45 @@ export default function SocialShare({
     window.open(shareLinks[platform], "_blank", "width=600,height=400");
   };
 
-  const buttonClass =
+  // Responsive classes: mobile horizontal, desktop vertical (for sidebar variant)
+  const containerClass =
     variant === "floating"
       ? "fixed bottom-8 right-8 flex flex-col gap-3 z-40"
-      : "flex flex-wrap gap-3 justify-center my-8";
+      : variant === "sidebar"
+        ? "flex flex-col gap-3 sticky top-24 self-start z-30"
+        : "flex flex-wrap gap-3 my-3";
+
+  const buttonsContainerClass =
+    variant === "sidebar" ? "flex flex-col gap-3" : "flex gap-3";
 
   return (
-    <div className={buttonClass}>
+    <div className={containerClass}>
       {variant === "floating" && (
         <div className="bg-linear-to-br from-blue-600 to-purple-600 text-white px-4 py-2 rounded-full shadow-lg text-sm font-medium">
           Ulashish
         </div>
       )}
-      <div className="flex gap-3">
+      <div className={buttonsContainerClass}>
+        <Link
+          href="/blog"
+          className="bg-gray-200/70 hover:bg-gray-200 text-black/70 p-2 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 flex items-center justify-center md:w-11 md:h-11 w-10 h-10 cursor-pointer"
+          aria-label="Back to blog"
+        >
+          <svg
+            className="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            viewBox="0 0 24 24"
+          >
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+        </Link>
         <button
           onClick={() => handleShare("telegram")}
-          className="bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 flex items-center justify-center w-12 h-12 cursor-pointer"
+          className="bg-gray-200/70 hover:bg-gray-300 text-primary p-2 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 flex items-center justify-center md:w-11 md:h-11 w-10 h-10 cursor-pointer"
           aria-label="Telegram da ulashish"
         >
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -62,7 +84,7 @@ export default function SocialShare({
         </button>
         <button
           onClick={() => handleShare("facebook")}
-          className="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 flex items-center justify-center w-12 h-12 cursor-pointer"
+          className="bg-gray-200/70 hover:bg-gray-300 text-primary p-2 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 flex items-center justify-center md:w-11 md:h-11 w-10 h-10 cursor-pointer"
           aria-label="Facebook da ulashish"
         >
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -70,17 +92,8 @@ export default function SocialShare({
           </svg>
         </button>
         <button
-          onClick={() => handleShare("twitter")}
-          className="bg-gray-900 hover:bg-black text-white p-3 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 flex items-center justify-center w-12 h-12 cursor-pointer"
-          aria-label="Twitter da ulashish"
-        >
-          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-          </svg>
-        </button>
-        <button
           onClick={() => handleShare("whatsapp")}
-          className="bg-emerald-500 hover:bg-emerald-600 text-white p-3 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 flex items-center justify-center w-12 h-12 cursor-pointer"
+          className="bg-gray-200/70 hover:bg-gray-300 text-emerald-600 p-2 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5 flex items-center justify-center md:w-11 md:h-11 w-10 h-10 cursor-pointer"
           aria-label="WhatsApp da ulashish"
         >
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

@@ -90,7 +90,7 @@ export default function CookieBanner() {
               </div>
 
               {/* Actions */}
-              <div className="flex flex-col sm:flex-row gap-2 md:flex-col md:min-w-[200px]">
+              <div className="flex flex-col sm:flex-row gap-2 md:flex-col md:min-w-50">
                 <button
                   onClick={handleAcceptAll}
                   className="px-4 py-2 text-sm bg-linear-to-br from-green-400 to-green-600 cursor-pointer text-white rounded-lg font-semibold hover:bg-primary-dark transition-colors duration-200 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"

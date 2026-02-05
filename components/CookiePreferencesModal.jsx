@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   getCookieConsent,
   saveCookieConsent,
@@ -8,23 +8,24 @@ import {
 } from "@/lib/cookieConsent";
 
 export default function CookiePreferencesModal({ onClose }) {
-  const [preferences, setPreferences] = useState({
-    necessary: true, // Always true, cannot be disabled
-    analytics: false,
-    advertising: false,
-  });
-
-  useEffect(() => {
-    // Load existing preferences if available
-    const existing = getCookieConsent();
-    if (existing) {
-      setPreferences({
-        necessary: true,
-        analytics: existing.analytics || false,
-        advertising: existing.advertising || false,
-      });
+  const [preferences, setPreferences] = useState(() => {
+    if (typeof window !== "undefined") {
+      const existing = getCookieConsent();
+      if (existing) {
+        return {
+          necessary: true,
+          analytics: existing.analytics || false,
+          advertising: existing.advertising || false,
+        };
+      }
     }
-  }, []);
+
+    return {
+      necessary: true, // Always true, cannot be disabled
+      analytics: false,
+      advertising: false,
+    };
+  });
 
   const handleToggle = (type) => {
     if (type === CookieTypes.NECESSARY) {
@@ -65,7 +66,7 @@ export default function CookiePreferencesModal({ onClose }) {
 
   return (
     <div
-      className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm animate-fade-in"
+      className="fixed inset-0 z-60 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm animate-fade-in"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
@@ -103,8 +104,8 @@ export default function CookiePreferencesModal({ onClose }) {
           </div>
           <p className="text-gray-600 mt-2 text-sm md:text-base">
             Quyida turli cookie turlarini boshqarishingiz mumkin. Zaruriy
-            cookie'lar saytning ishlashi uchun talab qilinadi va o'chirib
-            bo'lmaydi.
+            cookie&apos;lar saytning ishlashi uchun talab qilinadi va
+            o‘chirib bo‘lmaydi.
           </p>
         </div>
 
@@ -116,17 +117,17 @@ export default function CookiePreferencesModal({ onClose }) {
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2">
                   <h3 className="text-lg font-bold text-gray-900">
-                    Zaruriy cookie'lar
+                    Zaruriy cookie&apos;lar
                   </h3>
                   <span className="px-2 py-1 text-xs font-semibold bg-primary/20 text-primary rounded">
                     Majburiy
                   </span>
                 </div>
                 <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                  Bu cookie'lar saytning asosiy funksiyalarini ta'minlash uchun
-                  zarurdir. Ular saytning ishlashi, xavfsizligi va asosiy
-                  funksiyalarini ta'minlash uchun talab qilinadi va o'chirib
-                  bo'lmaydi.
+                  Bu cookie&apos;lar saytning asosiy funksiyalarini
+                  ta’minlash uchun zarurdir. Ular saytning ishlashi,
+                  xavfsizligi va asosiy funksiyalarini ta’minlash uchun talab
+                  qilinadi va o‘chirib bo‘lmaydi.
                 </p>
               </div>
               <div className="shrink-0">
@@ -138,7 +139,7 @@ export default function CookiePreferencesModal({ onClose }) {
                     className="w-12 h-6 bg-primary rounded-full appearance-none cursor-not-allowed opacity-75"
                     readOnly
                   />
-                  <span className="sr-only">Zaruriy cookie'lar</span>
+                  <span className="sr-only">Zaruriy cookie&apos;lar</span>
                 </label>
               </div>
             </div>
@@ -150,17 +151,17 @@ export default function CookiePreferencesModal({ onClose }) {
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2">
                   <h3 className="text-lg font-bold text-gray-900">
-                    Analitik cookie'lar
+                    Analitik cookie&apos;lar
                   </h3>
                   <span className="px-2 py-1 text-xs font-semibold bg-blue-100 text-blue-700 rounded">
                     Ixtiyoriy
                   </span>
                 </div>
                 <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-2">
-                  Bu cookie'lar bizga saytning qanday ishlatilayotganini
+                  Bu cookie&apos;lar bizga saytning qanday ishlatilayotganini
                   tushunishga yordam beradi. Ular Google Analytics va
-                  Yandex.Metrika kabi xizmatlar orqali statistik ma'lumotlarni
-                  to'playdi.
+                  Yandex.Metrika kabi xizmatlar orqali statistik
+                  ma’lumotlarni to‘playdi.
                 </p>
                 <p className="text-gray-600 text-xs md:text-sm">
                   <strong>Foydalaniladigan xizmatlar:</strong> Google Analytics,
@@ -175,9 +176,9 @@ export default function CookiePreferencesModal({ onClose }) {
                     onChange={() => handleToggle(CookieTypes.ANALYTICS)}
                     className="sr-only peer"
                   />
-                  <div className="w-12 h-6 bg-gray-300 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+                  <div className="w-12 h-6 bg-gray-300 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
                   <span className="sr-only">
-                    Analitik cookie'larni yoqish/o'chirish
+                    Analitik cookie&apos;larni yoqish/o‘chirish
                   </span>
                 </label>
               </div>
@@ -190,17 +191,18 @@ export default function CookiePreferencesModal({ onClose }) {
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2">
                   <h3 className="text-lg font-bold text-gray-900">
-                    Reklama cookie'lari
+                    Reklama cookie&apos;lari
                   </h3>
                   <span className="px-2 py-1 text-xs font-semibold bg-orange-100 text-orange-700 rounded">
                     Ixtiyoriy
                   </span>
                 </div>
                 <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-2">
-                  Bu cookie'lar Google AdSense orqali sizning qiziqishlaringizga
-                  mos reklamalarni ko'rsatish uchun ishlatiladi. Ular sizning
-                  tashriflaringiz va qiziqishlaringizga asoslangan reklamalarni
-                  yaratishga yordam beradi.
+                  Bu cookie&apos;lar Google AdSense orqali sizning
+                  qiziqishlaringizga mos reklamalarni ko‘rsatish uchun
+                  ishlatiladi. Ular sizning tashriflaringiz va
+                  qiziqishlaringizga asoslangan reklamalarni yaratishga yordam
+                  beradi.
                 </p>
                 <p className="text-gray-600 text-xs md:text-sm">
                   <strong>Foydalaniladigan xizmatlar:</strong> Google AdSense
@@ -224,9 +226,9 @@ export default function CookiePreferencesModal({ onClose }) {
                     onChange={() => handleToggle(CookieTypes.ADVERTISING)}
                     className="sr-only peer"
                   />
-                  <div className="w-12 h-6 bg-gray-300 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+                  <div className="w-12 h-6 bg-gray-300 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
                   <span className="sr-only">
-                    Reklama cookie'larini yoqish/o'chirish
+                    Reklama cookie&apos;larini yoqish/o‘chirish
                   </span>
                 </label>
               </div>
@@ -236,9 +238,10 @@ export default function CookiePreferencesModal({ onClose }) {
           {/* Info Box */}
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
             <p className="text-sm text-blue-900 leading-relaxed">
-              <strong>Eslatma:</strong> Cookie sozlamalarini o'zgartirgandan
-              so'ng, o'zgarishlarni amalga oshirish uchun sahifa qayta
-              yuklanadi. Cookie'lar haqida batafsil ma'lumot olish uchun{" "}
+              <strong>Eslatma:</strong> Cookie sozlamalarini
+              o‘zgartirgandan so‘ng, o‘zgarishlarni amalga
+              oshirish uchun sahifa qayta yuklanadi. Cookie&apos;lar haqida
+              batafsil ma&apos;lumot olish uchun{" "}
               <a
                 href="/privacy"
                 target="_blank"
@@ -247,7 +250,7 @@ export default function CookiePreferencesModal({ onClose }) {
               >
                 Maxfiylik siyosati
               </a>{" "}
-              sahifasini ko'rib chiqing.
+              sahifasini ko‘rib chiqing.
             </p>
           </div>
         </div>
@@ -259,7 +262,7 @@ export default function CookiePreferencesModal({ onClose }) {
               onClick={handleRejectAll}
               className="px-6 py-3 bg-gray-200 text-gray-800 rounded-lg font-semibold hover:bg-gray-300 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
             >
-              Faqat zaruriy cookie'lar
+              Faqat zaruriy cookie&apos;lar
             </button>
             <button
               onClick={handleAcceptAll}

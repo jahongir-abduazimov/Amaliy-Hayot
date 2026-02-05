@@ -6,11 +6,16 @@ import CookiePreferencesModal from "./CookiePreferencesModal";
 
 export default function CookieSettingsButton() {
   const [showPreferences, setShowPreferences] = useState(false);
-  const [hasConsent, setHasConsent] = useState(false);
+  const [hasConsent, setHasConsent] = useState(() => {
+    try {
+      return hasAnyConsent();
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    } catch (e) {
+      return false;
+    }
+  });
 
   useEffect(() => {
-    setHasConsent(hasAnyConsent());
-
     // Listen for consent updates
     const handleConsentUpdate = () => {
       setHasConsent(hasAnyConsent());
