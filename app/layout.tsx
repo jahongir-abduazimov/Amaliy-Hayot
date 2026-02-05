@@ -150,8 +150,13 @@ export default function RootLayout({
           <Footer />
         </div>
 
-        {/* Cookie Banner - Shows if user hasn't given consent */}
+        {/* Cookie Banner - TEMPORARILY DISABLED for one-day experiment.
+            To re-enable:
+            1) Set COOKIE_CONSENT_TEMPORARILY_DISABLED = false in lib/cookieConsent.js
+            2) Uncomment the <CookieBanner /> component below. */}
+        {/*
         <CookieBanner />
+        */}
       </body>
     </html>
   );
