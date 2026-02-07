@@ -127,12 +127,12 @@ export default function Privacy() {
             <strong>Analitik cookie:</strong> Sayt foydalanishini tahlil qilish
             uchun (Google Analytics, Yandex.Metrika)
           </li>
-          <li>
+          {/* <li>
             <strong>Reklama cookie:</strong> Google AdSense orqali
             foydalanuvchilarga mos reklamalarni ko‘rsatish uchun
-          </li>
+          </li> */}
         </ul>
-        <p>
+        {/* <p>
           Google uchinchi tomon cookie’laridan foydalanib, foydalanuvchilarning
           ushbu va boshqa saytlar bo‘yicha tashriflariga asoslangan reklamalarni
           ko‘rsatishi mumkin.
@@ -147,9 +147,9 @@ export default function Privacy() {
             Ads Settings
           </a>
           orqali boshqarishlari mumkin.
-        </p>
+        </p> */}
 
-        <h2>4. Google AdSense va uchinchi tomon reklamasi</h2>
+        {/* <h2>4. Google AdSense va uchinchi tomon reklamasi</h2>
         <p>
           Amaliy Hayot sayti Google AdSense reklama xizmatidan foydalanadi.
           Google AdSense — uchinchi tomon reklama tarmog‘i bo‘lib, u
@@ -165,9 +165,9 @@ export default function Privacy() {
           Agar siz shaxsiylashtirilgan reklamalarni ko‘rishni istamasangiz,
           Google’ning reklama sozlamalari orqali buni o‘chirib qo‘yishingiz
           mumkin.
-        </p>
+        </p> */}
 
-        <h2>5. Ma’lumotlarni himoya qilish</h2>
+        <h2>4. Ma’lumotlarni himoya qilish</h2>
         <p>
           Biz sizning shaxsiy ma’lumotlaringizni himoya qilish uchun quyidagi
           choralarni ko‘ramiz:
@@ -183,14 +183,14 @@ export default function Privacy() {
           esda tuting.
         </p>
 
-        <h2>6. Ma’lumotlarni saqlash muddati</h2>
+        <h2>5. Ma’lumotlarni saqlash muddati</h2>
         <p>
           Biz sizning ma’lumotlaringizni faqat zarur bo‘lgan muddat davomida
           saqlaymiz. Statistik ma’lumotlar odatda 2 yil davomida saqlanadi.
           Newsletter obunasi ma’lumotlari obuna bekor qilingungacha saqlanadi.
         </p>
 
-        <h2>7. Sizning huquqlaringiz</h2>
+        <h2>6. Sizning huquqlaringiz</h2>
         <p>Siz quyidagi huquqlarga egasiz:</p>
         <ul>
           <li>O‘zingiz haqingizdagi ma’lumotlarni olish</li>
@@ -200,12 +200,12 @@ export default function Privacy() {
         </ul>
         <p>
           Ushbu huquqlardan foydalanish uchun biz bilan bog‘laning:
-          <a href="/contact" className="text-primary font-medium">
+          {" "}<a href="/contact" className="text-primary font-medium">
             Bog‘lanish sahifasi
           </a>
         </p>
 
-        <h2>8. Bolalar maxfiyligi</h2>
+        <h2>7. Bolalar maxfiyligi</h2>
         <p>
           Bizning saytimiz 13 yoshdan kichik bolalar uchun mo‘ljallanmagan. Biz
           ataylab 13 yoshdan kichik bolalardan shaxsiy ma’lumot to‘plamaymiz.
@@ -214,7 +214,7 @@ export default function Privacy() {
           tashlaymiz.
         </p>
 
-        <h2>9. Siyosat o‘zgarishlari</h2>
+        <h2>8. Siyosat o‘zgarishlari</h2>
         <p>
           Biz ushbu maxfiylik siyosatini vaqt-vaqti bilan yangilashimiz mumkin.
           O‘zgarishlar kiritilganda, biz sahifaning yuqori qismida yangilanish
@@ -222,7 +222,7 @@ export default function Privacy() {
           tavsiya qilamiz.
         </p>
 
-        <h2>10. Biz bilan bog‘lanish</h2>
+        <h2>9. Biz bilan bog‘lanish</h2>
         <p>
           Maxfiylik siyosati yoki shaxsiy ma’lumotlar bilan bog‘liq
           savollaringiz bo‘lsa, biz bilan bog‘laning:
