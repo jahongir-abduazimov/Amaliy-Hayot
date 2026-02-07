@@ -8,8 +8,6 @@ category: Jarimalar
 keywords: "yo‘l harakati jarimalari 2026, YHQ jarima, tezlik oshirish jarimasi, svetofor jarimasi, YPX jarimalari, avtomobil jarimalari O‘zbekiston, radar jarima, yo‘l qoidalari buzilishi"
 ---
 
-# Yo‘l harakati qoidalarini buzganlik uchun jarimalar 2026
-
 O‘zbekistonda yo‘l harakati qoidalariga rioya qilish — nafaqat qonuniy majburiyat, balki **haydovchi va piyodalar xavfsizligi** uchun ham muhim. 2026-yilda yo‘l harakati qoidalarini buzganlik uchun belgilangan jarimalar Bazaviy hisoblash miqdori (BHM) asosida hisoblanadi.
 
 Ushbu maqolada siz **eng ko‘p uchraydigan yo‘l harakati huquqbuzarliklari**, ularning **2026-yildagi jarima miqdorlari**, shuningdek jarimani **qanday tekshirish va to‘lash** mumkinligi haqida to‘liq va tushunarli ma’lumot olasiz.

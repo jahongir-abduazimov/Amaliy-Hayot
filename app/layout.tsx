@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import CookieBanner from "@/components/CookieBanner";
+// import CookieBanner from "@/components/CookieBanner";
 import ConditionalScripts from "@/components/ConditionalScripts";
 
 const geistSans = Geist({
@@ -136,7 +136,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
-        <meta name="google-adsense-account" content="ca-pub-4193324716237811"></meta>
+        {/* <meta name="google-adsense-account" content="ca-pub-4193324716237811"></meta> */}
         <meta name="yandex-verification" content="d89380f0851adb15" />
       </head>
       <body
