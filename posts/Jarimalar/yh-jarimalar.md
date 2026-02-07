@@ -1,104 +1,208 @@
 ---
-title: "Yo‘l harakati qoidalarini buzganlik uchun jarimalar 2026"
-date: "2026-01-20"
-description: "O‘zbekiston bo‘yicha 2026 yilda yo‘l harakati qoidalarini buzganlik uchun qo‘llaniladigan jarimalar, ularning turlari, miqdorlari va to‘lov tartibi haqida to‘liq va tushunarli ma’lumot."
-image: "/images/fines/yh-jarimalar.jpg"
+title: "Yo‘l harakati qoidalarini buzganlik uchun jarimalar 2026: to‘liq ro‘yxat va tushuntirish"
+date: 2026-02-07
+description: "2026-yilda O‘zbekistonda yo‘l harakati qoidalarini buzganlik uchun jarimalar: tezlik oshirish, svetofor, to‘xtash qoidalari va boshqa huquqbuzarliklar uchun aniq miqdorlar va amaliy tushuntirish."
+image: /images/fines/yh-jarimalar.jpg
 author: "Amaliy Hayot"
 category: Jarimalar
-keywords: "yo‘l harakati qoidalari, jarima 2026, transport qoidalari, O‘zbekiston, haydovchi, avtomobil, tezyurar, tezlik, to‘lov, jarimalarni oldini olish"
+keywords: "yo‘l harakati jarimalari 2026, YHQ jarima, tezlik oshirish jarimasi, svetofor jarimasi, YPX jarimalari, avtomobil jarimalari O‘zbekiston, radar jarima, yo‘l qoidalari buzilishi"
 ---
 
-<!-- # Yo‘l harakati qoidalarini buzganlik uchun jarimalar 2026 -->
+# Yo‘l harakati qoidalarini buzganlik uchun jarimalar 2026
 
-O‘zbekistonda yo‘l harakati qoidalarini buzganlik jarimalari 2026 yilda ham haydovchilar va piyodalar uchun muhim e’tibor talab qiladigan masala bo‘lib qolmoqda. Har yili qoidalarni buzganlik oqibatida jismoniy shaxslar va transport vositalari egalari turli miqdordagi jarimalarga tortiladi. Ushbu maqolada siz 2026 yilgi jarimalar, ularning turlari, miqdorlari, to‘lov tartibi va jarimalardan qanday qochish mumkinligi haqida barcha amaliy ma’lumotlarni topasiz.  
+O‘zbekistonda yo‘l harakati qoidalariga rioya qilish — nafaqat qonuniy majburiyat, balki **haydovchi va piyodalar xavfsizligi** uchun ham muhim. 2026-yilda yo‘l harakati qoidalarini buzganlik uchun belgilangan jarimalar Bazaviy hisoblash miqdori (BHM) asosida hisoblanadi.
 
-## Yo‘l harakati qoidalarini buzishning asosiy turlari
+Ushbu maqolada siz **eng ko‘p uchraydigan yo‘l harakati huquqbuzarliklari**, ularning **2026-yildagi jarima miqdorlari**, shuningdek jarimani **qanday tekshirish va to‘lash** mumkinligi haqida to‘liq va tushunarli ma’lumot olasiz.
 
-Yo‘l harakati qoidalari buzilishining asosiy turlari bir nechta bo‘lib, ular jarimalarning miqdori va turiga bevosita ta’sir qiladi. O‘zbekiston qonunchiligiga ko‘ra, jarimalar quyidagi kategoriyalarga bo‘linadi:
+## Jarimalar qanday hisoblanadi?
 
-### 1. Tezlikni oshirish
-Tezlikni oshirish eng keng tarqalgan qoidabuzarliklardan biri hisoblanadi. 2026 yil uchun belgilangan jarimalar:
+O‘zbekistonda ko‘pchilik jarimalar **BHM (bazaviy hisoblash miqdori)** ga bog‘langan. Jarima miqdori qonunda BHMning ma’lum foizi yoki baravari sifatida belgilanadi.
 
-- **Shahar ichida** 20 km/s oshirilganda: 100 000–150 000 so‘m  
-- **Shahar tashqarisida** 20 km/s oshirilganda: 150 000–200 000 so‘m  
-- **Juda katta tezlik oshirilganda** (50 km/s va undan yuqori): 200 000–400 000 so‘m va haydovchilik guvohnomasini vaqtincha olib qo‘yish mumkin  
-- **Radar orqali tushgan jarimalar**ni tekshirish usullari👉: [Batafsil](https://amaliyhayot.uz/blog/radar-jarima-tekshirish)
+Bu shuni anglatadiki:
 
-### 2. Yashil chiroqda to‘xtamaslik
-Trafik chiroqlariga rioya qilmaslik ham katta xavf tug‘diradi. Bu qoidabuzarlik uchun jarima miqdori:
+- Jarimalar doimiy raqam emas
+- Ular BHM o‘zgarganda avtomatik ravishda yangilanadi
+- Har bir huquqbuzarlik uchun alohida koeffitsiyent mavjud
 
-- 100 000–150 000 so‘m
+Shu sababli haydovchilar uchun **qoidalarni bilish** jarima to‘lashdan ko‘ra muhimroq.
 
-### 3. Piyodalarni o‘tkazmaslik
-Piyodalarni o‘tkazmaslik — yo‘l harakati xavfsizligi uchun juda jiddiy hisoblanadi:
+## Tezlikni oshirganlik uchun jarimalar
 
-- Shahar ichida: 100 000 so‘m  
-- Shahar tashqarisida: 150 000 so‘m  
+Tezlikni oshirish — eng ko‘p qayd etiladigan qoidabuzarliklardan biri. Radar va avtomatik kuzatuv tizimlari sababli bu turdagi jarimalar tez-tez uchraydi.
 
-### 4. Ichkilikda yoki spirtli moddalar ta’sirida haydash
-Spirtli ichimlik ta’sirida haydash eng jiddiy qoidabuzarlik bo‘lib, qonunda katta jarimalar va javobgarlik ko‘zda tutilgan:
+### Belgilangan tezlikdan oshish
 
-- 1,0–1,5 promil spirtli ichimlik: 1 000 000 so‘mgacha jarima + haydovchilik guvohnomasini 1–2 yilga olib qo‘yish  
-- 1,5 promildan yuqori: jarima 2 000 000 so‘m, haydovchilik guvohnomasi 2 yilga olib qo‘yiladi, jinoiy javobgarlik mumkin  
+2026-yilda tezlikni oshirganlik uchun jarimalar odatda quyidagicha qo‘llanadi:
 
-### 5. Transport vositasini noto‘g‘ri joylashtirish
-Avtomobilni noto‘g‘ri joylashtirish yo‘l-transport hodisalariga sabab bo‘lishi mumkin:
+- Belgilangan tezlikdan kichik oshish — ogohlantirish yoki minimal jarima
+- O‘rtacha darajadagi oshish — bir necha BHM miqdorida jarima
+- Katta tezlik oshirish — yuqori jarima va ayrim hollarda haydovchilik huquqidan mahrum qilish
 
-- 50 000–100 000 so‘m  
-- Avtotransportni tortib olish holatlari ham mavjud  
+Takroriy qoidabuzarliklar esa yanada qattiqroq jazolanadi.
 
-### 6. Belgi va chiziqlarga rioya qilmaslik
-Yo‘l chiziqlari va belgilari haydovchi uchun muhim signal hisoblanadi:
+### Radar orqali aniqlangan jarimalar
 
-- 50 000–150 000 so‘m
+Avtomatik radarlar:
 
-## Jarimalarni to‘lash tartibi
+- Haydovchini to‘xtatmasdan jarima rasmiylashtiradi
+- Jarima ma’lumotini elektron tizimga yuboradi
+- Egaga SMS yoki onlayn bildirishnoma orqali yetkaziladi
 
-O‘zbekiston Respublikasi qonunchiligiga muvofiq, jarimalar **2 ish kuni ichida** to‘lanishi kerak. To‘lov tartibi quyidagicha:
+Shu sababli ko‘pchilik haydovchilar jarimani **kechroq bilib qoladi**.
 
-1. **Elektron to‘lov tizimi orqali**: Davlat xizmatlari portali yoki mobil ilovalar orqali.  
-2. **Bank orqali**: QR kod yordamida yoki bank kassasida.  
-3. **Mahalliy IIB bo‘limlariga tashrif**: Agar onlayn imkoniyat yo‘q bo‘lsa.  
+[To‘liq ma’lumot →](https://amaliyhayot.uz/blog/radar-jarima-tekshirish)
 
-**Eslatma:** To‘lovni o‘z vaqtida amalga oshirmaslik qo‘shimcha jarimalar va sud tartibini keltirib chiqarishi mumkin.
+## Svetofor va yo‘l belgilarini buzish
 
-## Jarimalardan qochish va xavfsizlikni oshirish
+Svetoforning qizil chirog‘ida o‘tish yoki yo‘l belgilariga rioya qilmaslik — xavfli qoidabuzarlik hisoblanadi.
 
-Yo‘l harakati qoidalariga rioya qilish — eng yaxshi strategiya. Quyidagi maslahatlar sizga yordam beradi:
+### Qizil chiroqda o‘tish
 
-- **Doim tezlikni belgilangan chegarada saqlang**  
-- **Chiroqlar va piyodalar belgilari bilan ehtiyotkor bo‘ling**  
-- **Spirtli ichimlik iste’mol qilgan holda haydashdan saqlaning**  
-- **Mashina to‘xtash joylariga rioya qiling**  
-- **Yo‘l chiziqlari va yo‘l belgilarini kuzating**  
+Bu holat:
 
-## FAQ
+- Yuqori miqdordagi jarima
+- Takroriy bo‘lsa — haydovchilik guvohnomasiga ta’sir
 
-**1. Jarimani kechiktirib to‘lash mumkinmi?**  
-Yo‘q, jarimalar 2 ish kuni ichida to‘lanishi kerak, aks holda qo‘shimcha jazolar bo‘lishi mumkin.  
+bilan yakunlanishi mumkin.
 
-**2. Haydovchilik guvohnomasi vaqtincha olinib qolsa, nima qilaman?**  
-Guvohnoma qaytarilishi uchun sud yoki IIB tomonidan belgilangan tartibni bajarish lozim.  
+[To‘liq ma’lumot →](https://amaliyhayot.uz/blog/qizil-chiroq-jarima)
 
-**3. Jarimani qayerdan tekshirish mumkin?**  
-Davlat xizmatlari portali yoki mobil ilovalardan, shuningdek, IIB bo‘limlaridan tekshirish mumkin.  
+### Belgilar va chiziqlarni buzish
+
+Masalan:
+
+- Qarama-qarshi yo‘nalishga chiqish
+- Uzluksiz chiziqni kesib o‘tish
+- Taqiqlangan joyda burilish
+
+Bunday qoidabuzarliklar ham sezilarli jarimalarga sabab bo‘ladi.
+
+## To‘xtash va parkovka qoidalarini buzish
+
+Noto‘g‘ri joyda to‘xtash yoki avtomobilni qoidaga zid qoldirish:
+
+- Jarima
+- Ayrim hollarda evakuatsiya (jarima maydoniga olib ketish)
+
+bilan tugaydi.
+
+Ko‘p haydovchilar quyidagi joylarda xato qiladi:
+
+- Piyodalar o‘tish joyi yaqinida
+- Jamoat transporti bekatida
+- Taqiqlangan belgilar ostida
+
+## Hujjatlarsiz yoki texnik talablarni buzib haydash
+
+Quyidagi holatlar ham jarimaga sabab bo‘ladi:
+
+- Haydovchilik guvohnomasisiz boshqarish
+- Sug‘urta polisining yo‘qligi
+- Texnik nosoz avtomobilni boshqarish
+- Xavfsizlik kamarini taqmaslik
+
+Bunday qoidabuzarliklar nafaqat jarima, balki xavfsizlikka ham jiddiy tahdid soladi.
+
+## Jarimani qanday tekshirish mumkin?
+
+Haydovchilar jarimalarni bir nechta usul bilan tekshirishi mumkin:
+
+### Onlayn tekshirish
+
+Jarimalarni:
+
+- Davlat xizmatlari portali
+- YHXBB onlayn tizimlari
+- Mobil ilovalar
+
+orqali ko‘rish mumkin.
+
+Buning uchun odatda:
+
+- Avtomobil davlat raqami
+- Texnik pasport ma’lumotlari
+
+kerak bo‘ladi.
+
+### SMS xabarnomalar
+
+Ko‘plab jarimalar avtomatik ravishda SMS orqali yuboriladi. Ammo har doim ham SMS kelmasligi mumkin, shuning uchun vaqti-vaqti bilan **mustaqil tekshirib turish** tavsiya etiladi.
+
+## Jarimani qanday to‘lash mumkin?
+
+Jarimalarni to‘lashning bir nechta qulay usullari mavjud:
+
+- Bank mobil ilovalari
+- To‘lov terminallari
+- Onlayn davlat xizmatlari
+- Bank kassalari
+
+Ayrim hollarda jarimani **erta to‘lash** chegirma berishi mumkin. Shu sababli jarimani cho‘zmasdan to‘lash foydali.
+
+## Jarimani o‘z vaqtida to‘lamaslik oqibatlari
+
+Jarimani belgilangan muddatda to‘lamaslik:
+
+- Qo‘shimcha jarima
+- Majburiy undiruv
+- Avtomobilga cheklov qo‘yish
+
+kabi oqibatlarga olib kelishi mumkin.
+
+Shuning uchun jarimalarni nazorat qilib borish muhim.
+
+## Haydovchilar uchun amaliy maslahatlar
+
+Jarimalardan qochish uchun:
+
+- Tezlikni doim nazorat qiling
+- Belgilarga diqqat qiling
+- Hujjatlarni har doim o‘zingiz bilan olib yuring
+- Radar hududlarida ehtiyot bo‘ling
+- Parkovka qoidalariga rioya qiling
+
+Bu oddiy qoidalar sizni ortiqcha xarajatlardan saqlaydi.
+
+---
+
+## FAQ — Ko‘p beriladigan savollar
+
+**Jarima qachon tizimda ko‘rinadi?**  
+Odatda bir necha kun ichida elektron tizimda paydo bo‘ladi.
+
+**Radar jarimasiga e’tiroz bildirish mumkinmi?**  
+Ha, belgilangan tartibda murojaat qilish mumkin.
+
+**Jarimani boshqa odam to‘lashi mumkinmi?**  
+Ha, to‘lovni istalgan shaxs amalga oshirishi mumkin.
+
+**Jarima to‘langanini qanday bilaman?**  
+To‘lovdan keyin tizimda qarzdorlik yo‘qoladi.
+
+---
 
 ## Qilish va qilmaslik kerak bo‘lganlar
 
-**Qilish kerak:**
+### Qilish kerak:
 
-- Yo‘l belgilarini va chiziqlarni doimiy kuzatish  
-- Tezlik chegarasiga rioya qilish  
-- Piyodalarni har doim o‘tkazish  
+- Jarimalarni muntazam tekshirib turish
+- O‘z vaqtida to‘lash
+- Yo‘l belgilariga rioya qilish
+- Hujjatlarni yangilab yurish
 
-**Qilmaslik kerak:**
+### Qilmaslik kerak:
 
-- Spirtli ichimlik ta’sirida haydash  
-- Qoidalarni buzish va xavfli harakatlar  
-- To‘lovni kechiktirish  
+- Jarimani e’tiborsiz qoldirish
+- Tezlikni oshirish
+- Noto‘g‘ri parkovka qilish
+- Hujjatsiz haydash
+
+---
 
 ## Qisqa xulosa
 
-2026 yilda O‘zbekistonda yo‘l harakati qoidalarini buzganlik uchun jarimalar jiddiy va qat’iy nazorat ostida bo‘lib qoladi. Yuqoridagi qoidalar va jarima miqdorlari haydovchilarga xavfsiz haydashni eslatadi va moliyaviy zararlarni oldini oladi. Qoidalarni buzmaslik va xavfsizlikni birinchi o‘ringa qo‘yish har doim foydali.
+2026-yilda yo‘l harakati qoidalarini buzganlik uchun jarimalar haydovchilarni **intizomga chaqirish** va **xavfsizlikni ta’minlash** maqsadida qo‘llanadi. Eng yaxshi yechim — jarima to‘lash emas, balki **qoidalarga rioya qilish**. Bu sizning hamyoningizni ham, hayotingizni ham asraydi.
+
+---
 
 **Amaliy Hayot** — hayot uchun foydali va ishonchli qo‘llanmalar.
