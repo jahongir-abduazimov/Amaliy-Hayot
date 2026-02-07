@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Logo from "../public/images/logo.png";
 import Image from "next/image";
-import CookieSettingsButton from "./CookieSettingsButton";
+// import CookieSettingsButton from "./CookieSettingsButton";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -85,9 +85,9 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
-              <li>
+              {/* <li>
                 <CookieSettingsButton />
-              </li>
+              </li> */}
             </ul>
           </div>
 
