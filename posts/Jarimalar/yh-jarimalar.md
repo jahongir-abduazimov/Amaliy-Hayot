@@ -1,6 +1,6 @@
 ---
 title: "Yo‘l harakati qoidalarini buzganlik uchun jarimalar 2026: to‘liq ro‘yxat va tushuntirish"
-date: 2026-02-07
+date: 2026-01-20
 description: "2026-yilda O‘zbekistonda yo‘l harakati qoidalarini buzganlik uchun jarimalar: tezlik oshirish, svetofor, to‘xtash qoidalari va boshqa huquqbuzarliklar uchun aniq miqdorlar va amaliy tushuntirish."
 image: /images/fines/yh-jarimalar.jpg
 author: "Amaliy Hayot"
