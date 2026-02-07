@@ -103,7 +103,7 @@ export default function Home() {
       </section>
 
       {/* Kirish bo‘limi */}
-      <section className="bg-neutral-off-white py-8">
+      {/* <section className="bg-neutral-off-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-3xl mx-auto">
             <p className="text-sm text-neutral-text-gray leading-relaxed">
@@ -113,7 +113,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Stats Section */}
       {/* <StatsSection /> */}
