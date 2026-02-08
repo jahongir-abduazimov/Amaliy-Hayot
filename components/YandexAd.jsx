@@ -24,7 +24,7 @@ export default function YandexAd() {
     <div className="my-8 flex justify-center">
       <div
         id="yandex_rtb_R-A-18670985-1"
-        className="min-h-[250px] w-full max-w-[728px]"
+        className="min-h-62.5 w-full max-w-182"
       />
     </div>
   );

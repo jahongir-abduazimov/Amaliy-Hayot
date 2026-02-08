@@ -22,7 +22,7 @@ export default function YandexFeedAd() {
   }, []);
 
   return (
-    <div className="my-8 flex justify-center">
+    <div className="my-8 flex justify-center border-y border-gray-500 pt-8">
       <div id="yandex_rtb_R-A-18670985-3" className="w-full" />
     </div>
   );
