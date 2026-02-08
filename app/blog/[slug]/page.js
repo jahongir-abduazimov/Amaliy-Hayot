@@ -5,6 +5,7 @@ import ReadingProgress from "@/components/ReadingProgress";
 import SocialShare from "@/components/SocialShare";
 import PostCard from "@/components/PostCard";
 import YandexAd from "@/components/YandexAd";
+import YandexFeedAd from "@/components/YandexFeedAd";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
@@ -58,21 +59,21 @@ export async function generateMetadata({ params }) {
       locale: "uz_UZ",
       images: fullImageUrl
         ? [
-            {
-              url: fullImageUrl,
-              width: 1200,
-              height: 630,
-              alt: post.title,
-            },
-          ]
+          {
+            url: fullImageUrl,
+            width: 1200,
+            height: 630,
+            alt: post.title,
+          },
+        ]
         : [
-            {
-              url: defaultImageUrl,
-              width: 1200,
-              height: 630,
-              alt: post.title,
-            },
-          ],
+          {
+            url: defaultImageUrl,
+            width: 1200,
+            height: 630,
+            alt: post.title,
+          },
+        ],
       ...(post.category && { section: post.category }),
     },
     twitter: {
@@ -343,6 +344,9 @@ export default async function BlogPost({ params }) {
             </div>
           </div>
         </div>
+
+        {/* Yandex Feed Ad */}
+        <YandexFeedAd />
 
         {/* Related Posts Section */}
         {relatedPosts.length > 0 && (
