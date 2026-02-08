@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import YandexFloorAd from "@/components/YandexFloorAd";
 // import CookieBanner from "@/components/CookieBanner";
 import ConditionalScripts from "@/components/ConditionalScripts";
 
@@ -155,6 +156,9 @@ export default function RootLayout({
           <main className="grow">{children}</main>
           <Footer />
         </div>
+
+        {/* Yandex.RTB floor ad — barcha sahifalarda */}
+        <YandexFloorAd />
 
         {/* Cookie Banner - TEMPORARILY DISABLED for one-day experiment.
             To re-enable:
