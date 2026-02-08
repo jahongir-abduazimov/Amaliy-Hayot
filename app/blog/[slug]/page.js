@@ -4,6 +4,7 @@ import { markdownToHtml, getReadingTime } from "@/lib/posts";
 import ReadingProgress from "@/components/ReadingProgress";
 import SocialShare from "@/components/SocialShare";
 import PostCard from "@/components/PostCard";
+import YandexAd from "@/components/YandexAd";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
@@ -193,6 +194,8 @@ export default async function BlogPost({ params }) {
       />
       <ReadingProgress />
       <article className="max-w-300 mx-auto px-4 sm:px-6 lg:px-8 pb-16 lg:pb-30 pt-20 md:pt-24 lg:pt-32">
+        {/* Yandex.RTB reklama */}
+        <YandexAd />
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="hidden lg:block lg:shrink-0">
             <SocialShare

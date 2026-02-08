@@ -85,43 +85,43 @@ export default function RootLayout({
 
   // Organization structured data
   const organizationJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'Amaliy Hayot',
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Amaliy Hayot",
     url: baseUrl,
     logo: `${baseUrl}/images/logo.png`,
     description:
       "O‘zbekistonda hujjatlar, jarimalar, sog‘liqni saqlash, avtomobillar va davlat xizmatlari bo‘yicha amaliy qo‘llanmalar.",
     sameAs: [],
     contactPoint: {
-      '@type': 'ContactPoint',
-      contactType: 'Customer Service',
+      "@type": "ContactPoint",
+      contactType: "Customer Service",
     },
   };
 
   // WebSite structured data with SearchAction
   const websiteJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    name: 'Amaliy Hayot',
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Amaliy Hayot",
     url: baseUrl,
     description:
       "O‘zbekistonda hujjatlar, jarimalar, sog‘liqni saqlash, avtomobillar va davlat xizmatlari bo‘yicha amaliy qo‘llanmalar.",
     publisher: {
-      '@type': 'Organization',
-      name: 'Amaliy Hayot',
+      "@type": "Organization",
+      name: "Amaliy Hayot",
       logo: {
-        '@type': 'ImageObject',
+        "@type": "ImageObject",
         url: `${baseUrl}/images/logo.png`,
       },
     },
     potentialAction: {
-      '@type': 'SearchAction',
+      "@type": "SearchAction",
       target: {
-        '@type': 'EntryPoint',
+        "@type": "EntryPoint",
         urlTemplate: `${baseUrl}/blog?q={search_term_string}`,
       },
-      'query-input': 'required name=search_term_string',
+      "query-input": "required name=search_term_string",
     },
   };
 
@@ -130,12 +130,17 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd),
+          }}
         />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
+        {/* Yandex.RTB */}
+        <script>window.yaContextCb=window.yaContextCb||[]</script>
+        <script src="https://yandex.ru/ads/system/context.js" async></script>
         {/* <meta name="google-adsense-account" content="ca-pub-4193324716237811"></meta> */}
         <meta name="yandex-verification" content="d89380f0851adb15" />
       </head>
