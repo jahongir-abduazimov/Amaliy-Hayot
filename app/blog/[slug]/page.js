@@ -195,7 +195,7 @@ export default async function BlogPost({ params }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <ReadingProgress />
-      <article className="max-w-300 mx-auto px-4 sm:px-6 lg:px-8 pb-16 lg:pb-30 pt-12 md:pt-18 lg:pt-20">
+      <article className="max-w-300 mx-auto px-4 sm:px-6 lg:px-8 pb-16 lg:pb-30 pt-11 md:pt-18 lg:pt-20">
         {/* Yandex.RTB reklama */}
         <YandexAd />
         <div className="flex flex-col lg:flex-row gap-8">
@@ -353,7 +353,7 @@ export default async function BlogPost({ params }) {
         {/* Related Posts Section */}
         {relatedPosts.length > 0 && (
           <section className="mt-14 md:mt-20">
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8 md:mb-10">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-5 md:mb-10">
               Mavzuga oid maqolalar
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
@@ -364,7 +364,7 @@ export default async function BlogPost({ params }) {
           </section>
         )}
         {/* Yandex Feed Ad */}
-        <YandexFeedAd />
+        {/* <YandexFeedAd /> */}
       </article>
     </>
   );

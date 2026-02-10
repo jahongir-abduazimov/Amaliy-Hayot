@@ -21,7 +21,7 @@ export default function YandexAd() {
   }, []);
 
   return (
-    <div className="my-8 flex justify-center">
+    <div className="md:my-8 my-5 flex justify-center">
       <div
         id="yandex_rtb_R-A-18670985-1"
         className="w-full"
