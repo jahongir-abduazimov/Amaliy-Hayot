@@ -30,7 +30,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 smooth ${
+      className={`fixed top-0 w-full z-50 smooth border-b border-border ${
         scrolled
           ? "bg-white/95 backdrop-blur-md shadow"
           : "bg-white/80 backdrop-blur-sm"
