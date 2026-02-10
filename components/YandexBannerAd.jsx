@@ -31,7 +31,7 @@ export default function YandexBannerAd() {
   }, []);
 
   return (
-    <div className="mt-8 mb-4 flex justify-center">
+    <div className="mt-8 flex justify-center">
       <div id="yandex_rtb_R-A-18670985-4" className="w-full" />
     </div>
   );

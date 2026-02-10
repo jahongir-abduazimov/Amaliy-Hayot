@@ -352,7 +352,7 @@ export default async function BlogPost({ params }) {
 
         {/* Related Posts Section */}
         {relatedPosts.length > 0 && (
-          <section className="mt-16 md:mt-20">
+          <section className="mt-14 md:mt-20">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8 md:mb-10">
               Mavzuga oid maqolalar
             </h2>
