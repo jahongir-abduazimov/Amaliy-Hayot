@@ -5,6 +5,7 @@ import ReadingProgress from "@/components/ReadingProgress";
 import SocialShare from "@/components/SocialShare";
 import PostCard from "@/components/PostCard";
 import YandexAd from "@/components/YandexAd";
+import YandexBannerAd from "@/components/YandexBannerAd";
 import YandexFeedAd from "@/components/YandexFeedAd";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -345,8 +346,9 @@ export default async function BlogPost({ params }) {
           </div>
         </div>
 
-        {/* Yandex Feed Ad */}
-        <YandexFeedAd />
+        {/* Yandex Banner Ad */}
+        <YandexBannerAd />
+
 
         {/* Related Posts Section */}
         {relatedPosts.length > 0 && (
@@ -361,6 +363,8 @@ export default async function BlogPost({ params }) {
             </div>
           </section>
         )}
+        {/* Yandex Feed Ad */}
+        <YandexFeedAd />
       </article>
     </>
   );
