@@ -60,7 +60,7 @@ export default function Header() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className={`text-neutral-text-gray hover:text-[#0EA5E9] smooth relative group font-medium ${isActive ? "text-[#0EA5E9]" : ""}`}
+                    className={`text-neutral-text-gray hover:text-primary smooth relative group font-medium ${isActive ? "text-primary" : ""}`}
                   >
                     {link.label}
                   </Link>
@@ -73,7 +73,7 @@ export default function Header() {
           <div className="flex items-center gap-4">
             <button
               onClick={() => setSearchOpen(true)}
-              className="text-neutral-text-gray hover:text-[#0EA5E9] smooth p-2 rounded-lg hover:bg-[#F8FAFC] cursor-pointer"
+              className="text-neutral-text-gray hover:text-primary smooth p-2 rounded-lg hover:bg-[#F8FAFC] cursor-pointer"
               aria-label="Qidiruv"
             >
               <svg
@@ -94,14 +94,14 @@ export default function Header() {
               href="https://t.me/amaliyhayot_uz"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden md:block bg-[#0EA5E9] text-white px-6 py-3 rounded-xl font-bold shadow-blue hover:bg-[#0369A1] smooth cursor-pointer"
+              className="hidden md:block bg-primary text-white px-6 py-3 rounded-xl font-bold shadow-blue hover:bg-primary-dark smooth cursor-pointer"
             >
               Obuna bo‘ling
             </Link>
 
             {/* Mobile menu button */}
             <button
-              className="md:hidden p-2.5 rounded-xl text-neutral-text-gray hover:bg-[#F8FAFC] active:bg-[#F1F5F9] smooth focus:outline-none focus:ring-2 focus:ring-[#0EA5E9] focus:ring-offset-2 cursor-pointer"
+              className="md:hidden p-2.5 rounded-xl text-neutral-text-gray hover:bg-[#F8FAFC] active:bg-[#F1F5F9] smooth focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 cursor-pointer"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle menu"
               aria-expanded={mobileMenuOpen}
@@ -140,8 +140,8 @@ export default function Header() {
                   href={link.href}
                   className={`block px-4 py-3 rounded-xl font-medium smooth ${
                     isActive
-                      ? "text-[#0EA5E9] bg-[#DBEAFE] border-l-4 border-[#0EA5E9]"
-                      : "text-neutral-text-dark hover:text-[#0EA5E9] hover:bg-[#F8FAFC]"
+                      ? "text-primary bg-[#DBEAFE] border-l-4 border-primary"
+                      : "text-neutral-text-dark hover:text-primary hover:bg-[#F8FAFC]"
                   }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
@@ -156,7 +156,7 @@ export default function Header() {
                   ?.scrollIntoView({ behavior: "smooth" });
                 setMobileMenuOpen(false);
               }}
-              className="w-full mt-2 bg-[#0EA5E9] text-white px-4 py-3 rounded-xl font-bold shadow-blue hover:bg-[#0369A1] smooth cursor-pointer"
+              className="w-full mt-2 bg-primary text-white px-4 py-3 rounded-xl font-bold shadow-blue hover:bg-primary-dark smooth cursor-pointer"
             >
               Obuna bo‘lish
             </button>

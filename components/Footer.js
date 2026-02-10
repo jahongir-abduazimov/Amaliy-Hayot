@@ -45,8 +45,8 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-subtle-gradient border-t border-neutral-border">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+    <footer className="bg-subtle-gradient border-t border-border">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {/* About */}
           <div className="space-y-4">
@@ -78,9 +78,9 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm md:text-base text-neutral-text-gray hover:text-[#0EA5E9] smooth inline-flex items-center group"
+                    className="text-sm md:text-base text-neutral-text-gray hover:text-primary smooth inline-flex items-center group"
                   >
-                    <span className="w-0 group-hover:w-2 h-0.5 bg-[#0EA5E9] mr-0 group-hover:mr-2 smooth"></span>
+                    <span className="w-0 group-hover:w-2 h-0.5 bg-primary mr-0 group-hover:mr-2 smooth"></span>
                     {link.label}
                   </Link>
                 </li>
@@ -101,7 +101,7 @@ export default function Footer() {
                 <a
                   key={social.name}
                   href={social.href}
-                  className="group relative p-3 rounded-xl bg-white border border-neutral-border hover:border-[#0EA5E9] shadow-soft hover:shadow-soft-lg text-neutral-text-gray hover:text-white smooth hover:bg-[#0EA5E9]"
+                  className="group relative p-3 rounded-xl bg-white border border-neutral-border hover:border-primary shadow-soft hover:shadow-soft-lg text-neutral-text-gray hover:text-white smooth hover:bg-primary"
                   aria-label={social.name}
                   target="_blank"
                   rel="noopener noreferrer"

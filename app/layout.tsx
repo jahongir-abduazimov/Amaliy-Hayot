@@ -3,9 +3,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import YandexFloorAd from "@/components/YandexFloorAd";
+// import YandexFloorAd from "@/components/YandexFloorAd";
 // import CookieBanner from "@/components/CookieBanner";
 import ConditionalScripts from "@/components/ConditionalScripts";
+import MobileTelegramBar from "@/components/MobileTelegramBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -153,12 +154,14 @@ export default function RootLayout({
 
         <div className="flex flex-col min-h-screen">
           <Header />
-          <main className="grow">{children}</main>
+          <main className="grow pb-20 md:pb-0">{children}</main>
           <Footer />
         </div>
 
+        <MobileTelegramBar />
+
         {/* Yandex.RTB floor ad — barcha sahifalarda */}
-        <YandexFloorAd />
+        {/* <YandexFloorAd /> */}
 
         {/* Cookie Banner - TEMPORARILY DISABLED for one-day experiment.
             To re-enable:

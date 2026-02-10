@@ -33,10 +33,10 @@ export default function StatsSection() {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="bg-white border border-neutral-border rounded-2xl p-8 text-center card-hover"
+              className="bg-white border border-border rounded-xl p-8 text-center card-hover"
             >
               <div className="text-5xl mb-4">{stat.icon}</div>
-              <div className="text-4xl md:text-5xl font-black text-[#0EA5E9] mb-2">
+              <div className="text-4xl md:text-5xl font-black text-primary mb-2">
                 {stat.number}
               </div>
               <div className="text-lg font-bold text-neutral-text-dark mb-2">

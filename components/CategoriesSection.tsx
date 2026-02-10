@@ -94,7 +94,7 @@ export default function CategoriesSection({
   const colorClasses = {
     blue: {
       base: "bg-blue-50 text-blue-700 hover:bg-blue-100",
-      active: "bg-[#0EA5E9] text-white",
+      active: "bg-primary text-white",
     },
     emerald: {
       base: "bg-emerald-50 text-emerald-700 hover:bg-emerald-100",
@@ -147,9 +147,8 @@ export default function CategoriesSection({
                 onClick={() =>
                   setActiveCategory(isActive ? null : category.name)
                 }
-                className={`px-6 py-3 rounded-full font-semibold smooth cursor-pointer ${
-                  isActive ? colors.active : colors.base
-                }`}
+                className={`px-6 py-3 rounded-full font-semibold smooth cursor-pointer ${isActive ? colors.active : colors.base
+                  }`}
               >
                 <span className="mr-2">{category.icon}</span>
                 {category.name}

@@ -63,7 +63,7 @@ export default function PostCard({ post }) {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className="group bg-white border border-neutral-border rounded-2xl overflow-hidden card-hover md:flex-col flex flex-row-reverse"
+      className="group bg-white border border-[#bdbdbd] rounded-xl overflow-hidden md:flex-col flex flex-row-reverse"
     >
       {/* Image */}
       {post.image ? (
@@ -87,7 +87,7 @@ export default function PostCard({ post }) {
         </div>
       ) : (
         <div className="md:w-full w-32 md:h-56 h-full shrink-0 bg-linear-to-br from-[#DBEAFE] via-[#F0F9FF] to-[#F8FAFC] flex items-center justify-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-linear-to-r from-[#0EA5E9]/20 to-[#06B6D4]/20 opacity-50 group-hover:opacity-70 smooth"></div>
+          <div className="absolute inset-0 bg-linear-to-r from-primary/20 to-[#06B6D4]/20 opacity-50 group-hover:opacity-70 smooth"></div>
           <span className="text-neutral-text-light text-xs md:text-sm font-medium relative z-10">
             Rasm yo‘q
           </span>
@@ -106,7 +106,7 @@ export default function PostCard({ post }) {
       {/* Content */}
       <div className="p-3 md:p-4 flex-1 flex flex-col">
         {/* Title */}
-        <h2 className="text-base md:text-xl lg:text-2xl font-bold text-neutral-text-dark mb-2 md:mb-3 group-hover:text-[#0EA5E9] smooth line-clamp-2 leading-tight">
+        <h2 className="text-base md:text-xl lg:text-2xl font-bold text-neutral-text-dark mb-2 md:mb-3 group-hover:text-primary smooth line-clamp-2 leading-tight">
           {post.title}
         </h2>
 
@@ -120,11 +120,11 @@ export default function PostCard({ post }) {
         {/* Meta */}
         {/* <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-2 md:gap-0 text-xs text-neutral-text-light pt-3 md:pt-4 border-t border-neutral-border/50 mt-auto">
           <div className="flex items-center gap-2">
-            <span className="text-[#0EA5E9]">📅</span>
+            <span className="text-primary">📅</span>
             <span>{formattedDate}</span>
           </div>
           {post.readingTime && (
-            <div className="flex items-center gap-2 text-[#0EA5E9] font-medium">
+            <div className="flex items-center gap-2 text-primary font-medium">
               <span>⏱️</span>
               <span>{post.readingTime} daqiqa</span>
             </div>

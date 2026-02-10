@@ -96,7 +96,7 @@ export default function SearchModal({ isOpen, onClose }) {
               placeholder="Maqolalarni qidirish..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-12 pr-4 py-3 rounded-xl border-2 border-neutral-border focus:border-[#0EA5E9] focus:outline-none text-lg bg-white text-neutral-text-dark"
+              className="w-full pl-12 pr-4 py-3 rounded-xl border-2 border-neutral-border focus:border-primary focus:outline-none text-lg bg-white text-neutral-text-dark"
               autoFocus
             />
             {searchQuery && (
@@ -136,7 +136,7 @@ export default function SearchModal({ isOpen, onClose }) {
                   onClick={onClose}
                   className="block px-4 py-3 hover:bg-[#F8FAFC] rounded-xl smooth group"
                 >
-                  <div className="font-semibold text-neutral-text-dark group-hover:text-[#0EA5E9] smooth mb-1">
+                  <div className="font-semibold text-neutral-text-dark group-hover:text-primary smooth mb-1">
                     {post.title}
                   </div>
                   {post.description && (
@@ -145,7 +145,7 @@ export default function SearchModal({ isOpen, onClose }) {
                     </div>
                   )}
                   {post.category && (
-                    <div className="mt-2 inline-block px-2 py-1 text-xs font-semibold bg-[#0EA5E9]/10 text-[#0EA5E9] rounded-lg">
+                    <div className="mt-2 inline-block px-2 py-1 text-xs font-semibold bg-primary/10 text-primary rounded-lg">
                       {post.category}
                     </div>
                   )}

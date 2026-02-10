@@ -179,7 +179,7 @@ export default function BlogList({ posts }) {
   const colorClasses = {
     blue: {
       base: "bg-blue-50 text-blue-700 hover:bg-blue-100 border-blue-200",
-      active: "bg-[#0EA5E9] text-white border-[#0EA5E9]",
+      active: "bg-primary text-white border-primary",
     },
     emerald: {
       base: "bg-emerald-50 text-emerald-700 hover:bg-emerald-100 border-emerald-200",
@@ -218,7 +218,7 @@ export default function BlogList({ posts }) {
   return (
     <>
       {/* Category Filters */}
-      <section className="bg-white pb-8 md:pb-12 border-b border-neutral-border/50">
+      <section className="bg-white pb-8 md:pb-12 border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center gap-6">
             {/* Category Title */}
@@ -237,11 +237,10 @@ export default function BlogList({ posts }) {
                 {/* All Categories Button */}
                 <button
                   onClick={() => handleCategoryClick(null)}
-                  className={`px-4 py-2.5 md:px-6 md:py-3 rounded-xl border-2 font-semibold text-sm md:text-base transition-all duration-200 smooth cursor-pointer flex items-center gap-2 ${
-                    selectedCategory === null
-                      ? "bg-[#0EA5E9] text-white border-[#0EA5E9] shadow-lg shadow-[#0EA5E9]/20"
-                      : "bg-white text-neutral-text-dark border-neutral-border hover:border-[#0EA5E9] hover:bg-blue-50"
-                  }`}
+                  className={`px-4 py-2.5 md:px-6 md:py-3 rounded-xl border-2 font-semibold text-sm md:text-base transition-all duration-200 smooth cursor-pointer flex items-center gap-2 ${selectedCategory === null
+                      ? "bg-primary text-white border-primary shadow-lg shadow-primary/20"
+                      : "bg-white text-neutral-text-dark border-neutral-border hover:border-primary hover:bg-blue-50"
+                    }`}
                 >
                   <span>📚</span>
                   <span>Barchasi</span>
@@ -260,20 +259,18 @@ export default function BlogList({ posts }) {
                     <button
                       key={category.key}
                       onClick={() => handleCategoryClick(category.key)}
-                      className={`px-4 py-2.5 md:px-6 md:py-3 rounded-xl border-2 font-semibold text-sm md:text-base transition-all duration-200 smooth cursor-pointer flex items-center gap-2 ${
-                        isActive
+                      className={`px-4 py-2.5 md:px-6 md:py-3 rounded-xl border-2 font-semibold text-sm md:text-base transition-all duration-200 smooth cursor-pointer flex items-center gap-2 ${isActive
                           ? `${colorClass.active} shadow-lg`
                           : `${colorClass.base}`
-                      }`}
+                        }`}
                     >
                       <span>{category.icon}</span>
                       <span>{category.label}</span>
                       <span
-                        className={`px-2 py-0.5 rounded-full text-xs ${
-                          isActive
+                        className={`px-2 py-0.5 rounded-full text-xs ${isActive
                             ? "bg-white/20 text-inherit"
                             : "bg-white/60 text-inherit"
-                        }`}
+                          }`}
                       >
                         {count}
                       </span>
@@ -310,7 +307,7 @@ export default function BlogList({ posts }) {
 
       {/* Posts Grid */}
       {paginatedPosts.length > 0 ? (
-        <section ref={postsListRef} className="bg-white py-12 md:py-20">
+        <section ref={postsListRef} className="bg-white py-10 md:py-14">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {paginatedPosts.map((post) => (
@@ -353,7 +350,7 @@ export default function BlogList({ posts }) {
 
       {/* Pagination */}
       {totalPages > 1 && (
-        <section className="bg-white py-8 md:py-12 border-t border-neutral-border/50">
+        <section className="bg-white pb-8 md:pb-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-center gap-2">
               {/* Previous button */}
@@ -364,11 +361,10 @@ export default function BlogList({ posts }) {
                   setTimeout(() => scrollToPostsList(), 0);
                 }}
                 disabled={currentPage === 1}
-                className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 ${
-                  currentPage === 1
+                className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 ${currentPage === 1
                     ? "bg-neutral-light-gray text-neutral-text-light cursor-not-allowed"
-                    : "bg-[#0EA5E9] text-white hover:bg-[#0284C7] smooth cursor-pointer"
-                }`}
+                    : "bg-primary text-white hover:bg-[#0284C7] smooth cursor-pointer"
+                  }`}
               >
                 ← Oldingi
               </button>
@@ -408,11 +404,10 @@ export default function BlogList({ posts }) {
                           setCurrentPage(page);
                           setTimeout(() => scrollToPostsList(), 0);
                         }}
-                        className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 cursor-pointer ${
-                          currentPage === page
-                            ? "bg-[#0EA5E9] text-white"
+                        className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 cursor-pointer ${currentPage === page
+                            ? "bg-primary text-white"
                             : "bg-neutral-light-gray text-neutral-text-dark hover:bg-neutral-border smooth"
-                        }`}
+                          }`}
                       >
                         {page}
                       </button>
@@ -429,11 +424,10 @@ export default function BlogList({ posts }) {
                   setTimeout(() => scrollToPostsList(), 0);
                 }}
                 disabled={currentPage === totalPages}
-                className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 ${
-                  currentPage === totalPages
+                className={`px-4 py-2 rounded-lg font-semibold text-sm md:text-base transition-all duration-200 ${currentPage === totalPages
                     ? "bg-neutral-light-gray text-neutral-text-light cursor-not-allowed"
-                    : "bg-[#0EA5E9] text-white hover:bg-[#0284C7] smooth cursor-pointer"
-                }`}
+                    : "bg-primary text-white hover:bg-[#0284C7] smooth cursor-pointer"
+                  }`}
               >
                 Keyingi →
               </button>

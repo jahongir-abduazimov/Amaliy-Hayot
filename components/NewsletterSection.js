@@ -73,13 +73,13 @@ export default function NewsletterSection() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             disabled={isSubmitting}
-            className="flex-1 px-4 py-3 sm:px-6 sm:py-4 rounded-xl border-2 border-neutral-border focus:border-[#0EA5E9] focus:outline-none smooth bg-white text-neutral-text-dark placeholder-neutral-text-light disabled:opacity-50 disabled:cursor-not-allowed text-base"
+            className="flex-1 px-4 py-3 sm:px-6 sm:py-4 rounded-xl border-2 border-neutral-border focus:border-primary focus:outline-none smooth bg-white text-neutral-text-dark placeholder-neutral-text-light disabled:opacity-50 disabled:cursor-not-allowed text-base"
             required
           />
           <button
             type="submit"
             disabled={isSubmitting}
-            className="group bg-[#0EA5E9] text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-bold shadow-blue hover:bg-[#0369A1] smooth whitespace-nowrap cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed text-base sm:text-lg"
+            className="group bg-primary text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-bold shadow-blue hover:bg-[#0369A1] smooth whitespace-nowrap cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed text-base sm:text-lg"
           >
             {isSubmitting ? "Kutilmoqda..." : "Obuna bo’lish"}
             {!isSubmitting && (
@@ -93,11 +93,10 @@ export default function NewsletterSection() {
         {/* Status Message */}
         {status && message && (
           <div
-            className={`mt-4 px-4 py-3 rounded-xl max-w-md mx-auto ${
-              status === "success"
+            className={`mt-4 px-4 py-3 rounded-xl max-w-md mx-auto ${status === "success"
                 ? "bg-green-50 text-green-700 border border-green-200"
                 : "bg-red-50 text-red-700 border border-red-200"
-            }`}
+              }`}
           >
             <div className="flex items-center justify-center gap-2">
               <span>{status === "success" ? "✓" : "✗"}</span>

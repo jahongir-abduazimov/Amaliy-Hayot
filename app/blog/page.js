@@ -74,7 +74,7 @@ export default function BlogPage() {
         <section className="relative bg-linear-to-b from-white to-neutral-off-white overflow-hidden pt-32 md:pt-42 pb-16">
           {/* Decorative shapes */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute top-20 right-20 w-96 h-96 bg-[#0EA5E9]/5 rounded-full blur-3xl"></div>
+            <div className="absolute top-20 right-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
             <div className="absolute bottom-20 left-20 w-80 h-80 bg-[#F97316]/5 rounded-full blur-3xl"></div>
           </div>
 
@@ -90,7 +90,7 @@ export default function BlogPage() {
                 yo‘riqnomalar
               </p>
 
-              <div className="inline-flex items-center gap-2 px-6 py-3 bg-[#0EA5E9]/10 text-[#0EA5E9] rounded-full font-semibold">
+              <div className="inline-flex items-center gap-2 px-6 py-3 bg-primary/10 text-primary rounded-full font-semibold">
                 <span>📚</span>
                 <span>{posts.length} ta maqola</span>
               </div>
