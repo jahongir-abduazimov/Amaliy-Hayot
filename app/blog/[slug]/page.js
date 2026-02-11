@@ -4,7 +4,7 @@ import { markdownToHtml, getReadingTime } from "@/lib/posts";
 import ReadingProgress from "@/components/ReadingProgress";
 import SocialShare from "@/components/SocialShare";
 import PostCard from "@/components/PostCard";
-import YandexAd from "@/components/YandexAd";
+// import YandexAd from "@/components/YandexAd";
 // import YandexBannerAd from "@/components/YandexBannerAd";
 // import YandexFeedAd from "@/components/YandexFeedAd";
 import Image from "next/image";
@@ -195,7 +195,7 @@ export default async function BlogPost({ params }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <ReadingProgress />
-      <article className="max-w-300 mx-auto px-4 sm:px-6 lg:px-8 pb-16 lg:pb-30 pt-19 md:pt-24 lg:pt-28">
+      <article className="max-w-300 mx-auto px-4 sm:px-6 lg:px-8 lg:pb-24 pt-19 md:pt-24 lg:pt-28">
         {/* Yandex.RTB reklama */}
         {/* <YandexAd /> */}
         <div className="flex flex-col lg:flex-row gap-8">
@@ -301,7 +301,7 @@ export default async function BlogPost({ params }) {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 896px"
                 />
                 {post.category && (
-                  <div className="absolute top-6 left-6 z-20">
+                  <div className="absolute top-3 left-3 md:top-6 md:left-6 z-20">
                     <span className="inline-block px-4 py-2 text-sm font-bold text-white bg-primary/50 backdrop-blur-xs rounded-full shadow-lg">
                       {post.category}
                     </span>
