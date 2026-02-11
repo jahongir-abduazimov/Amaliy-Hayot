@@ -31,18 +31,18 @@ export default function MobileTelegramBar() {
     }
   }, []);
 
-  // const handleClose = () => {
-  //   setIsVisible(false);
-  //   if (typeof window === "undefined") return;
-  //   window.localStorage.setItem(TELEGRAM_BAR_DISMISSED_KEY, "true");
-  // };
+  const handleClose = () => {
+    setIsVisible(false);
+    // if (typeof window === "undefined") return;
+    // window.localStorage.setItem(TELEGRAM_BAR_DISMISSED_KEY, "true");
+  };
 
   if (!isVisible) return null;
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-40 md:hidden">
-      <div className="rounded-t-2xl bg-ocean-gradient text-white shadow-xl shadow-blue border border-white/40 px-4 pt-3 pb-4 flex flex-col gap-2">
-        <p className="text-sm font-semibold tracking-wide uppercase text-center">
+      <div className="relative mx-4 mb-4 rounded-2xl bg-ocean-gradient text-white shadow-xl shadow-blue border border-white/40 px-4 pt-3 pb-4 flex flex-col gap-2">
+        <p className="text-sm font-semibold tracking-wide uppercase">
           Telegram kanalimiz
         </p>
 
@@ -68,11 +68,11 @@ export default function MobileTelegramBar() {
           </Link>
         </div>
 
-        {/* <button
+        <button
           type="button"
           onClick={handleClose}
           aria-label="Telegram panelini yopish"
-          className="p-1 rounded-full text-neutral-text-gray hover:text-neutral-text-dark hover:bg-gray-100 smooth cursor-pointer"
+          className="p-1 rounded-full text-neutral-text-gray hover:text-neutral-text-dark smooth cursor-pointer absolute top-2 right-3"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +86,7 @@ export default function MobileTelegramBar() {
               clipRule="evenodd"
             />
           </svg>
-        </button> */}
+        </button>
       </div>
     </div>
   );
