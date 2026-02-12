@@ -117,8 +117,8 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-12 pt-8 border-t border-neutral-border/50 text-center">
-          <p className="text-sm text-neutral-text-gray">
+        <div className="mt-8 md:mt-12 pt-5 md:pt-8 border-t border-neutral-border/50 text-center">
+          <p className="text-xs md:text-sm text-neutral-text-gray">
             © {currentYear}{" "}
             <span className="font-semibold text-neutral-text-dark">
               Amaliy Hayot

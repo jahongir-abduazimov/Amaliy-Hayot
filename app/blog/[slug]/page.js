@@ -195,7 +195,7 @@ export default async function BlogPost({ params }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <ReadingProgress />
-      <article className="max-w-300 mx-auto px-4 sm:px-6 lg:px-8 lg:pb-24 pt-19 md:pt-24 lg:pt-28">
+      <article className="max-w-300 mx-auto px-4 sm:px-6 lg:px-8 lg:pb-24 py-19 md:py-24 lg:py-28">
         {/* Yandex.RTB reklama */}
         {/* <YandexAd /> */}
         <div className="flex flex-col lg:flex-row gap-8">

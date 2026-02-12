@@ -39,13 +39,11 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav className="flex items-center justify-between md:h-20 h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-2 group">
             <Image
               src={Logo}
               alt="Amaliy Hayot - O‘zbekistonda kundalik hayot yo‘riqnomalari"
-              className="w-10 md:w-14"
-              width={56}
-              height={56}
+              className="w-10 md:w-13"
             />
             <span className="text-lg md:text-3xl font-bold text-primary block sm:hidden lg:block">
               Amaliy Hayot

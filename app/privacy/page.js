@@ -199,8 +199,8 @@ export default function Privacy() {
           <li>Cookie lardan foydalanishni cheklash</li>
         </ul>
         <p>
-          Ushbu huquqlardan foydalanish uchun biz bilan bog‘laning:
-          {" "}<a href="/contact" className="text-primary font-medium">
+          Ushbu huquqlardan foydalanish uchun biz bilan bog‘laning:{" "}
+          <a href="/contact" className="text-primary font-medium">
             Bog‘lanish sahifasi
           </a>
         </p>
