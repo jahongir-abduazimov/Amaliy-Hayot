@@ -8,9 +8,7 @@ category: Transport
 keywords: "texnik ko‘rik narxi 2026, texnik ko‘rik qancha, texnik ko‘rik avtomobil, tex ko‘rik to‘lovi, mashina texnik ko‘rigi, texnik ko‘rik qoidalari"
 ---
 
-# Texnik ko‘rik narxi 2026: avtomobillar uchun to‘liq tariflar va yangilangan qoidalar
-
-## Qisqa javob (featured snippet)
+## Qisqa javob
 
 **2026-yilda O‘zbekistonda yengil avtomobillar uchun texnik ko‘rik narxi odatda BHMning kichik foizi asosida hisoblanadi va o‘rtacha 40 000 – 80 000 so‘m atrofida.** Aniq summa transport turi, dvigatel hajmi va xizmat ko‘rsatish markaziga qarab farq qiladi. Texnik ko‘rikdan o‘tmagan avtomobilni boshqarish jarimaga sabab bo‘ladi.
 
@@ -168,9 +166,9 @@ Yo‘q, lekin kamchilikni tuzatib qayta kelish mumkin.
 
 ## Tavsiya etiladigan maqolalar
 
-- Haydovchilik guvohnomasini olish tartibi  
-- Mashinani o‘z nomiga o‘tkazish narxlari  
-- Yo‘l harakati jarimalari haqida qo‘llanma
+- [Haydovchilik guvohnomasini olish tartibi](https://amaliyhayot.uz/blog/haydovchilik-guvohnomasi)  
+- [Mashinani o‘z nomiga o‘tkazish narxlari](https://amaliyhayot.uz/blog/mashina-nomiga-otkazish) 
+- [Yo‘l harakati jarimalari haqida qo‘llanma](https://amaliyhayot.uz/blog/yh-jarimalar)
 
 ---
 
