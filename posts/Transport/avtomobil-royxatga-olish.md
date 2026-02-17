@@ -136,6 +136,14 @@ Agar navbat oldindan olingan bo‘lsa, jarayon tezroq yakunlanadi.
 
 ---
 
+## Ichki maqolalar (tavsiya etiladi)
+- [Mashinani o‘z nomingizga o‘tkazish tartibi (bosqichma-bosqich yo‘riqnoma)](https://amaliyhayot.uz/blog/mashina-nomiga-otkazish)
+- [Texnik ko‘rikdan o‘tish narxi va talablari](https://amaliyhayot.uz/blog/texnik-korik)
+- [Yo‘l harakati jarimalari turlari](https://amaliyhayot.uz/blog/yh-jarimalar)
+- [Avtomobilni sug‘urta qilish va majburiy sug‘urta](https://amaliyhayot.uz/blog/avtomobil-sugurta)
+
+---
+
 ## Qisqa xulosa
 
 2026-yilda O‘zbekistonda avtomobilni ro‘yxatga olish tartibi aniq va shaffof. Yangi yoki ikkinchi qo‘l avtomobil bo‘lishidan qat’i nazar, **hujjatlar**, **narxlar** va **muddatlarni** oldindan bilish sizni ortiqcha xarajat va muammolardan asraydi. To‘g‘ri yondashuv bilan bu jarayon bir kunda hal bo‘lishi mumkin.

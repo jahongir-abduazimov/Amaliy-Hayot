@@ -166,9 +166,10 @@ Yo‘q, lekin kamchilikni tuzatib qayta kelish mumkin.
 
 ## Tavsiya etiladigan maqolalar
 
-- [Haydovchilik guvohnomasini olish tartibi](https://amaliyhayot.uz/blog/haydovchilik-guvohnomasi)  
+- [Avtomobilni sug‘urta qilish va majburiy sug‘urta](https://amaliyhayot.uz/blog/avtomobil-sugurta)  
 - [Mashinani o‘z nomiga o‘tkazish narxlari](https://amaliyhayot.uz/blog/mashina-nomiga-otkazish) 
 - [Yo‘l harakati jarimalari haqida qo‘llanma](https://amaliyhayot.uz/blog/yh-jarimalar)
+- [Radar jarimalarini tekshirish](https://amaliyhayot.uz/blog/radar-jarima-tekshirish)
 
 ---
 
