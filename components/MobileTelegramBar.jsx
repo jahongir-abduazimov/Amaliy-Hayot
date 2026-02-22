@@ -48,7 +48,7 @@ export default function MobileTelegramBar() {
 
         <div className="flex items-center gap-3">
           <p className="text-xs opacity-90">
-            Eng so‘nggi qo‘llanmalar va foydali maslahatlarni Telegramda oling.
+            Amaliy Hayot — O‘zbekiston aholisi uchun foydali va ishonchli qo‘llanmalar.
           </p>
           <Link
             href="https://t.me/amaliyhayot_uz"
