@@ -89,7 +89,7 @@ export default function Header() {
               </svg>
             </button>
             <Link
-              href="https://t.me/amaliyhayot_uz"
+              href="https://t.me/amaliy_hayot"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:block bg-primary text-white px-6 py-3 rounded-xl font-bold shadow-blue hover:bg-primary-dark smooth cursor-pointer"

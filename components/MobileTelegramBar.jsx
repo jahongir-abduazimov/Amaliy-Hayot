@@ -51,7 +51,7 @@ export default function MobileTelegramBar() {
             Amaliy Hayot — O‘zbekiston aholisi uchun foydali va ishonchli qo‘llanmalar.
           </p>
           <Link
-            href="https://t.me/amaliyhayot_uz"
+            href="https://t.me/amaliy_hayot"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2.5 rounded-xl bg-white text-primary text-xs font-extrabold shadow-blue hover:bg-gray-100 smooth whitespace-nowrap cursor-pointer flex items-center gap-1"

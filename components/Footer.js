@@ -16,7 +16,7 @@ export default function Footer() {
   const socialLinks = [
     {
       name: "Telegram",
-      href: "https://t.me/amaliyhayot_uz",
+      href: "https://t.me/amaliy_hayot",
       icon: (
         <svg
           className="w-5 h-5"
