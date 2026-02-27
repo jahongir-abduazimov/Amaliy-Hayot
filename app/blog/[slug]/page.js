@@ -4,8 +4,8 @@ import { markdownToHtml, getReadingTime } from "@/lib/posts";
 import ReadingProgress from "@/components/ReadingProgress";
 import SocialShare from "@/components/SocialShare";
 import PostCard from "@/components/PostCard";
-// import YandexAd from "@/components/YandexAd";
-// import YandexBannerAd from "@/components/YandexBannerAd";
+import YandexAd from "@/components/YandexAd";
+import YandexBannerAd from "@/components/YandexBannerAd";
 // import YandexFeedAd from "@/components/YandexFeedAd";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -195,9 +195,9 @@ export default async function BlogPost({ params }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <ReadingProgress />
-      <article className="max-w-300 mx-auto px-4 sm:px-6 lg:px-8 lg:pb-24 py-19 md:py-24 lg:py-28">
+      <article className="max-w-300 mx-auto px-4 sm:px-6 lg:px-8 lg:pb-24 py-13 md:py-18 lg:py-20">
         {/* Yandex.RTB reklama */}
-        {/* <YandexAd /> */}
+        <YandexAd />
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="hidden lg:block lg:shrink-0">
             <SocialShare
@@ -347,7 +347,7 @@ export default async function BlogPost({ params }) {
         </div>
 
         {/* Yandex Banner Ad */}
-        {/* <YandexBannerAd /> */}
+        <YandexBannerAd />
 
 
         {/* Related Posts Section */}
