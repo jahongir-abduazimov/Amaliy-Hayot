@@ -198,7 +198,7 @@ export default async function BlogPost({ params }) {
       <article className="max-w-300 mx-auto px-4 sm:px-6 lg:px-8 lg:pb-24 py-13 md:py-18 lg:py-20">
         {/* Yandex.RTB reklama */}
         <YandexAd />
-        <div className="flex flex-col lg:flex-row gap-8">
+        <div className="flex flex-col lg:flex-row gap-8 pt-4 lg:pt-6">
           <div className="hidden lg:block lg:shrink-0">
             <SocialShare
               url={`${process.env.NEXT_PUBLIC_SITE_URL || "https://amaliyhayot.uz"}/blog/${slug}`}

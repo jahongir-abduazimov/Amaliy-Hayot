@@ -162,6 +162,25 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Above-the-fold ad placeholder (YAN/RTB) */
+#ad_top {
+  height: 200px;
+  position: relative;
+}
+
+#ad_top_skel {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  color: var(--neutral-text-gray);
+  font-size: 14px;
+  font-weight: 600;
+  background: linear-gradient(90deg, var(--gray-100), var(--gray-200), var(--gray-100));
+}
+
 /* Gradient text utility */
 .gradient-text {
   background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
