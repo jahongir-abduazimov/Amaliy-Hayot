@@ -22,7 +22,7 @@ function splitHtmlAtMiddle(html) {
   if (len < 200) {
     return { before: html, after: "", hasMiddle: false };
   }
-  const mid = Math.floor(len / 2);
+  const mid = Math.floor(len * 0.38);
   const blockEndRegex = /<\/p>|<\/h[1-6]>|<\/ul>|<\/ol>|<\/blockquote>/gi;
   let match;
   let bestPos = -1;
