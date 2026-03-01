@@ -6,6 +6,7 @@ import SocialShare from "@/components/SocialShare";
 import PostCard from "@/components/PostCard";
 import YandexAd from "@/components/YandexAd";
 import YandexBannerAd from "@/components/YandexBannerAd";
+import YandexArticleAd from "@/components/YandexArticleAd";
 // import YandexFeedAd from "@/components/YandexFeedAd";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -334,6 +335,8 @@ export default async function BlogPost({ params }) {
                   className="prose max-w-none"
                   dangerouslySetInnerHTML={{ __html: contentHtml }}
                 />
+                {/* Maqola o'qiyotganda reklama (R-A-18670985-6) */}
+                <YandexArticleAd />
               </div>
 
               {/* Table of Contents Sidebar */}
