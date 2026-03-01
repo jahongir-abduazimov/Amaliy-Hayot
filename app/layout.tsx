@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 // import CookieBanner from "@/components/CookieBanner";
 import ConditionalScripts from "@/components/ConditionalScripts";
 import MobileTelegramBar from "@/components/MobileTelegramBar";
-import YandexFullscreenAd from "@/components/YandexFullscreenAd";
+// import YandexFullscreenAd from "@/components/YandexFullscreenAd";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -162,7 +162,7 @@ export default function RootLayout({
         <MobileTelegramBar />
 
         {/* Yandex.RTB fullscreen — faqat touch qurilmalarda */}
-        <YandexFullscreenAd />
+        {/* <YandexFullscreenAd /> */}
 
         {/* Yandex.RTB floor ad — barcha sahifalarda */}
         {/* <YandexFloorAd /> */}
