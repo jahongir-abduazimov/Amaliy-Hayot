@@ -11,6 +11,38 @@ import YandexArticleAd from "@/components/YandexArticleAd";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
+/**
+ * Maqola HTML ni o‘rta atrofida blok tugash tegi (</p>, </h2>, ...) bo‘yicha ikki qismga ajratadi.
+ * Reklamani o‘rta qismda ko‘rsatish uchun ishlatiladi.
+ * @param {string} html - To‘liq kontent HTML
+ * @returns {{ before: string, after: string, hasMiddle: boolean }}
+ */
+function splitHtmlAtMiddle(html) {
+  const len = html.length;
+  if (len < 200) {
+    return { before: html, after: "", hasMiddle: false };
+  }
+  const mid = Math.floor(len / 2);
+  const blockEndRegex = /<\/p>|<\/h[1-6]>|<\/ul>|<\/ol>|<\/blockquote>/gi;
+  let match;
+  let bestPos = -1;
+  while ((match = blockEndRegex.exec(html)) !== null) {
+    if (match.index >= mid) {
+      bestPos = match.index + match[0].length;
+      break;
+    }
+    bestPos = match.index + match[0].length;
+  }
+  if (bestPos <= 0 || bestPos >= len) {
+    return { before: html, after: "", hasMiddle: false };
+  }
+  return {
+    before: html.slice(0, bestPos).trim(),
+    after: html.slice(bestPos).trim(),
+    hasMiddle: true,
+  };
+}
+
 // Generate static params for all posts
 export async function generateStaticParams() {
   const slugs = getAllPostSlugs();
@@ -100,6 +132,7 @@ export default async function BlogPost({ params }) {
   }
 
   const contentHtml = await markdownToHtml(post.content);
+  const { before: contentBeforeAd, after: contentAfterAd, hasMiddle } = splitHtmlAtMiddle(contentHtml);
   const readingTime = getReadingTime(post.content);
   // Format date in Uzbek format
   const date = new Date(post.date);
@@ -329,14 +362,21 @@ export default async function BlogPost({ params }) {
             <div className="lg:flex lg:gap-8">
               {/* Social Share - Desktop (left side, sticky) */}
 
-              {/* Article Content */}
+              {/* Article Content — reklama o‘rta qismda */}
               <div className="min-w-0 flex-1">
                 <div
                   className="prose max-w-none"
-                  dangerouslySetInnerHTML={{ __html: contentHtml }}
+                  dangerouslySetInnerHTML={{ __html: contentBeforeAd }}
                 />
-                {/* Maqola o'qiyotganda reklama (R-A-18670985-6) */}
-                <YandexArticleAd />
+                {hasMiddle && (
+                  <>
+                    <YandexArticleAd />
+                    <div
+                      className="prose max-w-none"
+                      dangerouslySetInnerHTML={{ __html: contentAfterAd }}
+                    />
+                  </>
+                )}
               </div>
 
               {/* Table of Contents Sidebar */}
