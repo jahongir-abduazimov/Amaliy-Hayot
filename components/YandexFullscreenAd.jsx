@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 
 /**
@@ -11,17 +11,34 @@ import { usePathname } from "next/navigation";
  * Eslatma:
  * - Fullscreen reklama `renderTo` talab qilmaydi.
  * - Faqat touch qurilmalarda ishga tushiriladi (platform: "touch").
- * - Sahifa reload bo'lganda ham, route o'zgarganda ham ishga tushadi.
+ * - Birinchi kirishda (link orqali) reklama chiqmaydi; faqat F5/reload yoki sahifa almashganda chiqadi.
  * - Bir session ichida tez-tez chiqib ketmasligi uchun cooldown qo'llanadi (10 min).
  *
  * @returns {null} Hech qanday DOM node qaytarmaydi.
  */
+function isReload() {
+  if (typeof performance === "undefined" || !performance.getEntriesByType) {
+    return false;
+  }
+  const nav = performance.getEntriesByType("navigation")[0];
+  return nav?.type === "reload";
+}
+
 export default function YandexFullscreenAd() {
   const pathname = usePathname();
+  const isFirstMountRef = useRef(true);
 
   useEffect(() => {
     if (typeof window === "undefined") {
       return;
+    }
+
+    const firstMount = isFirstMountRef.current;
+    if (firstMount) {
+      isFirstMountRef.current = false;
+      if (!isReload()) {
+        return;
+      }
     }
 
     const isTouch =
