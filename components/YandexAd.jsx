@@ -89,7 +89,7 @@ export default function YandexAd() {
   }, []);
 
   return (
-    <div id="ad_top" className="ad-box md:mt-8 mt-5 w-full flex justify-center">
+    <div id="ad_top" className="ad-box md:mt-8 mt-5 w-full flex justify-center items-center">
       <div id="ad_top_skel" className="ad-skel">
         Loading…
       </div>

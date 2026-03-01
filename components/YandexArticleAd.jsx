@@ -30,7 +30,7 @@ export default function YandexArticleAd() {
   }, []);
 
   return (
-    <div className="my-4 flex justify-center">
+    <div className="my-4 flex justify-center items-center">
       <div id="yandex_rtb_R-A-18670985-6" className="w-full" />
     </div>
   );
