@@ -164,7 +164,7 @@ html {
 
 /* Above-the-fold ad placeholder (YAN/RTB) */
 #ad_top {
-  max-height: 200px;
+  height: 200px;
   position: relative;
 }
 
