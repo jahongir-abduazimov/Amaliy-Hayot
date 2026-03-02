@@ -61,6 +61,7 @@ export async function generateMetadata({ params }) {
   if (!post) {
     return {
       title: "Maqola topilmadi",
+      robots: { index: false, follow: true },
     };
   }
 
@@ -343,7 +344,10 @@ export default async function BlogPost({ params }) {
                 )}
               </div>
             ) : (
-              <div className="w-full h-72 md:h-125 rounded-2xl overflow-hidden mb-6 md:mb-8 bg-linear-to-br from-primary/10 via-secondary/10 to-accent/10 flex items-center justify-center shadow-xl relative">
+              <div
+                className="w-full h-72 md:h-125 rounded-2xl overflow-hidden mb-6 md:mb-8 bg-linear-to-br from-primary/10 via-secondary/10 to-accent/10 flex items-center justify-center shadow-xl relative"
+                aria-hidden="true"
+              >
                 <div className="absolute inset-0 bg-linear-to-br from-primary/20 to-secondary/20 opacity-50"></div>
                 <span className="text-gray-500 text-lg font-medium relative z-10">
                   Rasm yo‘q

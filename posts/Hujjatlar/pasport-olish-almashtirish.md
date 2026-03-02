@@ -5,7 +5,7 @@ description: O‘zbekistonda pasport olish va almashtirish tartibi, kerakli hujj
 image: /images/documents/pasport-olish-almashtirish.webp
 author: "Amaliy Hayot"
 category: Hujjatlar
-keywords: pasport olish, pasport almashtirish, biometrik pasport, ID karta, davlat boji, O‘zbekiston pasporti, migratsiya bo‘limi, hujjatlar ro‘yxati
+keywords: "pasport olish, pasport almashtirish, biometrik pasport, ID karta, davlat boji, O‘zbekiston pasporti, migratsiya bo‘limi, hujjatlar ro‘yxati"
 ---
 
 O‘zbekistonda pasport (yoki ID karta) olish va almashtirish uchun fuqaro yashash joyi bo‘yicha migratsiya va fuqarolikni rasmiylashtirish bo‘limiga murojaat qiladi, ariza topshiradi, biometrik ma’lumotlar olinadi va davlat boji to‘lanadi. Odatda hujjat 1 ish kuni ichida tayyor bo‘ladi.
