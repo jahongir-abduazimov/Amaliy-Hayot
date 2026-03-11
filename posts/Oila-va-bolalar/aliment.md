@@ -174,13 +174,13 @@ Yo‘q. Rasmiy ravishda undiriladi va to‘lamaganlik uchun javobgarlik mavjud.
 - Sud qarorini e’tiborsiz qoldirish
 - Alimentdan qasddan qochish
 
-<!-- ---
+---
 
 # Tavsiya etiladigan maqolalar
 
-- **Ajrashish tartibi 2026: qayerga murojaat qilish va qancha vaqt oladi?**
-- **Bolalar nafaqasi va moddiy yordam turlari**
-- **Nikoh shartnomasi nima va qachon kerak bo‘ladi?** -->
+<!-- - **Ajrashish tartibi 2026: qayerga murojaat qilish va qancha vaqt oladi?** -->
+- [Bolalar nafaqasi va moddiy yordam turlari](/blog/bola-nafaqasi)
+- [Nikoh shartnomasi nima va qachon kerak bo‘ladi?](/blog/nikoh-shartnomasi)
 
 ---
 

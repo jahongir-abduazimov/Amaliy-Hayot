@@ -10,7 +10,7 @@ keywords: "texnik ko‘rik narxi 2026, texnik ko‘rik qancha, texnik ko‘rik a
 
 ## Qisqa javob
 
-**2026-yilda O‘zbekistonda yengil avtomobillar uchun texnik ko‘rik narxi odatda BHMning kichik foizi asosida hisoblanadi va o‘rtacha 40 000 – 80 000 so‘m atrofida.** Aniq summa transport turi, dvigatel hajmi va xizmat ko‘rsatish markaziga qarab farq qiladi. Texnik ko‘rikdan o‘tmagan avtomobilni boshqarish jarimaga sabab bo‘ladi.
+**2026-yilda O‘zbekistonda yengil avtomobillar uchun texnik ko‘rik narxi odatda BHMning kichik foizi asosida hisoblanadi va o‘rtacha 80 000 – 120 000 so‘m atrofida.** Aniq summa transport turi, dvigatel hajmi va xizmat ko‘rsatish markaziga qarab farq qiladi. Texnik ko‘rikdan o‘tmagan avtomobilni boshqarish jarimaga sabab bo‘ladi.
 
 ---
 
@@ -26,15 +26,15 @@ Texnik ko‘rik narxlari BHM (bazaviy hisoblash miqdori)ga bog‘langan. Amaliyo
 
 ### Yengil avtomobillar
 
-- Oddiy yengil avtomobil: **≈ 40 000 – 60 000 so‘m**
-- SUV yoki katta dvigatelli avtomobil: **≈ 60 000 – 80 000 so‘m**
+- Oddiy yengil avtomobil: **≈ 80 000 – 100 000 so‘m**
+- SUV yoki katta dvigatelli avtomobil: **≈ 100 000 – 120 000 so‘m**
 
 ### Yuk avtomobillari va mikroavtobuslar
 
-- Kichik yuk mashinalari: **≈ 80 000 – 120 000 so‘m**
-- Katta yuk transporti: **≈ 120 000 so‘m va yuqori**
+- Kichik yuk mashinalari: **≈ 120 000 – 150 000 so‘m**
+- Katta yuk transporti: **≈ 200 000 so‘m va yuqori**
 
-> Amaliy misol: 1.6 dvigatelli oddiy sedan uchun ko‘pchilik markazlarda to‘lov 50 000 so‘m atrofida bo‘ladi.
+> Narxlar ko‘rsatilganidan yuqori bo‘lishi ham mumkin.
 
 Narxga odatda quyidagilar kiradi:
 
