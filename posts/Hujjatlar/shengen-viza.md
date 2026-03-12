@@ -92,10 +92,10 @@ Yo‘q, konsullik yig‘imi hujjatlarni ko‘rib chiqish xizmati uchun olinadi v
 
 ---
 
-## Tavsiya etilgan maqolalar
+<!-- ## Tavsiya etilgan maqolalar
 * [Xorijga chiqish pasportini olish tartibi](https://amaliyhayot.uz/pasport-olish)
 * [Bankdan ma'lumotnoma olishning eng tezkor usullari](https://amaliyhayot.uz/bank-malumotnoma)
-* [Arzon aviachiptalarni qanday topsa bo‘ladi?](https://amaliyhayot.uz/arzon-chiptalar)
+* [Arzon aviachiptalarni qanday topsa bo‘ladi?](https://amaliyhayot.uz/arzon-chiptalar) -->
 
 **Xulosa:**
 Shengen vizasini olish murakkab tuyulishi mumkin, ammo qoidalarga qat'iy amal qilsangiz va hujjatlarni to‘g‘ri tayyorlasangiz, muvaffaqiyat ehtimoli juda yuqori. Eng muhimi — rejalashtirishni erta boshlang va faqat ishonchli ma'lumotlarga tayanib ish tuting.
