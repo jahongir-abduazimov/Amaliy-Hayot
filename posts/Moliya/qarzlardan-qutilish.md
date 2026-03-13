@@ -93,10 +93,10 @@ Jamshid qo‘shimcha ish qilib, oyiga yana **400 000 so‘m** topdi.
 
 ---
 
-<!-- ## Tavsiya etiladigan maqolalar
-* [Shaxsiy byudjetni qanday yuritish kerak?](/shaxsiy-byudjet-yuritish)
-* [O‘zbekistonda omonat turlari: Pulni qanday ko‘paytirish mumkin?](/omonat-turlari)
-* [Kredit tarixingizni qanday tekshirish va yaxshilash mumkin?](/kredit-tarixi-haqida) -->
+## Tavsiya etiladigan maqolalar
+<!-- * [Shaxsiy byudjetni qanday yuritish kerak?](/shaxsiy-byudjet-yuritish) -->
+* [O‘zbekistonda omonat turlari: Pulni qanday ko‘paytirish mumkin?](/blog/omonat-turlari)
+<!-- * [Kredit tarixingizni qanday tekshirish va yaxshilash mumkin?](/kredit-tarixi-haqida) -->
 
 ## Xulosa
 
