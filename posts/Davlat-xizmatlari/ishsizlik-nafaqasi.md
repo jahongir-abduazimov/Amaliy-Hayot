@@ -106,10 +106,10 @@ Agar siz ikki marta taklif qilingan (ma’lumotingiz va malakangizga mos) ishni 
 
 ---
 
-<!-- ## Ichki linking uchun tavsiyalar
-* [O‘zini o‘zi band qilish tartibi: Qanday ro‘yxatdan o‘tish kerak?](https://amaliyhayot.uz/ozini-ozi-band-qilish)
-* [Hokim yordamchisidan subsidiya olish yo‘llari](https://amaliyhayot.uz/subsidiya-olish)
-* [2026-yilda eng talabgir kasblar ro‘yxati](https://amaliyhayot.uz/talabgir-kasblar) -->
+## Ichki linking uchun tavsiyalar
+* [O‘zini o‘zi band qilish tartibi: Qanday ro‘yxatdan o‘tish kerak?](/blog/ozini-ozi-band-qilish)
+<!-- * [Hokim yordamchisidan subsidiya olish yo‘llari](https://amaliyhayot.uz/subsidiya-olish) -->
+<!-- * [2026-yilda eng talabgir kasblar ro‘yxati](https://amaliyhayot.uz/talabgir-kasblar) -->
 
 ## Xulosa
 O‘zbekistonda ishsizlik masalasida davlatdan yordam olish — bu murakkab byurokratiya emas, balki raqamlashgan va shaffof jarayondir. Asosiysi — harakatni boshlash. Agar ishsiz bo‘lsangiz, nafaqaga tayanish bilan cheklanib qolmasdan, bepul kurslarda yangi kasb egallashni maqsad qiling. Bu uzoq muddatli barqaror daromad garovidir.
