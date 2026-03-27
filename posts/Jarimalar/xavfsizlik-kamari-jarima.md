@@ -77,12 +77,12 @@ Xavfsizlik kamari nosoz bo‘lgan avtomobildan foydalanish taqiqlanadi. Bu trans
 | Yo‘lovchilardan ham kamarni taqishni talab qiling. | Kamar o‘rniga turli "zaguska" (pishchalka o‘chirgich) ishlatmang. |
 | Jarimani 15 kun ichida to‘lab, 50% tejab qoling. | "Kamera ko‘rmaydi" deb qorong‘ida e’tiborsiz bo‘lmang. |
 
-<!-- ---
+---
 
 ## Ichki linking uchun tavsiyalar
-* [O‘zbekistonda jarimalarni onlayn tekshirish va to‘lash usullari](#)
-* [Tezlikni oshirganlik uchun jarimalar jadvali 2026](#)
-* [Yashil va qizil yo‘lak: Bojxona qoidalari haqida](#) -->
+<!-- * [O‘zbekistonda jarimalarni onlayn tekshirish va to‘lash usullari](#) -->
+* [Tezlikni oshirganlik uchun jarimalar 2026](#)
+<!-- * [Yashil va qizil yo‘lak: Bojxona qoidalari haqida](#) -->
 
 ## Xulosa
 

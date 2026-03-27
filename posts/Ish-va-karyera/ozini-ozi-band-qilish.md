@@ -98,10 +98,10 @@ Yo‘q, ro‘yxatdan o‘tish va guvohnoma olish mutlaqo bepul.
 
 ---
 
-<!-- ## Ichki linking uchun tavsiyalar
-* [O‘zbekistonda masofaviy ishlash: Eng yaxshi kasblar ro‘yxati](#)
-* [Yakka tartibdagi tadbirkorlik (YaTT) ochish tartibi 2026](#)
-* [Soliq mobil ilovasidan foydalanish bo‘yicha qo‘llanma](#) -->
+## Ichki linking uchun tavsiyalar
+<!-- * [O‘zbekistonda masofaviy ishlash: Eng yaxshi kasblar ro‘yxati](#) -->
+* [Yakka tartibdagi tadbirkorlik (YaTT) ochish tartibi 2026](/blog/yatt-ochish-tartibi)
+<!-- * [Soliq mobil ilovasidan foydalanish bo‘yicha qo‘llanma](#) -->
 
 ## Xulosa
 
