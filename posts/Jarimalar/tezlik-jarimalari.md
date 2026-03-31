@@ -5,7 +5,7 @@ description: "O‘zbekistonda tezlikni oshirganlik uchun 2026-yildagi jarimalar 
 image: /images/fines/tezlik-jarimalari.jpeg
 author: "Amaliy Hayot"
 category: Jarimalar
-keywords: [tezlikni oshirish jarimasi, radar jarimasi 2026, O'zbekiston yo'l harakati qoidalari, BHM miqdori, jarima tekshirish, jarima to'lash, 50 foiz chegirma, yo'l harakati xavfsizligi, radar xatoligi]
+keywords: "tezlikni oshirish jarimasi, radar jarimasi 2026, O'zbekiston yo'l harakati qoidalari, BHM miqdori, jarima tekshirish, jarima to'lash, 50 foiz chegirma, yo'l harakati xavfsizligi, radar xatoligi"
 ---
 
 # Tezlikni oshirganlik uchun jarimalar 2026: To‘liq jadval va qoidalar

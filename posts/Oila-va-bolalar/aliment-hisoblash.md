@@ -5,7 +5,7 @@ description: 2026-yilda O‘zbekistonda aliment miqdori, hisoblash tartibi, ishs
 image: /images/family-and-children/aliment-hisoblash.jpg
 author: "Amaliy Hayot"
 category: Oila va Bolalar
-keywords: aliment miqdori 2026, aliment hisoblash, aliment undirish, aliment eng kam miqdori, O'zbekiston aliment qonunchiligi, aliment ishsizlardan, MIB aliment, aliment kalkulyatori
+keywords: "aliment miqdori 2026, aliment hisoblash, aliment undirish, aliment eng kam miqdori, O'zbekiston aliment qonunchiligi, aliment ishsizlardan, MIB aliment, aliment kalkulyatori"
 ---
 
 O‘zbekiston Respublikasi Oila kodeksiga asosan, ota-ona o‘zining voyaga yetmagan bolalariga ta’minot berishi shart. Agar bu majburiyat ixtiyoriy ravishda bajarilmasa, aliment sud tartibida undiriladi.

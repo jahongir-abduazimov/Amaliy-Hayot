@@ -5,7 +5,7 @@ description: O‘zbekistonda ko‘p bolali oilalar kimlar, ularga qanday imtiyoz
 image: /images/family-and-children/kop-bolali-oilalar-imtiyozlari.jpg
 author: "Amaliy Hayot"
 category: Oila va Bolalar
-keywords: ko'p bolali oila imtiyozlari 2026, bola puli olish, ko'p bolali oila statusi, uy-joy imtiyozlari, O'zbekiston ijtimoiy yordam, kam ta'minlangan oilalar, moddiy yordam ariza berish
+keywords: "ko'p bolali oila imtiyozlari 2026, bola puli olish, ko'p bolali oila statusi, uy-joy imtiyozlari, O'zbekiston ijtimoiy yordam, kam ta'minlangan oilalar, moddiy yordam ariza berish"
 ---
 
 O‘zbekiston qonunchiligiga ko‘ra, to‘rt nafar va undan ortiq voyaga yetmagan farzandi bor oilalar **ko‘p bolali oilalar** hisoblanadi. Davlat tomonidan bunday oilalarni qo‘llab-quvvatlash uchun soliq, uy-joy, mehnat va ijtimoiy sohalarda qator imtiyozlar belgilangan.

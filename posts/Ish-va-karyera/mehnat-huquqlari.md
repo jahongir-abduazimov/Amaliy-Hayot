@@ -5,7 +5,7 @@ description: "O‘zbekiston Respublikasi Mehnat kodeksi asosida xodimlarning aso
 image: /images/work-and-career/mehnat-huquqlari.jpeg
 author: "Amaliy Hayot"
 category: "Ish va Karyera"
-keywords: [mehnat kodeksi 2026, ishga kirish tartibi, mehnat shartnomasi, yillik ta'til muddati, ishdan bo'shatish tartibi, O'zbekiston mehnat qonunchiligi, xodim huquqlari, kompensatsiya to'lash]
+keywords: "mehnat kodeksi 2026, ishga kirish tartibi, mehnat shartnomasi, yillik ta'til muddati, ishdan bo'shatish tartibi, O'zbekiston mehnat qonunchiligi, xodim huquqlari, kompensatsiya to'lash"
 ---
 
 O‘zbekistonda har bir xodimning huquqlari **Yangi tahrirdagi Mehnat kodeksi** bilan himoyalangan. Ish beruvchi va xodim o‘rtasidagi munosabatlar qonuniy doirada bo‘lishi nafaqat barqaror daromad, balki ijtimoiy himoyani ham kafolatlaydi.

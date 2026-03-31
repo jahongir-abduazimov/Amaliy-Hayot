@@ -5,7 +5,7 @@ description: "Propiska (doimiy va vaqtinchalik ro‘yxatdan o‘tish) qanday qil
 image: "/images/documents/propiska.jpg"
 author: "Amaliy Hayot"
 category: Hujjatlar
-keywords: [propiska qilish, doimiy ro'yxatga turish, vaqtinchalik ro'yxatdan o'tish, my.gov.uz propiska, O'zbekiston propiska tizimi 2026, pasport stol, ijara shartnomasi ro'yxatdan o'tkazish, propiska hujjatlari]
+keywords: "propiska qilish, doimiy ro'yxatga turish, vaqtinchalik ro'yxatdan o'tish, my.gov.uz propiska, O'zbekiston propiska tizimi 2026, pasport stol, ijara shartnomasi ro'yxatdan o'tkazish, propiska hujjatlari"
 ---
 
 O‘zbekiston fuqarolari uchun turgan joyi bo‘yicha ro‘yxatdan o‘tish (eski tilda "propiska") jarayoni so‘nggi yillarda sezilarli darajada soddalashtirildi. Endilikda bu jarayon korrupsiyadan xoli, raqamlashgan va ortiqcha qog‘ozbozliksiz amalga oshirilmoqda.

@@ -5,7 +5,7 @@ description: "O‘zbekistonda yakka tartibdagi tadbirkorlikni (YaTT) mustaqil oc
 image: /images/public-services/yatt-ochish-tartibi.jpeg
 author: "Amaliy Hayot"
 category: Davlat xizmatlari
-keywords: [YaTT ochish, tadbirkorlikni ro'yxatdan o'tkazish, my.gov.uz, soliqlar 2026, O'zbekiston biznes, yakka tartibdagi tadbirkor, biznes boshlash tartibi, davlat xizmatlari markazi]
+keywords: "YaTT ochish, tadbirkorlikni ro'yxatdan o'tkazish, my.gov.uz, soliqlar 2026, O'zbekiston biznes, yakka tartibdagi tadbirkor, biznes boshlash tartibi, davlat xizmatlari markazi"
 ---
 
 O‘zbekistonda o‘z biznesini boshlamoqchi bo‘lganlar uchun eng sodda va ommabop huquqiy shakl — bu **Yakka tartibdagi tadbirkorlik (YaTT)** hisoblanadi. Bugungi kunda tadbirkorlikni ro‘yxatdan o‘tkazish jarayoni to‘liq raqamlashgan bo‘lib, uyingizdan chiqmasdan turib ham tadbirkorga aylanish imkoniyati mavjud.

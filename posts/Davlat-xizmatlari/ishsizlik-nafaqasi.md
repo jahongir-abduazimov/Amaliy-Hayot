@@ -5,7 +5,7 @@ description: "O'zbekistonda ishsiz sifatida ro'yxatdan o'tish, nafaqa tayinlash 
 image: /images/public-services/ishsizlik-nafaqasi.jpg
 author: "Amaliy Hayot"
 category: "Davlat xizmatlari"
-keywords: ["ishsizlik nafaqasi 2026", "bandlik markazi ro'yxatdan o'tish", "my.gov.uz ishsizlik", "bepul kasb-hunar kurslari", "ishga marhamat mono markaz", "O'zbekiston bandlik qonunchiligi", "ish qidirish", "subsidiya olish"]
+keywords: "ishsizlik nafaqasi 2026, bandlik markazi ro'yxatdan o'tish, my.gov.uz ishsizlik, bepul kasb-hunar kurslari, ishga marhamat mono markaz, O'zbekiston bandlik qonunchiligi, ish qidirish, subsidiya olish"
 ---
 
 O‘zbekistonda doimiy ish joyiga ega bo‘lmagan fuqarolar davlat tomonidan ijtimoiy himoya qilinadi. Bu nafaqat moliyaviy yordam (ishsizlik nafaqasi), balki zamonaviy kasblarni mutlaqo bepul o‘rganish va tadbirkorlikni boshlash uchun subsidiya olish imkoniyatini ham anglatadi.
