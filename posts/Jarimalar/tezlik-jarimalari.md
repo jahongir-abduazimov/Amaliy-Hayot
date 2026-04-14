@@ -12,7 +12,7 @@ keywords: "tezlikni oshirish jarimasi, radar jarimasi 2026, O'zbekiston yo'l har
 
 O‘zbekiston yo‘llarida harakat xavfsizligini ta'minlash maqsadida tezlik rejimiga rioya qilish qat'iy nazorat qilinadi. 2026-yilda ham tezlikni oshirganlik uchun jarimalar Bazaviy hisoblash miqdori (BHM) asosida hisoblanadi. Ushbu maqolada jarima miqdorlari, radar xatoliklari va to‘lovdagi imtiyozlar haqida barcha amaliy ma’lumotlarni jamladik.
 
-> **Qisqa javob (Featured Snippet):**
+> **Qisqa javob:**
 > 2026-yilda O‘zbekistonda tezlikni oshirganlik uchun jarimalar 3 ta asosiy toifaga bo‘linadi:
 > * **+20 km/soatgacha:** 1 BHM miqdorida.
 > * **20-40 km/soatgacha:** 5 BHM miqdorida.

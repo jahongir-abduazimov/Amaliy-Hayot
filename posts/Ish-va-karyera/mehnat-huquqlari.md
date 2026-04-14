@@ -10,7 +10,7 @@ keywords: "mehnat kodeksi 2026, ishga kirish tartibi, mehnat shartnomasi, yillik
 
 O‘zbekistonda har bir xodimning huquqlari **Yangi tahrirdagi Mehnat kodeksi** bilan himoyalangan. Ish beruvchi va xodim o‘rtasidagi munosabatlar qonuniy doirada bo‘lishi nafaqat barqaror daromad, balki ijtimoiy himoyani ham kafolatlaydi.
 
-> **Qisqa javob (Featured Snippet):**
+> **Qisqa javob:**
 > O‘zbekiston qonunchiligiga ko‘ra, mehnat munosabatlari yozma shakldagi **mehnat shartnomasi** bilan rasmiylashtirilishi shart. Xodim yiliga kamida **21 kalendar kuni** miqdorida haq to‘lanadigan ta’tilga chiqish huquqiga ega. Ishdan bo‘shatishda esa sababga ko‘ra 2 haftadan 2 oygacha bo‘lgan muddatda ogohlantirish yoki kompensatsiya ko‘zda tutilgan.
 
 ---

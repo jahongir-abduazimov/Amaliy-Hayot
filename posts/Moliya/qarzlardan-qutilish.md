@@ -12,7 +12,7 @@ keywords: "qarzdan qutilish, qor uyumi usuli, kreditni yopish, moliyaviy erkinli
 
 Qarzlardan qutilishning eng tez va psixologik jihatdan oson yo‘li — bu **"Qor uyumi" (Debt Snowball)** usulidir. Bu usul qarzlarni foiz stavkasiga qarab emas, balki ularning **hajmi (summasi)** bo‘yicha kichigidan kattasiga qarab saralash va to‘lashni nazarda tutadi.
 
-> **Featured Snippet uchun qisqa javob:** "Qor uyumi" usulida siz barcha qarzlaringizni eng kichik summadan boshlab ro‘yxat qilasiz. Barcha qarzlar bo‘yicha minimal to‘lovlarni amalga oshirgan holda, bor imkoniyatingizni (ortiqcha mablag‘ni) eng kichik qarzni yopishga qaratasiz. Kichik qarz yopilgach, bo‘shagan mablag‘ keyingi eng kichik qarzga qo‘shiladi — xuddi tepalikdan dumalayotgan qor uyumi kattalashib borgani kabi.
+> **Qisqa javob:** "Qor uyumi" usulida siz barcha qarzlaringizni eng kichik summadan boshlab ro‘yxat qilasiz. Barcha qarzlar bo‘yicha minimal to‘lovlarni amalga oshirgan holda, bor imkoniyatingizni (ortiqcha mablag‘ni) eng kichik qarzni yopishga qaratasiz. Kichik qarz yopilgach, bo‘shagan mablag‘ keyingi eng kichik qarzga qo‘shiladi — xuddi tepalikdan dumalayotgan qor uyumi kattalashib borgani kabi.
 
 ---
 

@@ -14,7 +14,7 @@ Ushbu maqolada sun’iy intellektdan qanday qilib ish, o‘qish va uy yumushlari
 
 ---
 
-### Qisqa javob (Featured Snippet)
+### Qisqa javob
 
 ChatGPT yordamida vaqtni tejash uchun unga aniq kontekst bering: kimligingizni, nima qilishingiz kerakligini va natija qanday shaklda bo‘lishini (jadval, ro‘yxat, xat) belgilang. U yozishmalarni tahrirlash, g‘oyalar yaratish, murakkab matnlarni qisqartirish, byudjet tuzish va o‘quv rejalarini ishlab chiqishda eng yaxshi yordamchidir.
 

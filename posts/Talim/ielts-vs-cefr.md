@@ -10,7 +10,7 @@ keywords: "IELTS, CEFR, Milliy sertifikat, ingliz tili imtihoni, O'zbekistonda t
 
 O‘zbekistonlik abituriyentlar va talabalar orasida eng ko‘p beriladigan savollardan biri: **"IELTS topshiraymi yoki CEFR (Milliy sertifikat)?"** Javob sizning maqsadingizga bog‘liq: agar maqsadingiz faqat O‘zbekiston OTMlariga kirish va ustama olish bo‘lsa — **CEFR**, agar xalqaro darajadagi imkoniyatlar va chet elda o‘qish bo‘lsa — **IELTS** afzalroq.
 
-> **Qisqa javob (Featured Snippet):**
+> **Qisqa javob:**
 > O‘zbekiston ichidagi oliy o‘quv yurtlariga kirishda maksimal ball olish va oylik ish haqiga ustama qo‘shish uchun **CEFR (Milliy sertifikat)** arzonroq va qulayroq variantdir. Biroq, xalqaro grantlar, xorijiy universitetlar va emigratsiya masalalarida faqat **IELTS** tan olinadi. 
 
 ---

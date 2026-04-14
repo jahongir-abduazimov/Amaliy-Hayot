@@ -14,7 +14,7 @@ Quyida barcha jarayonlar bosqichma-bosqich tushuntiriladi.
 
 ---
 
-## Qisqa javob (Featured snippet uchun)
+## Qisqa javob
 
 **Pasport olish uchun nima kerak?**
 
