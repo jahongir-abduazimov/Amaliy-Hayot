@@ -86,7 +86,6 @@ export default function Contact() {
                 <a
                   href="https://t.me/abduazimov707"
                   target="_blank"
-                  rel="noopener noreferrer"
                   className="text-cyan-600 hover:text-cyan-800 font-medium"
                 >
                   @abduazimov707
@@ -117,7 +116,6 @@ export default function Contact() {
                 <a
                   href="https://facebook.com/amaliyhayot"
                   target="_blank"
-                  rel="noopener noreferrer"
                   className="text-indigo-600 hover:text-indigo-800 font-medium"
                 >
                   facebook.com/amaliyhayot

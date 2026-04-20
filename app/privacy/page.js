@@ -142,7 +142,6 @@ export default function Privacy() {
           <a
             href="https://adssettings.google.com"
             target="_blank"
-            rel="noopener noreferrer"
           >
             Ads Settings
           </a>
@@ -233,7 +232,6 @@ export default function Privacy() {
             <a
               href="https://t.me/abduazimov707"
               target="_blank"
-              rel="noopener noreferrer"
             >
               @abduazimov707
             </a>
@@ -243,7 +241,6 @@ export default function Privacy() {
             <a
               href="https://facebook.com/amaliyhayot"
               target="_blank"
-              rel="noopener noreferrer"
             >
               facebook.com/amaliyhayot
             </a>

@@ -16,7 +16,7 @@ export default function Footer() {
   const socialLinks = [
     {
       name: "Telegram",
-      href: "https://t.me/amaliy_hayot",
+      href: "https://t.me/+BPD056aF_E0wNjQy",
       icon: (
         <svg
           className="w-5 h-5"
@@ -104,7 +104,6 @@ export default function Footer() {
                   className="group relative p-3 rounded-xl bg-white border border-neutral-border hover:border-primary shadow-soft hover:shadow-soft-lg text-neutral-text-gray hover:text-white smooth hover:bg-primary"
                   aria-label={social.name}
                   target="_blank"
-                  rel="noopener noreferrer"
                 >
                   <span className="relative z-10">{social.icon}</span>
                 </a>

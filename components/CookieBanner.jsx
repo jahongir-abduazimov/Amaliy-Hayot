@@ -80,7 +80,6 @@ export default function CookieBanner() {
                         href="/privacy"
                         className="text-primary hover:underline font-medium"
                         target="_blank"
-                        rel="noopener noreferrer"
                       >
                         Maxfiylik siyosati
                       </a>

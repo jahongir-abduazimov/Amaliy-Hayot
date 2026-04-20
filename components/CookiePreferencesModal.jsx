@@ -211,7 +211,6 @@ export default function CookiePreferencesModal({ onClose }) {
                   <a
                     href="https://adssettings.google.com"
                     target="_blank"
-                    rel="noopener noreferrer"
                     className="text-primary hover:underline"
                   >
                     Google reklama sozlamalarini boshqarish
@@ -245,7 +244,6 @@ export default function CookiePreferencesModal({ onClose }) {
               <a
                 href="/privacy"
                 target="_blank"
-                rel="noopener noreferrer"
                 className="text-primary hover:underline font-medium"
               >
                 Maxfiylik siyosati

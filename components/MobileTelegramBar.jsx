@@ -80,8 +80,8 @@ export default function MobileTelegramBar() {
 
           <div className="flex-1 space-y-1">
             <p className="font-medium text-[15px] leading-snug">
-              Telegram kanlimizda odamlar uchun har kuni kerak bo‘ladigan aniq va tushunarli
-              qo‘llanmalar va maslahatlar berib boriladi.
+              Telegram kanlimizda odamlar uchun har kuni kerak bo‘ladigan aniq
+              va tushunarli qo‘llanmalar va maslahatlar berib boriladi.
             </p>
             {/* <ul className="text-[11px] leading-relaxed opacity-90 list-disc list-inside space-y-0.5">
               <li>Faqat Telegram’da beriladigan foydali check-listlar</li>
@@ -101,9 +101,8 @@ export default function MobileTelegramBar() {
           </button>
 
           <Link
-            href="https://t.me/amaliy_hayot"
+            href="https://t.me/+BPD056aF_E0wNjQy"
             target="_blank"
-            rel="noopener noreferrer"
             className="px-4 py-2.5 rounded-xl bg-white text-primary text-[13px] font-extrabold shadow-lg shadow-blue/60 hover:bg-gray-100 smooth whitespace-nowrap cursor-pointer flex items-center gap-1.5 animate-pulse-soft"
           >
             <svg
